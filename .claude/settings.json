@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Alejandro/.claude/projects/c--Users-Alejandro--gemini-antigravity-scratch-dental-funnel-agentes//**)",
+      "WebFetch(domain:www.binhex.cloud)",
+      "Read(//c/Users/Alejandro/OneDrive/Escritorio/master seo//**)",
+      "Read(//c/Users/Alejandro/OneDrive/Escritorio/master seo/**)"
+    ]
+  }
+}
