@@ -1,0 +1,104 @@
+body {
+    background-color: #050508;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Ambient Glows */
+.ambient-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    max-width: 100vw;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(5, 5, 8, 0) 70%);
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Grid Background */
+.bg-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, transparent, black 40%, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 40%, black 70%, transparent);
+}
+
+/* Utilities */
+.text-gradient {
+    background: linear-gradient(to right, #3B82F6, #818CF8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animations Classes */
+.anim-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.anim-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.anim-stagger {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.anim-stagger.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.anim-slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.anim-slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.anim-scale {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.4s ease;
+}
+
+.anim-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Card Hover Effects */
+.card-hover-effect {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+}
+
+/* Accordion Transition */
+.accordion-content {
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.accordion-content.open {
+    max-height: 200px;
+    opacity: 1;
+}
