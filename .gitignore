@@ -1,2 +1,6 @@
 .vercel
 .env*.local
+*.txt
+*.py
+*.zip
+notebooklm_context.txt
