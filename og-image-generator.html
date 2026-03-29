@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>OG Image Generator - ZappyApps</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .og-container {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #050508 0%, #111827 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        /* Decorative elements */
+        .og-container::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .og-container::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .logo-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        .brand-name {
+            font-size: 72px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -1px;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        .brand-name span {
+            color: #3B82F6;
+        }
+        .subtitle {
+            font-size: 28px;
+            color: #3B82F6;
+            margin-top: 16px;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+        .url {
+            font-size: 20px;
+            color: #6B7280;
+            margin-top: 24px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+        /* Subtle grid pattern */
+        .grid-bg {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .instructions {
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 14px;
+            text-align: center;
+            max-width: 600px;
+        }
+        .instructions strong {
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="og-container" id="og-image">
+            <div class="grid-bg"></div>
+            <svg class="logo-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="16" fill="#3B82F6" fill-opacity="0.15"/>
+                <path d="M24 52L36 28L44 44L52 32L60 52" stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="36" cy="28" r="4" fill="#3B82F6"/>
+                <circle cx="52" cy="32" r="3" fill="#60A5FA"/>
+            </svg>
+            <h1 class="brand-name">Zappy<span>Apps</span></h1>
+            <p class="subtitle">Diseno Web Estrategico con IA para PYMEs</p>
+            <p class="url">zappyapps.tech</p>
+        </div>
+        <div class="instructions">
+            <p><strong>Instrucciones:</strong> Haz screenshot de la caja superior (1200x630px) y guardala como <strong>og-image.jpg</strong> en la raiz del sitio.</p>
+            <p>En Windows: Win+Shift+S > selecciona el area > pega en Paint > Guardar como JPG</p>
+        </div>
+    </div>
+</body>
+</html>

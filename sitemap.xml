@@ -3,178 +3,413 @@
   <!-- Homepage -->
   <url>
     <loc>https://zappyapps.tech/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Sobre Nosotros (E-E-A-T) -->
   <url>
-    <loc>https://zappyapps.tech/sobre-nosotros.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/sobre-nosotros</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Contacto -->
+  <url>
+    <loc>https://zappyapps.tech/contacto</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- FAQ -->
+  <url>
+    <loc>https://zappyapps.tech/faq</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Testimonios -->
+  <url>
+    <loc>https://zappyapps.tech/testimonios</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Portfolio -->
+  <url>
+    <loc>https://zappyapps.tech/portfolio</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Equipo -->
+  <url>
+    <loc>https://zappyapps.tech/equipo</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Servicios Hub -->
   <url>
-    <loc>https://zappyapps.tech/servicios/index.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Servicios individuales -->
   <url>
-    <loc>https://zappyapps.tech/servicios/diseno-web-estrategico.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/diseno-web-estrategico</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/chatbot-ia.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/chatbot-ia</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/captacion-leads.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/captacion-leads</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/lead-scoring.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/lead-scoring</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/funnels-conversion.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/funnels-conversion</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/crm-personalizado.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/crm-personalizado</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/optimizacion-continua.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/optimizacion-continua</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/servicios/soporte-mantenimiento.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/servicios/soporte-mantenimiento</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Sectores Hub -->
   <url>
-    <loc>https://zappyapps.tech/para/index.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <!-- Sectores individuales -->
   <url>
-    <loc>https://zappyapps.tech/para/restaurantes.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para/restaurantes</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/para/clinicas.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para/clinicas</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/para/abogados.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para/abogados</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/para/ecommerce.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para/ecommerce</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/para/coaches.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para/coaches</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/para/inmobiliarias.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/para/inmobiliarias</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <!-- Blog Hub -->
   <url>
-    <loc>https://zappyapps.tech/blog/index.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog artículos -->
+  <!-- Blog articulos -->
   <url>
-    <loc>https://zappyapps.tech/blog/por-que-mi-web-no-genera-clientes.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog/por-que-mi-web-no-genera-clientes</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/blog/cuanto-cuesta-web-profesional.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog/cuanto-cuesta-web-profesional</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/blog/chatbot-ia-para-pymes.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog/chatbot-ia-para-pymes</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/blog/diferencia-web-bonita-web-que-vende.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog/diferencia-web-bonita-web-que-vende</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/blog/como-automatizar-captacion-leads.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog/como-automatizar-captacion-leads</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/blog/que-es-lead-scoring.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://zappyapps.tech/blog/que-es-lead-scoring</loc>
+    <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-  <!-- Páginas legales (noindex pero en sitemap para crawlability) -->
+  <!-- Sprint 2 - Servicio nuevo -->
   <url>
-    <loc>https://zappyapps.tech/privacidad.html</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://zappyapps.tech/servicios/landing-pages</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Sprint 2 - Sectores nuevos -->
+  <url>
+    <loc>https://zappyapps.tech/para/gimnasios</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/terminos.html</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://zappyapps.tech/para/academias</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://zappyapps.tech/cookies.html</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://zappyapps.tech/para/clinicas-dentales</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Sprint 2 - Blog posts MOFU -->
+  <url>
+    <loc>https://zappyapps.tech/blog/mejores-agencias-diseno-web-espana</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/como-elegir-agencia-web</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/crm-para-pymes-guia</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/funnel-ventas-automatizado</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/web-conversion-vs-web-corporativa</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/ia-aplicada-marketing-pymes</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Sprint 3 - Silo Comparativas -->
+  <url>
+    <loc>https://zappyapps.tech/comparar</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/comparar/agencia-vs-freelancer</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/comparar/agencia-vs-hacer-tu-web</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/comparar/wordpress-vs-web-a-medida</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/comparar/zappyapps-vs-agencia-tradicional</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/comparar/wix-vs-web-profesional</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/comparar/shopify-vs-web-a-medida</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <!-- Sprint 3 - Blog TOFU -->
+  <url>
+    <loc>https://zappyapps.tech/blog/tendencias-diseno-web-2026</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/errores-web-pymes</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/automatizar-whatsapp-business</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/ia-generativa-ventas-pymes</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Sprint 3 - Sectores adicionales -->
+  <url>
+    <loc>https://zappyapps.tech/para/consultoras</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/para/veterinarios</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/para/centros-estetica</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Sprint 3 - Servicio SEO local -->
+  <url>
+    <loc>https://zappyapps.tech/servicios/seo-local</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Sprint 5 - Precios + Blog -->
+  <url>
+    <loc>https://zappyapps.tech/precios</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/kit-digital-guia</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/subvenciones-digitalizacion-2026</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/como-captar-clientes-online</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/crm-vs-excel</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/blog/redes-sociales-vs-web</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Sprint 4 - Páginas locales -->
+  <url>
+    <loc>https://zappyapps.tech/diseno-web-tenerife</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/agencia-digital-tenerife</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/diseno-web-canarias</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zappyapps.tech/agencia-digital-canarias</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>
