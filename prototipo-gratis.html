@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="oCtnfh5mvtglGTDiyMi2ADmvcZUvNXhOFE-V9O6bl0U" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q73Z1TK7LS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q73Z1TK7LS');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicita tu Prototipo Gratis — ZappyApps</title>
+  <meta name="description" content="Solicita tu prototipo de web o landing page gratis. Te lo diseñamos antes de la reunión para que veas el resultado real antes de decidir nada.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://zappyapps.tech/prototipo-gratis">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:      #050508;
+      --bg2:     #0f1119;
+      --bg3:     #13151f;
+      --border:  rgba(255,255,255,0.08);
+      --border-h:rgba(255,255,255,0.18);
+      --border-a:rgba(59,130,246,0.5);
+      --text:    #ffffff;
+      --t2:      #94a3b8;
+      --t3:      #4a5568;
+      --primary: #3B82F6;
+      --primary-dark: #2563EB;
+      --accent:  #8B5CF6;
+      --p-dim:   rgba(59,130,246,0.08);
+      --p-glow:  rgba(59,130,246,0.18);
+      --a-dim:   rgba(139,92,246,0.08);
+      --danger:  #f87171;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36px 16px 60px;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: -180px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 420px;
+      background: radial-gradient(ellipse, rgba(59,130,246,0.06) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(139,92,246,0.04) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 32px;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+    }
+    .logo-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    .form-wrap {
+      width: 100%;
+      max-width: 560px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Progress */
+    .prog-track {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .prog-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      position: relative;
+    }
+    .prog-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      z-index: 0;
+      transition: background 0.4s;
+    }
+    .prog-step.done:not(:last-child)::after { background: var(--primary); }
+    .prog-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: var(--bg2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--t3);
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+      font-family: 'Outfit', sans-serif;
+    }
+    .prog-step.active .prog-dot {
+      border-color: var(--primary);
+      background: var(--p-dim);
+      color: var(--primary);
+      box-shadow: 0 0 0 4px var(--p-glow);
+    }
+    .prog-step.done .prog-dot {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .prog-lbl {
+      font-size: 10px;
+      color: var(--t3);
+      margin-top: 5px;
+      letter-spacing: .04em;
+      white-space: nowrap;
+      font-weight: 500;
+    }
+    .prog-step.active .prog-lbl,
+    .prog-step.done .prog-lbl { color: var(--t2); }
+
+    .step-counter {
+      font-size: 12px;
+      color: var(--t3);
+      text-align: center;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .step-counter span { color: var(--t2); }
+
+    /* Card */
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+    .card-inner { padding: 32px 32px 22px; }
+    @media(max-width:480px) { .card-inner { padding: 20px 18px 16px; } }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .step-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text);
+      margin-bottom: 6px;
+      letter-spacing: -0.4px;
+    }
+    .step-sub {
+      font-size: 13px;
+      color: var(--t2);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    /* Option cards */
+    .opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 6px; }
+    .opt-grid.c1 { grid-template-columns: 1fr; }
+    .opt-card {
+      background: var(--bg3);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 15px;
+      cursor: pointer;
+      transition: all .2s;
+      text-align: left;
+      position: relative;
+    }
+    .opt-card:hover { border-color: var(--border-h); background: rgba(255,255,255,0.02); }
+    .opt-card.selected {
+      border-color: var(--primary);
+      background: var(--p-dim);
+      box-shadow: 0 0 0 1px var(--primary), inset 0 0 20px rgba(59,130,246,0.03);
+    }
+    .opt-card.selected::after {
+      content: '✓';
+      position: absolute;
+      top: 11px;
+      right: 13px;
+      font-size: 11px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .opt-icon { font-size: 20px; margin-bottom: 9px; display: block; }
+    .opt-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+    .opt-desc { font-size: 12px; color: var(--t2); line-height: 1.5; }
+    .opt-badge {
+      display: inline-block;
+      margin-top: 7px;
+      font-size: 9px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: var(--p-dim);
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: .05em;
+      border: 1px solid rgba(59,130,246,0.2);
+    }
+
+    /* Tags */
+    .tag-wrap { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 6px; }
+    .tag-btn {
+      padding: 7px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      color: var(--t2);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all .2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .tag-btn:hover { border-color: var(--border-h); color: var(--text); }
+    .tag-btn.sel {
+      border-color: var(--primary);
+      background: var(--p-dim);
+      color: var(--primary);
+    }
+
+    /* Fields */
+    .field { margin-bottom: 16px; }
+    .field:last-child { margin-bottom: 0; }
+    .field label {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--t2);
+      margin-bottom: 6px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      padding: 12px 15px;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      -webkit-appearance: none;
+    }
+    .field input::placeholder,
+    .field textarea::placeholder { color: var(--t3); }
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      border-color: var(--border-a);
+      box-shadow: 0 0 0 3px var(--p-glow);
+    }
+    .field textarea { resize: vertical; min-height: 88px; line-height: 1.6; }
+    .field select { cursor: pointer; }
+    .field select option { background: #13151f; color: #fff; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    @media(max-width:420px) { .field-row { grid-template-columns: 1fr; } }
+    .hint { font-size: 11px; color: var(--t3); margin-top: 5px; line-height: 1.5; }
+    .err { font-size: 12px; color: var(--danger); margin-top: 5px; display: none; }
+    .field.bad input,
+    .field.bad textarea,
+    .field.bad select { border-color: var(--danger); }
+    .field.bad .err { display: block; }
+    .cond { display: none; }
+    .cond.show { display: block; }
+
+    /* Footer */
+    .card-footer {
+      padding: 16px 32px 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    @media(max-width:480px) { .card-footer { padding: 14px 18px 20px; } }
+
+    .btn-back {
+      padding: 11px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--t2);
+      font-size: 14px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+    .btn-back:hover { border-color: var(--border-h); color: var(--text); }
+
+    .btn-next {
+      flex: 1;
+      padding: 13px 22px;
+      border-radius: 10px;
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: .01em;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      box-shadow: 0 0 20px rgba(59,130,246,0.3);
+    }
+    .btn-next:hover {
+      background: var(--primary-dark);
+      box-shadow: 0 0 28px rgba(59,130,246,0.5);
+      transform: translateY(-1px);
+    }
+    .btn-next:active { transform: translateY(0); }
+    .arr { font-size: 15px; transition: transform .2s; }
+    .btn-next:hover .arr { transform: translateX(3px); }
+
+    /* Confirm */
+    .confirm { text-align: center; padding: 44px 32px; }
+    .confirm-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--p-dim);
+      border: 1.5px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 26px;
+      box-shadow: 0 0 24px rgba(59,130,246,0.2);
+    }
+    .confirm-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.4px;
+    }
+    .confirm-sub {
+      font-size: 13px;
+      color: var(--t2);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .confirm-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .c-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      gap: 14px;
+    }
+    .c-row:last-child { border-bottom: none; }
+    .c-lbl { font-size: 12px; color: var(--t2); white-space: nowrap; }
+    .c-val { font-size: 13px; color: var(--text); text-align: right; font-weight: 500; }
+    .next-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      font-size: 13px;
+      color: var(--t2);
+      line-height: 1.75;
+      text-align: left;
+    }
+    .next-box strong { color: var(--primary); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .panel { animation: fadeUp .28s ease both; }
+
+    .bottom-note {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--t3);
+      line-height: 1.6;
+    }
+    .bottom-note a { color: var(--t2); text-decoration: none; transition: color .2s; }
+    .bottom-note a:hover { color: var(--text); }
+
+    /* Gradient text helper */
+    .grad { background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <a href="/" class="logo">
+    <span class="logo-name">ZappyApps</span>
+  </a>
+
+  <div class="form-wrap">
+
+    <!-- Progress bar -->
+    <div class="prog-track" id="prog-track">
+      <div class="prog-step active" id="ps1"><div class="prog-dot">1</div><span class="prog-lbl">Tipo</span></div>
+      <div class="prog-step" id="ps2"><div class="prog-dot">2</div><span class="prog-lbl">Negocio</span></div>
+      <div class="prog-step" id="ps3"><div class="prog-dot">3</div><span class="prog-lbl">Situaci&oacute;n</span></div>
+      <div class="prog-step" id="ps4"><div class="prog-dot">4</div><span class="prog-lbl">Objetivos</span></div>
+      <div class="prog-step" id="ps5"><div class="prog-dot">5</div><span class="prog-lbl">Contacto</span></div>
+    </div>
+    <div class="step-counter" id="step-counter">Paso <span id="snum">1</span> de 5</div>
+
+    <div class="card">
+      <div id="form-body">
+
+        <!-- PASO 1 -->
+        <div class="panel" id="s1">
+          <div class="card-inner">
+            <div class="eyebrow">Prototipo gratuito</div>
+            <div class="step-title">&iquest;Qu&eacute; necesitas que <span class="grad">dise&ntilde;emos</span>?</div>
+            <div class="step-sub">Dise&ntilde;amos el prototipo antes de reunirnos para que veas el resultado real antes de decidir nada. Sin pagos, sin compromisos.</div>
+            <div class="opt-grid">
+              <div class="opt-card" data-g="tipo" data-v="web" onclick="pick(this)">
+                <span class="opt-icon">🌐</span>
+                <div class="opt-title">Prototipo de Web</div>
+                <div class="opt-desc">Dise&ntilde;o completo de tu p&aacute;gina principal orientada a captar clientes.</div>
+                <span class="opt-badge">HOME COMPLETA</span>
+              </div>
+              <div class="opt-card" data-g="tipo" data-v="landing" onclick="pick(this)">
+                <span class="opt-icon">🎯</span>
+                <div class="opt-title">Prototipo de Landing</div>
+                <div class="opt-desc">P&aacute;gina enfocada en un solo objetivo: que te llamen, escriban o compren.</div>
+                <span class="opt-badge">ALTA CONVERSI&Oacute;N</span>
+              </div>
+            </div>
+            <div class="err" id="err-tipo" style="display:none;margin-top:4px">Selecciona el tipo de prototipo.</div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-next" style="margin-left:auto" onclick="next()">Continuar <span class="arr">→</span></button>
+          </div>
+        </div>
+
+        <!-- PASO 2 -->
+        <div class="panel" id="s2" style="display:none">
+          <div class="card-inner">
+            <div class="eyebrow">Tu negocio</div>
+            <div class="step-title">Cu&eacute;ntanos <span class="grad">qui&eacute;n eres</span></div>
+            <div class="step-sub">Con esto dise&ntilde;amos algo adaptado a tu sector real, no una plantilla gen&eacute;rica.</div>
+            <div class="field-row">
+              <div class="field" id="f-nom">
+                <label>Nombre del negocio *</label>
+                <input type="text" id="nom" placeholder="Ej: Cl&iacute;nica Vital">
+                <div class="err">Campo obligatorio.</div>
+              </div>
+              <div class="field" id="f-sec">
+                <label>Sector *</label>
+                <select id="sec">
+                  <option value="">Selecciona...</option>
+                  <option>Salud y bienestar</option>
+                  <option>Restauraci&oacute;n y hosteler&iacute;a</option>
+                  <option>Comercio y retail</option>
+                  <option>Servicios profesionales</option>
+                  <option>Inmobiliaria</option>
+                  <option>Educaci&oacute;n y formaci&oacute;n</option>
+                  <option>Belleza y est&eacute;tica</option>
+                  <option>Deporte y fitness</option>
+                  <option>Construcci&oacute;n y reformas</option>
+                  <option>Legal y asesor&iacute;a</option>
+                  <option>Tecnolog&iacute;a</option>
+                  <option>E-commerce</option>
+                  <option>Otro</option>
+                </select>
+                <div class="err">Selecciona tu sector.</div>
+              </div>
+            </div>
+            <div class="field" id="f-desc">
+              <label>&iquest;A qu&eacute; se dedica tu negocio? *</label>
+              <textarea id="desc" placeholder="Ej: Cl&iacute;nica de fisioterapia especializada en lesiones deportivas en Tenerife." rows="3"></textarea>
+              <div class="hint">Una o dos frases. Queremos entender bien c&oacute;mo ayudas a tus clientes.</div>
+              <div class="err">Cu&eacute;ntanos brevemente a qu&eacute; te dedicas.</div>
+            </div>
+            <div class="field" id="f-icp">
+              <label>&iquest;Qui&eacute;n es tu cliente ideal? *</label>
+              <textarea id="icp" placeholder="Ej: Due&ntilde;os de peque&ntilde;os negocios de 35-55 a&ntilde;os que quieren m&aacute;s clientes." rows="2"></textarea>
+              <div class="err">Describe a tu cliente ideal.</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-next" onclick="next()">Continuar <span class="arr">→</span></button>
+          </div>
+        </div>
+
+        <!-- PASO 3 -->
+        <div class="panel" id="s3" style="display:none">
+          <div class="card-inner">
+            <div class="eyebrow">Situaci&oacute;n actual</div>
+            <div class="step-title">&iquest;C&oacute;mo est&aacute; tu <span class="grad">presencia digital</span>?</div>
+            <div class="step-sub">Nos ayuda a hacer la auditor&iacute;a previa y mostrarte el mayor salto posible desde el primer d&iacute;a.</div>
+            <div class="field">
+              <label>Estado actual</label>
+              <div class="opt-grid">
+                <div class="opt-card" data-g="estado" data-v="no-web" onclick="pick(this);chkUrl()">
+                  <div class="opt-title">No tengo web</div>
+                  <div class="opt-desc">Parto de cero o solo tengo redes sociales.</div>
+                </div>
+                <div class="opt-card" data-g="estado" data-v="web-mala" onclick="pick(this);chkUrl()">
+                  <div class="opt-title">Tengo web pero no funciona</div>
+                  <div class="opt-desc">Existe pero no me trae clientes ni consultas.</div>
+                </div>
+                <div class="opt-card" data-g="estado" data-v="web-ok" onclick="pick(this);chkUrl()">
+                  <div class="opt-title">Tengo web, quiero mejorarla</div>
+                  <div class="opt-desc">Funciona, pero podr&iacute;a rendir mucho m&aacute;s.</div>
+                </div>
+                <div class="opt-card" data-g="estado" data-v="landing" onclick="pick(this);chkUrl()">
+                  <div class="opt-title">Quiero una landing nueva</div>
+                  <div class="opt-desc">Para un servicio, campa&ntilde;a o producto concreto.</div>
+                </div>
+              </div>
+            </div>
+            <div class="field cond" id="url-field">
+              <label>URL de tu web actual</label>
+              <input type="url" id="web-url" placeholder="https://tunegocio.com">
+              <div class="hint">Nos ayuda a preparar la auditor&iacute;a antes de la reuni&oacute;n.</div>
+            </div>
+            <div class="field" id="f-prob">
+              <label>Mayor problema que quieres resolver *</label>
+              <div class="tag-wrap" id="prob-tags">
+                <button class="tag-btn" onclick="tog(this)">No consigo que me contacten</button>
+                <button class="tag-btn" onclick="tog(this)">Mi web es antigua y no vende</button>
+                <button class="tag-btn" onclick="tog(this)">No aparezco en Google</button>
+                <button class="tag-btn" onclick="tog(this)">No tengo sistema de captaci&oacute;n</button>
+                <button class="tag-btn" onclick="tog(this)">Quiero atender clientes sin estar pendiente</button>
+                <button class="tag-btn" onclick="tog(this)">Quiero validar una oferta r&aacute;pido</button>
+                <button class="tag-btn" onclick="tog(this)">Imagen poco profesional</button>
+              </div>
+              <div class="err" id="err-prob">Selecciona al menos un problema.</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-next" onclick="next()">Continuar <span class="arr">→</span></button>
+          </div>
+        </div>
+
+        <!-- PASO 4 -->
+        <div class="panel" id="s4" style="display:none">
+          <div class="card-inner">
+            <div class="eyebrow">Objetivos y estilo</div>
+            <div class="step-title">&iquest;Qu&eacute; resultado <span class="grad">esperas</span>?</div>
+            <div class="step-sub">Con esto el dise&ntilde;ador adapta cada decisi&oacute;n al objetivo real, no a lo que "queda bonito".</div>
+            <div class="field" id="f-obj">
+              <label>Objetivo principal *</label>
+              <div class="opt-grid c1">
+                <div class="opt-card" data-g="obj" data-v="leads" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Que m&aacute;s gente me contacte y me compre</div></div>
+                <div class="opt-card" data-g="obj" data-v="confianza" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Transmitir m&aacute;s profesionalidad y confianza</div></div>
+                <div class="opt-card" data-g="obj" data-v="automatizar" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Que la web trabaje sola: capte y atienda sin que yo est&eacute;</div></div>
+                <div class="opt-card" data-g="obj" data-v="validar" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Lanzar algo nuevo y ver si funciona antes de invertir m&aacute;s</div></div>
+              </div>
+              <div class="err" id="err-obj">Selecciona tu objetivo principal.</div>
+            </div>
+            <div class="field">
+              <label>Tono visual de tu marca</label>
+              <div class="tag-wrap" id="estilo-tags">
+                <button class="tag-btn" onclick="tog(this)">Moderno y tecnol&oacute;gico</button>
+                <button class="tag-btn" onclick="tog(this)">Elegante y premium</button>
+                <button class="tag-btn" onclick="tog(this)">Cercano y humano</button>
+                <button class="tag-btn" onclick="tog(this)">Minimalista y limpio</button>
+                <button class="tag-btn" onclick="tog(this)">Atrevido y diferente</button>
+                <button class="tag-btn" onclick="tog(this)">Profesional y serio</button>
+              </div>
+              <div class="hint">Puedes elegir varios. El dise&ntilde;ador lo tendr&aacute; en cuenta.</div>
+            </div>
+            <div class="field">
+              <label>Referencia visual o comentario</label>
+              <textarea id="refs" placeholder="Ej: Me gusta el estilo de Apple.com. O: somos una cl&iacute;nica, queremos transmitir salud y modernidad. Colores: azul y blanco." rows="3"></textarea>
+              <div class="hint">Opcional pero muy &uacute;til para el dise&ntilde;ador.</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-next" onclick="next()">Continuar <span class="arr">→</span></button>
+          </div>
+        </div>
+
+        <!-- PASO 5 -->
+        <div class="panel" id="s5" style="display:none">
+          <div class="card-inner">
+            <div class="eyebrow">&Uacute;ltimo paso</div>
+            <div class="step-title">&iquest;D&oacute;nde te <span class="grad">enviamos la fecha</span>?</div>
+            <div class="step-sub">En 24&ndash;48h te escribimos por WhatsApp para confirmar la sesi&oacute;n donde te presentamos el prototipo ya terminado.</div>
+            <div class="field-row">
+              <div class="field" id="f-nc">
+                <label>Tu nombre *</label>
+                <input type="text" id="nc" placeholder="Alejandro Garc&iacute;a">
+                <div class="err">Introduce tu nombre.</div>
+              </div>
+              <div class="field">
+                <label>Tu cargo / rol</label>
+                <input type="text" id="cargo" placeholder="Fundador, CEO...">
+              </div>
+            </div>
+            <div class="field" id="f-email">
+              <label>Email *</label>
+              <input type="email" id="email" placeholder="tu@empresa.com">
+              <div class="err">Introduce un email v&aacute;lido.</div>
+            </div>
+            <div class="field" id="f-wa">
+              <label>WhatsApp *</label>
+              <input type="tel" id="wa" placeholder="+34 600 000 000">
+              <div class="hint">Te contactamos aqu&iacute; para agendar la sesi&oacute;n.</div>
+              <div class="err">Introduce tu n&uacute;mero de WhatsApp.</div>
+            </div>
+            <div class="field">
+              <label>Presupuesto orientativo</label>
+              <select id="budget">
+                <option value="">Prefiero no indicarlo ahora</option>
+                <option>Menos de 1.000&euro;</option>
+                <option>1.000&euro; &ndash; 3.000&euro;</option>
+                <option>3.000&euro; &ndash; 6.000&euro;</option>
+                <option>6.000&euro; &ndash; 15.000&euro;</option>
+                <option>+15.000&euro;</option>
+              </select>
+              <div class="hint">No condiciona nada. Tenemos planes para cada momento de crecimiento.</div>
+            </div>
+            <div class="field" id="f-legal">
+              <label style="display:flex;align-items:flex-start;gap:9px;cursor:pointer;text-transform:none;letter-spacing:0;font-size:12px;color:var(--t2)">
+                <input type="checkbox" id="legal" style="width:15px;height:15px;margin-top:1px;flex-shrink:0;accent-color:var(--primary)">
+                Acepto la <a href="/privacidad" style="color:var(--primary);text-decoration:none">&nbsp;pol&iacute;tica de privacidad</a>&nbsp;y que ZappyApps me contacte sobre mi solicitud.
+              </label>
+              <div class="err" id="err-legal">Debes aceptar la pol&iacute;tica de privacidad.</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-next" onclick="submit()">Solicitar prototipo gratis &nbsp;🚀</button>
+          </div>
+        </div>
+
+        <!-- CONFIRMACIÓN -->
+        <div id="s-ok" style="display:none">
+          <div class="confirm">
+            <div class="confirm-icon">✓</div>
+            <div class="confirm-title">&iexcl;Prototipo en camino!</div>
+            <div class="confirm-sub">Hemos recibido tu solicitud. Nuestro equipo ya est&aacute; analizando tu negocio para dise&ntilde;ar algo que te sorprenda.</div>
+            <div class="confirm-box" id="c-summary"></div>
+            <div class="next-box">
+              <strong>&iquest;Qu&eacute; pasa ahora?</strong><br>
+              En las pr&oacute;ximas <strong>24&ndash;48h</strong> te escribimos por WhatsApp para agendar tu <strong>Sesi&oacute;n de Revelaci&oacute;n</strong>.<br><br>
+              Te presentamos el prototipo terminado y el plan exacto para convertirlo en un sistema que capta clientes solo. Si te convence, hablamos de seguir. Si no, te quedas con el dise&ntilde;o igualmente.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="bottom-note">
+      Sin pagos. Sin compromisos. Si no te convence, te quedas con el dise&ntilde;o.<br>
+      <a href="/">← Volver a zappyapps.tech</a>
+    </p>
+
+  </div>
+
+  <script>
+  let step = 1;
+  const data = {};
+
+  function pick(el) {
+    const g = el.dataset.g;
+    document.querySelectorAll('[data-g="' + g + '"]').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    data[g] = el.dataset.v;
+    const e = document.getElementById('err-' + g);
+    if (e) e.style.display = 'none';
+  }
+
+  function tog(el) { el.classList.toggle('sel'); }
+
+  function chkUrl() {
+    const s = document.querySelector('[data-g="estado"].selected');
+    const f = document.getElementById('url-field');
+    f.classList.toggle('show', s && (s.dataset.v === 'web-mala' || s.dataset.v === 'web-ok'));
+  }
+
+  function bad(id, show) {
+    const f = document.getElementById('f-' + id) || document.getElementById(id);
+    if (!f) return;
+    f.classList.toggle('bad', show);
+  }
+
+  function validate() {
+    let ok = true;
+    if (step === 1) {
+      if (!document.querySelector('[data-g="tipo"].selected')) {
+        document.getElementById('err-tipo').style.display = 'block';
+        ok = false;
+      }
+    }
+    if (step === 2) {
+      const n = document.getElementById('nom').value.trim();
+      const s = document.getElementById('sec').value;
+      const d = document.getElementById('desc').value.trim();
+      const i = document.getElementById('icp').value.trim();
+      bad('nom', !n); bad('sec', !s); bad('desc', !d); bad('icp', !i);
+      if (!n || !s || !d || !i) ok = false;
+    }
+    if (step === 3) {
+      const tags = document.querySelectorAll('#prob-tags .tag-btn.sel');
+      const e = document.getElementById('err-prob');
+      if (!tags.length) { e.style.display = 'block'; ok = false; }
+      else e.style.display = 'none';
+    }
+    if (step === 4) {
+      if (!document.querySelector('[data-g="obj"].selected')) {
+        document.getElementById('err-obj').style.display = 'block';
+        ok = false;
+      }
+    }
+    if (step === 5) {
+      const nc  = document.getElementById('nc').value.trim();
+      const em  = document.getElementById('email').value;
+      const wa  = document.getElementById('wa').value.trim();
+      const lg  = document.getElementById('legal').checked;
+      const re  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      bad('nc', !nc); bad('email', !re.test(em)); bad('wa', !wa);
+      document.getElementById('err-legal').style.display = lg ? 'none' : 'block';
+      if (!nc || !re.test(em) || !wa || !lg) ok = false;
+    }
+    return ok;
+  }
+
+  function upProg() {
+    for (let i = 1; i <= 5; i++) {
+      const el = document.getElementById('ps' + i);
+      el.classList.remove('active', 'done');
+      if (i < step) el.classList.add('done');
+      else if (i === step) el.classList.add('active');
+    }
+    document.getElementById('snum').textContent = step;
+  }
+
+  function showStep(s) {
+    for (let i = 1; i <= 5; i++) {
+      const el = document.getElementById('s' + i);
+      if (el) el.style.display = (i === s) ? 'block' : 'none';
+    }
+    document.getElementById('s-ok').style.display = 'none';
+    upProg();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function next() { if (validate() && step < 5) { step++; showStep(step); } }
+  function prev() { if (step > 1) { step--; showStep(step); } }
+
+  function submit() {
+    if (!validate()) return;
+    const tipo   = document.querySelector('[data-g="tipo"].selected');
+    const estado = document.querySelector('[data-g="estado"].selected');
+    const obj    = document.querySelector('[data-g="obj"].selected');
+    const probs  = [...document.querySelectorAll('#prob-tags .tag-btn.sel')].map(b => b.textContent.trim());
+    const ests   = [...document.querySelectorAll('#estilo-tags .tag-btn.sel')].map(b => b.textContent.trim());
+
+    const payload = {
+      tipo:        tipo   ? tipo.querySelector('.opt-title').textContent   : '',
+      negocio:     document.getElementById('nom').value,
+      sector:      document.getElementById('sec').value,
+      descripcion: document.getElementById('desc').value,
+      clienteIdeal:document.getElementById('icp').value,
+      estadoWeb:   estado ? estado.querySelector('.opt-title').textContent : '',
+      urlActual:   document.getElementById('web-url').value || 'N/A',
+      problemas:   probs,
+      objetivo:    obj    ? obj.querySelector('.opt-title').textContent    : '',
+      estilos:     ests,
+      referencias: document.getElementById('refs').value,
+      nombre:      document.getElementById('nc').value,
+      cargo:       document.getElementById('cargo').value,
+      email:       document.getElementById('email').value,
+      whatsapp:    document.getElementById('wa').value,
+      presupuesto: document.getElementById('budget').value || 'No indicado',
+    };
+
+    console.log('ZappyApps Submission:', payload);
+
+    // Conecta aquí tu webhook (GoHighLevel, Make, Zapier...):
+    // fetch('https://TU_WEBHOOK_AQUI', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify(payload)
+    // });
+
+    for (let i = 1; i <= 5; i++) {
+      const el = document.getElementById('s' + i);
+      if (el) el.style.display = 'none';
+    }
+    document.getElementById('s-ok').style.display = 'block';
+    document.getElementById('prog-track').style.display = 'none';
+    document.getElementById('step-counter').style.display = 'none';
+
+    document.getElementById('c-summary').innerHTML = `
+      <div class="c-row"><span class="c-lbl">Tipo de prototipo</span><span class="c-val">${payload.tipo}</span></div>
+      <div class="c-row"><span class="c-lbl">Negocio</span><span class="c-val">${payload.negocio} &middot; ${payload.sector}</span></div>
+      <div class="c-row"><span class="c-lbl">Objetivo</span><span class="c-val">${payload.objetivo}</span></div>
+      <div class="c-row"><span class="c-lbl">WhatsApp</span><span class="c-val">${payload.whatsapp}</span></div>
+      <div class="c-row"><span class="c-lbl">Email</span><span class="c-val">${payload.email}</span></div>
+    `;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  </script>
+
+</body>
+</html>
