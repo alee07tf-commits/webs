@@ -20,19 +20,20 @@
         content="diseño web estratégico, automatización IA, chatbot empresas, captación leads, CRM pymes, diseño web Tenerife, agencia digital Canarias, ZappyApps">
     <meta name="author" content="ZappyApps">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://zappyapps.tech/">
+    <link rel="canonical" href="https://zappyapps.tech">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zappyapps.tech/">
+    <meta property="og:url" content="https://zappyapps.tech">
     <meta property="og:title" content="Diseño Web Estratégico para PYMEs con IA | ZappyApps">
     <meta property="og:description"
         content="Agencia de diseño web estratégico y automatización con IA para PYMEs. Chatbots, CRM, embudos de venta y captación de leads. Prototipo gratis.">
     <meta property="og:image" content="https://zappyapps.tech/og-image.svg">
+    <meta property="og:site_name" content="ZappyApps">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://zappyapps.tech/">
+    <meta name="twitter:url" content="https://zappyapps.tech">
     <meta name="twitter:title" content="Diseño Web Estratégico para PYMEs con IA | ZappyApps">
     <meta name="twitter:description" content="Agencia de diseño web estratégico y automatización con IA para PYMEs. Chatbots, CRM, embudos de venta y captación de leads. Prototipo gratis.">
     <meta name="twitter:image" content="https://zappyapps.tech/og-image.svg">
@@ -57,6 +58,7 @@
       "description": "Agencia digital especializada en diseño web estratégico, automatización con IA y sistemas de captación de clientes para PyMEs.",
       "url": "https://zappyapps.tech",
       "email": "hola@zappyapps.tech",
+      "telephone": "+34696120384",
       "priceRange": "€€",
       "address": {
         "@type": "PostalAddress",
@@ -76,9 +78,7 @@
         "closes": "18:00"
       },
       "sameAs": [
-        "https://twitter.com/zappyapps",
-        "https://instagram.com/zappyapps",
-        "https://linkedin.com/company/zappyapps"
+        "https://www.instagram.com/zappyapps.tech/"
       ]
     }
     </script>
@@ -100,8 +100,7 @@
     </script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -115,75 +114,8 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2/dist/dotlottie-player.mjs" type="module"></script>
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        background: '#050508',
-                        card: 'rgba(15, 17, 25, 0.9)',
-                        'card-hover': 'rgba(15, 17, 25, 1)',
-                        primary: {
-                            DEFAULT: '#3B82F6',
-                            dark: '#2563EB',
-                            glow: 'rgba(59, 130, 246, 0.4)'
-                        },
-                        secondary: '#94A3B8',
-                        accent: '#F97316'
-                    },
-                    fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
-                        body: ['Inter', 'sans-serif']
-                    },
-                    animation: {
-                        'glow-breathe': 'glowBreathe 7s ease-in-out infinite',
-                        'hero-float': 'heroFloat 5s ease-in-out infinite',
-                        'cta-pulse': 'ctaPulse 2.5s ease-in-out infinite',
-                        'shimmer': 'shimmer 3s ease-in-out infinite',
-                        'float-gentle': 'floatGentle 6s ease-in-out infinite',
-                        'gradient-border': 'gradientBorder 6s ease infinite',
-                        'particle-drift': 'particleDrift 4s ease-in-out infinite'
-                    },
-                    keyframes: {
-                        glowBreathe: {
-                            '0%, 100%': { transform: 'scale(1)', opacity: '0.08' },
-                            '50%': { transform: 'scale(1.08)', opacity: '0.04' }
-                        },
-                        heroFloat: {
-                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
-                            '50%': { transform: 'translateY(-6px) rotate(1deg)' }
-                        },
-                        ctaPulse: {
-                            '0%, 100%': { boxShadow: '0 0 15px rgba(59, 130, 246, 0.2)' },
-                            '50%': { boxShadow: '0 0 30px rgba(59, 130, 246, 0.4)' }
-                        },
-                        shimmer: {
-                            '0%': { backgroundPosition: '-200% 0' },
-                            '100%': { backgroundPosition: '200% 0' }
-                        },
-                        floatGentle: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-4px)' }
-                        },
-                        gradientBorder: {
-                            '0%': { backgroundPosition: '0% 50%' },
-                            '50%': { backgroundPosition: '100% 50%' },
-                            '100%': { backgroundPosition: '0% 50%' }
-                        },
-                        particleDrift: {
-                            '0%': { transform: 'translateY(0) translateX(0)', opacity: '0' },
-                            '20%': { opacity: '0.4' },
-                            '80%': { opacity: '0.4' },
-                            '100%': { transform: 'translateY(-60px) translateX(20px)', opacity: '0' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Custom CSS (Inlined for Speed) -->
+    <link rel="stylesheet" href="/tailwind.min.css">
+<!-- Custom CSS (Inlined for Speed) -->
     <style>
         body {
             background-color: #050508;
@@ -502,12 +434,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "ZappyApps",
-        "url": "https://zappyapps.tech/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://zappyapps.tech/blog/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+        "url": "https://zappyapps.tech"
     }
     </script>
 </head>
@@ -524,13 +451,13 @@
             <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="absolute top-full left-0 mt-1 w-56 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-            <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Dise&ntilde;o Web Estrat&eacute;gico</a>
+            <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Diseño Web Estratégico</a>
             <a href="/servicios/chatbot-ia" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Chatbot IA</a>
-            <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Captaci&oacute;n de Leads</a>
+            <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Captación de Leads</a>
             <a href="/servicios/lead-scoring" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Lead Scoring</a>
-            <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Funnels de Conversi&oacute;n</a>
+            <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Funnels de Conversión</a>
             <a href="/servicios/crm-personalizado" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">CRM Personalizado</a>
-            <a href="/servicios/optimizacion-continua" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Optimizaci&oacute;n Continua</a>
+            <a href="/servicios/optimizacion-continua" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Optimización Continua</a>
             <a href="/servicios/soporte-mantenimiento" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Soporte y Mantenimiento</a>
               <a href="/servicios/landing-pages" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Landing Pages</a>
               <a href="/servicios/seo-local" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">SEO Local</a>
@@ -545,17 +472,17 @@
           </button>
           <div class="absolute top-full left-0 mt-1 w-52 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
             <a href="/para/restaurantes" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Restaurantes</a>
-            <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Cl&iacute;nicas</a>
+            <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Clínicas</a>
             <a href="/para/abogados" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Abogados</a>
             <a href="/para/coaches" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Coaches</a>
             <a href="/para/ecommerce" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">eCommerce</a>
             <a href="/para/inmobiliarias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Inmobiliarias</a>
               <a href="/para/gimnasios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Gimnasios</a>
               <a href="/para/academias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Academias</a>
-              <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Cl&iacute;nicas Dentales</a>
+              <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Clínicas Dentales</a>
               <a href="/para/consultoras" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Consultoras</a>
               <a href="/para/veterinarios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Veterinarios</a>
-              <a href="/para/centros-estetica" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Centros Est&eacute;tica</a>
+              <a href="/para/centros-estetica" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Centros Estética</a>
             <div class="border-t border-white/5 mt-1 pt-1">
               <a href="/para/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5 transition-colors">Ver todos &rarr;</a>
             </div>
@@ -580,13 +507,13 @@
         <div>
           <button onclick="toggleMobileAccordion('mob-servicios')" class="w-full flex items-center justify-between py-3 text-white font-medium text-base">Servicios <svg class="w-4 h-4 text-secondary transition-transform" id="mob-servicios-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
           <div id="mob-servicios" class="hidden pl-4 pb-2 space-y-1">
-            <a href="/servicios/diseno-web-estrategico" class="block py-2 text-sm text-secondary hover:text-primary">Dise&ntilde;o Web Estrat&eacute;gico</a>
+            <a href="/servicios/diseno-web-estrategico" class="block py-2 text-sm text-secondary hover:text-primary">Diseño Web Estratégico</a>
             <a href="/servicios/chatbot-ia" class="block py-2 text-sm text-secondary hover:text-primary">Chatbot IA</a>
-            <a href="/servicios/captacion-leads" class="block py-2 text-sm text-secondary hover:text-primary">Captaci&oacute;n de Leads</a>
+            <a href="/servicios/captacion-leads" class="block py-2 text-sm text-secondary hover:text-primary">Captación de Leads</a>
             <a href="/servicios/lead-scoring" class="block py-2 text-sm text-secondary hover:text-primary">Lead Scoring</a>
-            <a href="/servicios/funnels-conversion" class="block py-2 text-sm text-secondary hover:text-primary">Funnels de Conversi&oacute;n</a>
+            <a href="/servicios/funnels-conversion" class="block py-2 text-sm text-secondary hover:text-primary">Funnels de Conversión</a>
             <a href="/servicios/crm-personalizado" class="block py-2 text-sm text-secondary hover:text-primary">CRM Personalizado</a>
-            <a href="/servicios/optimizacion-continua" class="block py-2 text-sm text-secondary hover:text-primary">Optimizaci&oacute;n Continua</a>
+            <a href="/servicios/optimizacion-continua" class="block py-2 text-sm text-secondary hover:text-primary">Optimización Continua</a>
             <a href="/servicios/soporte-mantenimiento" class="block py-2 text-sm text-secondary hover:text-primary">Soporte y Mantenimiento</a>
             <a href="/servicios/landing-pages" class="block py-2 text-sm text-secondary hover:text-primary">Landing Pages</a>
             <a href="/servicios/seo-local" class="block py-2 text-sm text-secondary hover:text-primary">SEO Local</a>
@@ -597,17 +524,17 @@
           <button onclick="toggleMobileAccordion('mob-sectores')" class="w-full flex items-center justify-between py-3 text-white font-medium text-base">Sectores <svg class="w-4 h-4 text-secondary transition-transform" id="mob-sectores-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
           <div id="mob-sectores" class="hidden pl-4 pb-2 space-y-1">
             <a href="/para/restaurantes" class="block py-2 text-sm text-secondary hover:text-primary">Restaurantes</a>
-            <a href="/para/clinicas" class="block py-2 text-sm text-secondary hover:text-primary">Cl&iacute;nicas</a>
+            <a href="/para/clinicas" class="block py-2 text-sm text-secondary hover:text-primary">Clínicas</a>
             <a href="/para/abogados" class="block py-2 text-sm text-secondary hover:text-primary">Abogados</a>
             <a href="/para/coaches" class="block py-2 text-sm text-secondary hover:text-primary">Coaches</a>
             <a href="/para/ecommerce" class="block py-2 text-sm text-secondary hover:text-primary">eCommerce</a>
             <a href="/para/inmobiliarias" class="block py-2 text-sm text-secondary hover:text-primary">Inmobiliarias</a>
               <a href="/para/gimnasios" class="block py-2 text-sm text-secondary hover:text-primary">Gimnasios</a>
               <a href="/para/academias" class="block py-2 text-sm text-secondary hover:text-primary">Academias</a>
-              <a href="/para/clinicas-dentales" class="block py-2 text-sm text-secondary hover:text-primary">Cl&iacute;nicas Dentales</a>
+              <a href="/para/clinicas-dentales" class="block py-2 text-sm text-secondary hover:text-primary">Clínicas Dentales</a>
             <a href="/para/consultoras" class="block py-2 text-sm text-secondary hover:text-primary">Consultoras</a>
             <a href="/para/veterinarios" class="block py-2 text-sm text-secondary hover:text-primary">Veterinarios</a>
-            <a href="/para/centros-estetica" class="block py-2 text-sm text-secondary hover:text-primary">Centros Est&eacute;tica</a>
+            <a href="/para/centros-estetica" class="block py-2 text-sm text-secondary hover:text-primary">Centros Estética</a>
             <a href="/para/" class="block py-2 text-sm text-primary font-semibold">Ver todos &rarr;</a>
           </div>
         </div>
@@ -1260,52 +1187,52 @@
                 <div class="bg-card rounded-2xl border border-white/10 p-8 flex flex-col anim-stagger">
                     <div class="mb-6">
                         <div class="flex items-center gap-2 mb-4">
-                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-secondary/10 text-secondary border border-white/10">B&aacute;sico</span>
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 5 d&iacute;as</span>
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-secondary/10 text-secondary border border-white/10">Básico</span>
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 5 días</span>
                         </div>
                         <div class="flex items-end gap-1 mb-1">
-                            <span class="text-4xl font-extrabold">797&euro;</span>
-                            <span class="text-secondary font-[Inter] text-sm mb-1">/pago &uacute;nico</span>
+                            <span class="text-4xl font-extrabold">797€</span>
+                            <span class="text-secondary font-[Inter] text-sm mb-1">/pago único</span>
                         </div>
                         <p class="text-secondary text-sm font-[Inter]">Tu web lista para atraer clientes en 5 días</p>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1 font-[Inter] text-sm">
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Web profesional de hasta 15 p&aacute;ginas</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Se ve bien en m&oacute;vil, tablet y escritorio</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Dise&ntilde;ada para que la gente te contacte</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Web profesional de hasta 15 páginas</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Se ve bien en móvil, tablet y escritorio</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Diseñada para que la gente te contacte</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Formularios que llegan directo a tu correo</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Asistente automático básico de atención</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Candado de seguridad incluido (SSL)</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Entrega en 5 d&iacute;as</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Entrega en 5 días</li>
                         <li class="flex items-start gap-2 text-secondary/50"><svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg> Estrategia SEO</li>
                         <li class="flex items-start gap-2 text-secondary/50"><svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg> Publicidad digital</li>
-                        <li class="flex items-start gap-2 text-secondary/50"><svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg> Captaci&oacute;n de tr&aacute;fico</li>
+                        <li class="flex items-start gap-2 text-secondary/50"><svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg> Captación de tráfico</li>
                     </ul>
-                    <a href="/contacto/" class="block text-center border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all">Solicitar B&aacute;sico</a>
+                    <a href="/contacto/" class="block text-center border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all">Solicitar Básico</a>
                 </div>
 
                 <!-- Profesional — destacado -->
                 <div class="bg-gradient-to-b from-primary/10 to-accent/5 rounded-2xl border border-primary/40 p-8 flex flex-col relative anim-stagger">
                     <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                        <span class="px-4 py-1 rounded-full text-xs font-bold bg-primary text-white shadow-lg">M&aacute;s popular</span>
+                        <span class="px-4 py-1 rounded-full text-xs font-bold bg-primary text-white shadow-lg">Más popular</span>
                     </div>
                     <div class="mb-6">
                         <div class="flex items-center gap-2 mb-4">
                             <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-primary/20 text-primary border border-primary/30">Profesional</span>
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 14 d&iacute;as</span>
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 14 días</span>
                         </div>
                         <div class="flex items-end gap-1 mb-1">
-                            <span class="text-4xl font-extrabold">2.650&euro;</span>
-                            <span class="text-secondary font-[Inter] text-sm mb-1">/pago &uacute;nico</span>
+                            <span class="text-4xl font-extrabold">2.650€</span>
+                            <span class="text-secondary font-[Inter] text-sm mb-1">/pago único</span>
                         </div>
                         <p class="text-secondary text-sm font-[Inter]">Web profesional + SEO para que Google te traiga clientes</p>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1 font-[Inter] text-sm">
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Web profesional de hasta 50 p&aacute;ginas</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Todo lo del Plan B&aacute;sico incluido</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Web profesional de hasta 50 páginas</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Todo lo del Plan Básico incluido</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Posicionamiento en Google para que te encuentren sin pagar anuncios</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Investigaci&oacute;n de lo que busca tu p&uacute;blico en Google</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Asistente autom&aacute;tico con tu marca y personalidad</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Investigación de lo que busca tu público en Google</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Asistente automático con tu marca y personalidad</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Blog que atrae visitas de Google cada mes</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Te damos de alta en las herramientas de Google</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Soporte prioritario (respuesta en 24h)</li>
@@ -1319,22 +1246,22 @@
                     <div class="mb-6">
                         <div class="flex items-center gap-2 mb-4">
                             <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20">Premium</span>
-                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 30 d&iacute;as</span>
+                            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 30 días</span>
                         </div>
                         <div class="flex items-end gap-1 mb-1">
-                            <span class="text-4xl font-extrabold">5.800&euro;</span>
-                            <span class="text-secondary font-[Inter] text-sm mb-1">/pago &uacute;nico</span>
+                            <span class="text-4xl font-extrabold">5.800€</span>
+                            <span class="text-secondary font-[Inter] text-sm mb-1">/pago único</span>
                         </div>
                         <p class="text-secondary text-sm font-[Inter]">Todo el sistema: web, Google y publicidad para llegar a personas que aún no te conocen</p>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1 font-[Inter] text-sm">
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> P&aacute;ginas ilimitadas</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Páginas ilimitadas</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Todo lo del Plan Profesional incluido</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Panel de gesti&oacute;n de clientes a medida</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Panel de gestión de clientes a medida</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Publicidad en Google Ads y Meta Ads configurada</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Llegamos a personas que todav&iacute;a no te conocen</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Llegamos a personas que todavía no te conocen</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Anuncios en Google configurados y gestionados</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Secuencias autom&aacute;ticas que convierten visitas en clientes</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Secuencias automáticas que convierten visitas en clientes</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Soporte dedicado con respuesta en 4 horas</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Revisamos los resultados contigo cada semana</li>
                     </ul>
@@ -1350,34 +1277,34 @@
                     <table class="w-full font-[Inter] text-sm">
                         <thead>
                             <tr class="border-b border-white/10">
-                                <th class="text-left py-4 pr-6 text-secondary font-medium w-1/2">Caracter&iacute;stica</th>
-                                <th class="text-center py-4 px-4 font-semibold">B&aacute;sico</th>
+                                <th class="text-left py-4 pr-6 text-secondary font-medium w-1/2">Característica</th>
+                                <th class="text-center py-4 px-4 font-semibold">Básico</th>
                                 <th class="text-center py-4 px-4 font-semibold text-primary">Profesional</th>
                                 <th class="text-center py-4 px-4 font-semibold text-accent">Premium</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-white/5">
                             <tr>
-                                <td class="py-4 pr-6 text-secondary">P&aacute;ginas web</td>
+                                <td class="py-4 pr-6 text-secondary">Páginas web</td>
                                 <td class="text-center py-4 px-4">Hasta 15</td>
                                 <td class="text-center py-4 px-4">Hasta 50</td>
                                 <td class="text-center py-4 px-4">Ilimitadas</td>
                             </tr>
                             <tr class="bg-white/[0.02]">
-                                <td class="py-4 pr-6 text-secondary">Se ve bien en m&oacute;vil</td>
+                                <td class="py-4 pr-6 text-secondary">Se ve bien en móvil</td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-accent mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                             </tr>
                             <tr>
-                                <td class="py-4 pr-6 text-secondary">Dise&ntilde;ada para que te contacten</td>
+                                <td class="py-4 pr-6 text-secondary">Diseñada para que te contacten</td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-accent mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                             </tr>
                             <tr class="bg-white/[0.02]">
                                 <td class="py-4 pr-6 text-secondary">Chatbot</td>
-                                <td class="text-center py-4 px-4">B&aacute;sico</td>
+                                <td class="text-center py-4 px-4">Básico</td>
                                 <td class="text-center py-4 px-4">IA personalizado</td>
                                 <td class="text-center py-4 px-4">IA avanzado</td>
                             </tr>
@@ -1412,7 +1339,7 @@
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-accent mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
                             </tr>
                             <tr class="bg-white/[0.02]">
-                                <td class="py-4 pr-6 text-secondary">Secuencias autom&aacute;ticas de captaci&oacute;n</td>
+                                <td class="py-4 pr-6 text-secondary">Secuencias automáticas de captación</td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-secondary/40 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-secondary/40 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></td>
                                 <td class="text-center py-4 px-4"><svg class="w-4 h-4 text-accent mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></td>
@@ -1425,9 +1352,9 @@
                             </tr>
                             <tr class="bg-white/[0.02]">
                                 <td class="py-4 pr-6 text-secondary">Tiempo de entrega</td>
-                                <td class="text-center py-4 px-4">5 d&iacute;as</td>
-                                <td class="text-center py-4 px-4">14 d&iacute;as</td>
-                                <td class="text-center py-4 px-4">30 d&iacute;as</td>
+                                <td class="text-center py-4 px-4">5 días</td>
+                                <td class="text-center py-4 px-4">14 días</td>
+                                <td class="text-center py-4 px-4">30 días</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1437,8 +1364,8 @@
             <!-- Presupuesto personalizado -->
             <div class="bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl border border-white/10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 anim-fade-up">
                 <div class="flex-1">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-3">&iquest;Tu caso es diferente?</h3>
-                    <p class="text-secondary font-[Inter] leading-relaxed">Si necesitas que se conecte con tu software actual, una tienda online, varios idiomas, reservas de citas o acceso privado para clientes &mdash; te hacemos un presupuesto a medida sin coste. Cu&eacute;ntanos lo que necesitas y te respondemos en 24 horas.</p>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-3">¿Tu caso es diferente?</h3>
+                    <p class="text-secondary font-[Inter] leading-relaxed">Si necesitas que se conecte con tu software actual, una tienda online, varios idiomas, reservas de citas o acceso privado para clientes &mdash; te hacemos un presupuesto a medida sin coste. Cuéntanos lo que necesitas y te respondemos en 24 horas.</p>
                 </div>
                 <a href="/contacto/" class="shrink-0 inline-flex items-center gap-2 bg-white text-[#050508] hover:bg-white/90 px-8 py-4 rounded-xl text-sm font-bold transition-all">
                     Pedir presupuesto a medida
@@ -1623,9 +1550,9 @@
         <div>
           <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Servicios</h4>
           <ul class="space-y-3 text-sm text-secondary">
-            <li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Dise&ntilde;o Web</a></li>
+            <li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Diseño Web</a></li>
             <li><a href="/servicios/chatbot-ia" class="hover:text-primary transition-colors">Chatbot IA</a></li>
-            <li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captaci&oacute;n de Leads</a></li>
+            <li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captación de Leads</a></li>
             <li><a href="/servicios/funnels-conversion" class="hover:text-primary transition-colors">Funnels</a></li>
             <li><a href="/servicios/crm-personalizado" class="hover:text-primary transition-colors">CRM</a></li>
             <li><a href="/servicios/" class="hover:text-primary transition-colors font-medium text-primary">Ver todos &rarr;</a></li>
@@ -1635,7 +1562,7 @@
           <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Sectores</h4>
           <ul class="space-y-3 text-sm text-secondary">
             <li><a href="/para/restaurantes" class="hover:text-primary transition-colors">Restaurantes</a></li>
-            <li><a href="/para/clinicas" class="hover:text-primary transition-colors">Cl&iacute;nicas</a></li>
+            <li><a href="/para/clinicas" class="hover:text-primary transition-colors">Clínicas</a></li>
             <li><a href="/para/abogados" class="hover:text-primary transition-colors">Abogados</a></li>
             <li><a href="/para/coaches" class="hover:text-primary transition-colors">Coaches</a></li>
             <li><a href="/para/ecommerce" class="hover:text-primary transition-colors">eCommerce</a></li>
@@ -1657,22 +1584,22 @@
         <div>
           <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4>
           <ul class="space-y-3 text-sm text-secondary">
-            <li><a href="/privacidad" class="hover:text-primary transition-colors">Pol&iacute;tica de Privacidad</a></li>
-            <li><a href="/terminos" class="hover:text-primary transition-colors">T&eacute;rminos y Condiciones</a></li>
-            <li><a href="/cookies" class="hover:text-primary transition-colors">Pol&iacute;tica de Cookies</a></li>
+            <li><a href="/privacidad" class="hover:text-primary transition-colors">Política de Privacidad</a></li>
+            <li><a href="/terminos" class="hover:text-primary transition-colors">Términos y Condiciones</a></li>
+            <li><a href="/cookies" class="hover:text-primary transition-colors">Política de Cookies</a></li>
           </ul>
         </div>
       </div>
       <!-- Presencia local -->
       <div class="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-sm text-secondary">
-        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Dise&ntilde;o Web Tenerife</a>
+        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Diseño Web Tenerife</a>
         <a href="/agencia-digital-tenerife" class="hover:text-primary transition-colors">Agencia Digital Tenerife</a>
-        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Dise&ntilde;o Web Canarias</a>
+        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Diseño Web Canarias</a>
         <a href="/agencia-digital-canarias" class="hover:text-primary transition-colors">Agencia Digital Canarias</a>
       </div>
       <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary">
         <div>&copy; 2026 ZappyApps. Todos los derechos reservados.</div>
-        <div><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
+        <div class="flex items-center gap-4"><a href="tel:+34696120384" class="hover:text-primary transition-colors">696 120 384</a><span class="text-white/20">|</span><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
       </div>
     </div>
   </footer>

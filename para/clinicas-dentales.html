@@ -26,21 +26,12 @@
     <meta name="twitter:title" content="Diseño Web para Clínicas Dentales | ZappyApps">
     <meta name="twitter:description" content="Diseño web para clínicas dentales: reservas online, chatbot IA y SEO local dental. Prototipo gratis en 48h.">
     <meta name="twitter:image" content="https://zappyapps.tech/og-image.svg">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-        theme: { extend: {
-            colors: { background: '#050508', card: 'rgba(15, 17, 25, 0.9)', primary: { DEFAULT: '#3B82F6', dark: '#2563EB' }, secondary: '#94a3b8', accent: '#8B5CF6' },
-            fontFamily: { sans: ['Outfit', 'sans-serif'], body: ['Inter', 'sans-serif'] }
-        }}
-    }
-    </script>
-    <script src="https://unpkg.com/lucide@0.460.0" defer></script>
+    <link rel="stylesheet" href="/tailwind.min.css">
+<script src="https://unpkg.com/lucide@0.460.0" defer></script>
 
     <script type="application/ld+json">
     {
@@ -64,6 +55,7 @@
             "addressCountry": "ES"
         },
         "email": "hola@zappyapps.tech",
+      "telephone": "+34696120384",
         "priceRange": "€€"
     }
     </script>
@@ -73,7 +65,7 @@
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zappyapps.tech/" },
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zappyapps.tech" },
             { "@type": "ListItem", "position": 2, "name": "Soluciones", "item": "https://zappyapps.tech/para" },
             { "@type": "ListItem", "position": 3, "name": "Clínicas Dentales", "item": "https://zappyapps.tech/para/clinicas-dentales" }
         ]
@@ -124,11 +116,11 @@
                 <div class="relative group">
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">Servicios <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
                     <div class="absolute top-full left-0 mt-1 w-56 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                        <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Dise&ntilde;o Web Estrat&eacute;gico</a>
+                        <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Diseño Web Estratégico</a>
                         <a href="/servicios/chatbot-ia" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Chatbot IA</a>
-                        <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Captaci&oacute;n de Leads</a>
+                        <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Captación de Leads</a>
                         <a href="/servicios/landing-pages" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Landing Pages</a>
-                        <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Funnels de Conversi&oacute;n</a>
+                        <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Funnels de Conversión</a>
                         <a href="/servicios/seo-local" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">SEO Local</a>
                         <div class="border-t border-white/5 mt-1 pt-1"><a href="/servicios/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5">Ver todos &rarr;</a></div>
                     </div>
@@ -137,10 +129,10 @@
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">Sectores <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
                     <div class="absolute top-full left-0 mt-1 w-52 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
                         <a href="/para/restaurantes" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Restaurantes</a>
-                        <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Cl&iacute;nicas</a>
+                        <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Clínicas</a>
                         <a href="/para/gimnasios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Gimnasios</a>
                         <a href="/para/academias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Academias</a>
-                        <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-white bg-white/5 font-medium">Cl&iacute;nicas Dentales</a>
+                        <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-white bg-white/5 font-medium">Clínicas Dentales</a>
                         <div class="border-t border-white/5 mt-1 pt-1"><a href="/para/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5">Ver todos &rarr;</a></div>
                     </div>
                 </div>
@@ -338,21 +330,21 @@
     <footer class="border-t border-white/5 bg-[#050508] pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
-                <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Servicios</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Dise&ntilde;o Web</a></li><li><a href="/servicios/chatbot-ia" class="hover:text-primary transition-colors">Chatbot IA</a></li><li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captaci&oacute;n de Leads</a></li><li><a href="/servicios/landing-pages" class="hover:text-primary transition-colors">Landing Pages</a></li><li><a href="/servicios/" class="text-primary font-medium">Ver todos &rarr;</a></li></ul></div>
-                <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Sectores</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/para/restaurantes" class="hover:text-primary transition-colors">Restaurantes</a></li><li><a href="/para/clinicas" class="hover:text-primary transition-colors">Cl&iacute;nicas</a></li><li><a href="/para/gimnasios" class="hover:text-primary transition-colors">Gimnasios</a></li><li><a href="/para/academias" class="hover:text-primary transition-colors">Academias</a></li><li><a href="/para/clinicas-dentales" class="hover:text-primary transition-colors">Cl&iacute;nicas Dentales</a></li><li><a href="/para/" class="text-primary font-medium">Ver todos &rarr;</a></li></ul></div>
+                <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Servicios</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Diseño Web</a></li><li><a href="/servicios/chatbot-ia" class="hover:text-primary transition-colors">Chatbot IA</a></li><li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captación de Leads</a></li><li><a href="/servicios/landing-pages" class="hover:text-primary transition-colors">Landing Pages</a></li><li><a href="/servicios/" class="text-primary font-medium">Ver todos &rarr;</a></li></ul></div>
+                <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Sectores</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/para/restaurantes" class="hover:text-primary transition-colors">Restaurantes</a></li><li><a href="/para/clinicas" class="hover:text-primary transition-colors">Clínicas</a></li><li><a href="/para/gimnasios" class="hover:text-primary transition-colors">Gimnasios</a></li><li><a href="/para/academias" class="hover:text-primary transition-colors">Academias</a></li><li><a href="/para/clinicas-dentales" class="hover:text-primary transition-colors">Clínicas Dentales</a></li><li><a href="/para/" class="text-primary font-medium">Ver todos &rarr;</a></li></ul></div>
                 <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Empresa</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/sobre-nosotros" class="hover:text-primary transition-colors">Sobre Nosotros</a></li><li><a href="/blog/" class="hover:text-primary transition-colors">Blog</a></li><li><a href="/contacto/" class="hover:text-primary transition-colors">Contacto</a></li></ul></div>
-                <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/privacidad" class="hover:text-primary transition-colors">Privacidad</a></li><li><a href="/terminos" class="hover:text-primary transition-colors">T&eacute;rminos</a></li><li><a href="/cookies" class="hover:text-primary transition-colors">Cookies</a></li></ul></div>
+                <div><h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4><ul class="space-y-3 text-sm text-secondary"><li><a href="/privacidad" class="hover:text-primary transition-colors">Privacidad</a></li><li><a href="/terminos" class="hover:text-primary transition-colors">Términos</a></li><li><a href="/cookies" class="hover:text-primary transition-colors">Cookies</a></li></ul></div>
             </div>
       <!-- Presencia local -->
       <div class="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-sm text-secondary">
-        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Dise&ntilde;o Web Tenerife</a>
+        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Diseño Web Tenerife</a>
         <a href="/agencia-digital-tenerife" class="hover:text-primary transition-colors">Agencia Digital Tenerife</a>
-        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Dise&ntilde;o Web Canarias</a>
+        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Diseño Web Canarias</a>
         <a href="/agencia-digital-canarias" class="hover:text-primary transition-colors">Agencia Digital Canarias</a>
       </div>
             <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary">
                 <div>&copy; 2026 ZappyApps. Todos los derechos reservados.</div>
-                <div><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
+                <div class="flex items-center gap-4"><a href="tel:+34696120384" class="hover:text-primary transition-colors">696 120 384</a><span class="text-white/20">|</span><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
             </div>
         </div>
     </footer>

@@ -27,21 +27,12 @@
     <meta name="twitter:title" content="Preguntas Frecuentes sobre Diseño Web | ZappyApps">
     <meta name="twitter:description" content="Resolvemos tus dudas sobre diseño web, precios, plazos, tecnología e IA. Más de 20 preguntas frecuentes sobre nuestros servicios para PYMEs.">
     <meta name="twitter:image" content="https://zappyapps.tech/og-image.svg">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-        theme: { extend: {
-            colors: { background: '#050508', card: 'rgba(15, 17, 25, 0.9)', primary: { DEFAULT: '#3B82F6', dark: '#2563EB' }, secondary: '#94a3b8', accent: '#8B5CF6' },
-            fontFamily: { sans: ['Outfit', 'sans-serif'] }
-        }}
-    }
-    </script>
-    <script src="https://unpkg.com/lucide@0.460.0" defer></script>
+    <link rel="stylesheet" href="/tailwind.min.css">
+<script src="https://unpkg.com/lucide@0.460.0" defer></script>
 
     <!-- Schema: FAQPage -->
     <script type="application/ld+json">
@@ -164,7 +155,7 @@
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zappyapps.tech/" },
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zappyapps.tech" },
             { "@type": "ListItem", "position": 2, "name": "Preguntas Frecuentes", "item": "https://zappyapps.tech/faq" }
         ]
     }
@@ -187,13 +178,13 @@
             <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="absolute top-full left-0 mt-1 w-56 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-            <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Dise&ntilde;o Web Estrat&eacute;gico</a>
+            <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Diseño Web Estratégico</a>
             <a href="/servicios/chatbot-ia" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Chatbot IA</a>
-            <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Captaci&oacute;n de Leads</a>
+            <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Captación de Leads</a>
             <a href="/servicios/lead-scoring" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Lead Scoring</a>
-            <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Funnels de Conversi&oacute;n</a>
+            <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Funnels de Conversión</a>
             <a href="/servicios/crm-personalizado" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">CRM Personalizado</a>
-            <a href="/servicios/optimizacion-continua" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Optimizaci&oacute;n Continua</a>
+            <a href="/servicios/optimizacion-continua" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Optimización Continua</a>
             <a href="/servicios/soporte-mantenimiento" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Soporte y Mantenimiento</a>
               <a href="/servicios/landing-pages" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Landing Pages</a>
               <a href="/servicios/seo-local" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">SEO Local</a>
@@ -208,17 +199,17 @@
           </button>
           <div class="absolute top-full left-0 mt-1 w-52 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
             <a href="/para/restaurantes" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Restaurantes</a>
-            <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Cl&iacute;nicas</a>
+            <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Clínicas</a>
             <a href="/para/abogados" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Abogados</a>
             <a href="/para/coaches" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Coaches</a>
             <a href="/para/ecommerce" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">eCommerce</a>
             <a href="/para/inmobiliarias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Inmobiliarias</a>
               <a href="/para/gimnasios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Gimnasios</a>
               <a href="/para/academias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Academias</a>
-              <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Cl&iacute;nicas Dentales</a>
+              <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Clínicas Dentales</a>
               <a href="/para/consultoras" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Consultoras</a>
               <a href="/para/veterinarios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Veterinarios</a>
-              <a href="/para/centros-estetica" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Centros Est&eacute;tica</a>
+              <a href="/para/centros-estetica" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Centros Estética</a>
             <div class="border-t border-white/5 mt-1 pt-1">
               <a href="/para/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5 transition-colors">Ver todos &rarr;</a>
             </div>
@@ -243,13 +234,13 @@
         <div>
           <button onclick="toggleMobileAccordion('mob-servicios')" class="w-full flex items-center justify-between py-3 text-white font-medium text-base">Servicios <svg class="w-4 h-4 text-secondary transition-transform" id="mob-servicios-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
           <div id="mob-servicios" class="hidden pl-4 pb-2 space-y-1">
-            <a href="/servicios/diseno-web-estrategico" class="block py-2 text-sm text-secondary hover:text-primary">Dise&ntilde;o Web Estrat&eacute;gico</a>
+            <a href="/servicios/diseno-web-estrategico" class="block py-2 text-sm text-secondary hover:text-primary">Diseño Web Estratégico</a>
             <a href="/servicios/chatbot-ia" class="block py-2 text-sm text-secondary hover:text-primary">Chatbot IA</a>
-            <a href="/servicios/captacion-leads" class="block py-2 text-sm text-secondary hover:text-primary">Captaci&oacute;n de Leads</a>
+            <a href="/servicios/captacion-leads" class="block py-2 text-sm text-secondary hover:text-primary">Captación de Leads</a>
             <a href="/servicios/lead-scoring" class="block py-2 text-sm text-secondary hover:text-primary">Lead Scoring</a>
-            <a href="/servicios/funnels-conversion" class="block py-2 text-sm text-secondary hover:text-primary">Funnels de Conversi&oacute;n</a>
+            <a href="/servicios/funnels-conversion" class="block py-2 text-sm text-secondary hover:text-primary">Funnels de Conversión</a>
             <a href="/servicios/crm-personalizado" class="block py-2 text-sm text-secondary hover:text-primary">CRM Personalizado</a>
-            <a href="/servicios/optimizacion-continua" class="block py-2 text-sm text-secondary hover:text-primary">Optimizaci&oacute;n Continua</a>
+            <a href="/servicios/optimizacion-continua" class="block py-2 text-sm text-secondary hover:text-primary">Optimización Continua</a>
             <a href="/servicios/soporte-mantenimiento" class="block py-2 text-sm text-secondary hover:text-primary">Soporte y Mantenimiento</a>
             <a href="/servicios/landing-pages" class="block py-2 text-sm text-secondary hover:text-primary">Landing Pages</a>
             <a href="/servicios/seo-local" class="block py-2 text-sm text-secondary hover:text-primary">SEO Local</a>
@@ -260,17 +251,17 @@
           <button onclick="toggleMobileAccordion('mob-sectores')" class="w-full flex items-center justify-between py-3 text-white font-medium text-base">Sectores <svg class="w-4 h-4 text-secondary transition-transform" id="mob-sectores-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
           <div id="mob-sectores" class="hidden pl-4 pb-2 space-y-1">
             <a href="/para/restaurantes" class="block py-2 text-sm text-secondary hover:text-primary">Restaurantes</a>
-            <a href="/para/clinicas" class="block py-2 text-sm text-secondary hover:text-primary">Cl&iacute;nicas</a>
+            <a href="/para/clinicas" class="block py-2 text-sm text-secondary hover:text-primary">Clínicas</a>
             <a href="/para/abogados" class="block py-2 text-sm text-secondary hover:text-primary">Abogados</a>
             <a href="/para/coaches" class="block py-2 text-sm text-secondary hover:text-primary">Coaches</a>
             <a href="/para/ecommerce" class="block py-2 text-sm text-secondary hover:text-primary">eCommerce</a>
             <a href="/para/inmobiliarias" class="block py-2 text-sm text-secondary hover:text-primary">Inmobiliarias</a>
               <a href="/para/gimnasios" class="block py-2 text-sm text-secondary hover:text-primary">Gimnasios</a>
               <a href="/para/academias" class="block py-2 text-sm text-secondary hover:text-primary">Academias</a>
-              <a href="/para/clinicas-dentales" class="block py-2 text-sm text-secondary hover:text-primary">Cl&iacute;nicas Dentales</a>
+              <a href="/para/clinicas-dentales" class="block py-2 text-sm text-secondary hover:text-primary">Clínicas Dentales</a>
             <a href="/para/consultoras" class="block py-2 text-sm text-secondary hover:text-primary">Consultoras</a>
             <a href="/para/veterinarios" class="block py-2 text-sm text-secondary hover:text-primary">Veterinarios</a>
-            <a href="/para/centros-estetica" class="block py-2 text-sm text-secondary hover:text-primary">Centros Est&eacute;tica</a>
+            <a href="/para/centros-estetica" class="block py-2 text-sm text-secondary hover:text-primary">Centros Estética</a>
             <a href="/para/" class="block py-2 text-sm text-primary font-semibold">Ver todos &rarr;</a>
           </div>
         </div>
@@ -297,17 +288,17 @@
         <div class="mb-12">
             <span class="inline-block px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 mb-6">FAQ</span>
             <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Preguntas frecuentes sobre<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">diseño web para PYMEs</span></h1>
-            <p class="text-secondary text-lg max-w-2xl font-[Inter]">Resolvemos las preguntas frecuentes sobre dise&ntilde;o web para PYMEs m&aacute;s habituales. Si no encuentras lo que buscas, <a href="/contacto" class="text-primary hover:underline">escr&iacute;benos</a> y te respondemos personalmente.</p>
+            <p class="text-secondary text-lg max-w-2xl font-[Inter]">Resolvemos las preguntas frecuentes sobre diseño web para PYMEs más habituales. Si no encuentras lo que buscas, <a href="/contacto" class="text-primary hover:underline">escríbenos</a> y te respondemos personalmente.</p>
         </div>
 
         <!-- Índice de categorías -->
         <nav class="bg-card rounded-2xl border border-white/5 p-6 mb-10">
-            <h2 class="text-lg font-bold mb-4">Categor&iacute;as</h2>
+            <h2 class="text-lg font-bold mb-4">Categorías</h2>
             <div class="flex flex-wrap gap-3">
                 <a href="#proceso" class="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm hover:bg-primary/20 transition-colors">Proceso</a>
                 <a href="#precios" class="px-4 py-2 rounded-full bg-accent/10 text-accent border border-accent/20 text-sm hover:bg-accent/20 transition-colors">Precios</a>
                 <a href="#plazos" class="px-4 py-2 rounded-full bg-green-500/10 text-green-400 border border-green-500/20 text-sm hover:bg-green-500/20 transition-colors">Plazos</a>
-                <a href="#tecnologia" class="px-4 py-2 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 text-sm hover:bg-yellow-500/20 transition-colors">Tecnolog&iacute;a</a>
+                <a href="#tecnologia" class="px-4 py-2 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 text-sm hover:bg-yellow-500/20 transition-colors">Tecnología</a>
                 <a href="#ia" class="px-4 py-2 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20 text-sm hover:bg-pink-500/20 transition-colors">IA</a>
                 <a href="#soporte" class="px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-sm hover:bg-cyan-500/20 transition-colors">Soporte</a>
             </div>
@@ -323,20 +314,20 @@
             </div>
             <div class="space-y-4">
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;C&oacute;mo es el proceso de dise&ntilde;o web con ZappyApps?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Nuestro proceso tiene 4 fases: descubrimiento (entendemos tu negocio y objetivos), prototipado (creamos un <a href="/servicios/diseno-web-estrategico" class="text-primary hover:underline">dise&ntilde;o personalizado</a> gratuito), desarrollo (construimos la web con IA integrada) y lanzamiento (publicamos, optimizamos y te formamos). Todo el proceso dura entre 5 y 15 d&iacute;as laborables seg&uacute;n la complejidad.</p>
+                    <h3 class="font-bold text-white mb-2">¿Cómo es el proceso de diseño web con ZappyApps?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Nuestro proceso tiene 4 fases: descubrimiento (entendemos tu negocio y objetivos), prototipado (creamos un <a href="/servicios/diseno-web-estrategico" class="text-primary hover:underline">diseño personalizado</a> gratuito), desarrollo (construimos la web con IA integrada) y lanzamiento (publicamos, optimizamos y te formamos). Todo el proceso dura entre 5 y 15 días laborables según la complejidad.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Qu&eacute; necesito tener preparado antes de empezar?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Solo necesitas tener claro qu&eacute; hace tu negocio y a qui&eacute;n te diriges. Nosotros nos encargamos del dise&ntilde;o, los textos, la estructura y la tecnolog&iacute;a. Si ya tienes logo, fotos o textos propios, los integramos; si no, los creamos desde cero.</p>
+                    <h3 class="font-bold text-white mb-2">¿Qué necesito tener preparado antes de empezar?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Solo necesitas tener claro qué hace tu negocio y a quién te diriges. Nosotros nos encargamos del diseño, los textos, la estructura y la tecnología. Si ya tienes logo, fotos o textos propios, los integramos; si no, los creamos desde cero.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Ofrec&eacute;is un prototipo gratis de verdad?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">S&iacute;, es 100% real. Antes de que pagues nada, dise&ntilde;amos un prototipo funcional de tu web para que veas exactamente c&oacute;mo quedar&aacute;. Si no te convence, no tienes ninguna obligaci&oacute;n. Puedes solicitarlo desde nuestra <a href="/contacto" class="text-primary hover:underline">p&aacute;gina de contacto</a>.</p>
+                    <h3 class="font-bold text-white mb-2">¿Ofrecéis un prototipo gratis de verdad?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Sí, es 100% real. Antes de que pagues nada, diseñamos un prototipo funcional de tu web para que veas exactamente cómo quedará. Si no te convence, no tienes ninguna obligación. Puedes solicitarlo desde nuestra <a href="/contacto" class="text-primary hover:underline">página de contacto</a>.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Puedo ver c&oacute;mo va mi web durante el desarrollo?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Por supuesto. Te damos acceso a una versi&oacute;n de previsualizaci&oacute;n en tiempo real para que puedas ver los avances y darnos feedback en cualquier momento.</p>
+                    <h3 class="font-bold text-white mb-2">¿Puedo ver cómo va mi web durante el desarrollo?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Por supuesto. Te damos acceso a una versión de previsualización en tiempo real para que puedas ver los avances y darnos feedback en cualquier momento.</p>
                 </div>
             </div>
         </section>
@@ -351,16 +342,16 @@
             </div>
             <div class="space-y-4">
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Cu&aacute;nto cuesta una web con ZappyApps?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Depende del alcance del proyecto. Tenemos planes desde webs b&aacute;sicas orientadas a conversi&oacute;n hasta sistemas completos con <a href="/servicios/chatbot-ia" class="text-primary hover:underline">chatbot IA</a>, <a href="/servicios/crm-personalizado" class="text-primary hover:underline">CRM</a> y automatizaciones. Puedes consultar nuestros <a href="/#pricing" class="text-primary hover:underline">planes en la secci&oacute;n de precios</a> o contactarnos para un presupuesto personalizado sin compromiso.</p>
+                    <h3 class="font-bold text-white mb-2">¿Cuánto cuesta una web con ZappyApps?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Depende del alcance del proyecto. Tenemos planes desde webs básicas orientadas a conversión hasta sistemas completos con <a href="/servicios/chatbot-ia" class="text-primary hover:underline">chatbot IA</a>, <a href="/servicios/crm-personalizado" class="text-primary hover:underline">CRM</a> y automatizaciones. Puedes consultar nuestros <a href="/#pricing" class="text-primary hover:underline">planes en la sección de precios</a> o contactarnos para un presupuesto personalizado sin compromiso.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Hay costes ocultos o permanentes?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">No. Somos totalmente transparentes con los precios. El coste del proyecto es cerrado y lo conoces antes de empezar. Los &uacute;nicos costes recurrentes opcionales son hosting y mantenimiento si decides contratarlos con nosotros.</p>
+                    <h3 class="font-bold text-white mb-2">¿Hay costes ocultos o permanentes?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">No. Somos totalmente transparentes con los precios. El coste del proyecto es cerrado y lo conoces antes de empezar. Los únicos costes recurrentes opcionales son hosting y mantenimiento si decides contratarlos con nosotros.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Ofrec&eacute;is facilidades de pago?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">S&iacute;. Normalmente trabajamos con un pago inicial del 50% para comenzar el proyecto y el 50% restante al finalizar, antes de la entrega definitiva. Para proyectos grandes podemos acordar un calendario de pagos personalizado.</p>
+                    <h3 class="font-bold text-white mb-2">¿Ofrecéis facilidades de pago?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Sí. Normalmente trabajamos con un pago inicial del 50% para comenzar el proyecto y el 50% restante al finalizar, antes de la entrega definitiva. Para proyectos grandes podemos acordar un calendario de pagos personalizado.</p>
                 </div>
             </div>
         </section>
@@ -375,16 +366,16 @@
             </div>
             <div class="space-y-4">
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Cu&aacute;nto tiempo tard&aacute;is en entregar una web?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Una web est&aacute;ndar est&aacute; lista en 5-10 d&iacute;as laborables. Proyectos m&aacute;s complejos con CRM, chatbot IA y automatizaciones pueden tardar 10-15 d&iacute;as. Siempre te damos una fecha de entrega concreta antes de empezar.</p>
+                    <h3 class="font-bold text-white mb-2">¿Cuánto tiempo tardáis en entregar una web?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Una web estándar está lista en 5-10 días laborables. Proyectos más complejos con CRM, chatbot IA y automatizaciones pueden tardar 10-15 días. Siempre te damos una fecha de entrega concreta antes de empezar.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Puedo solicitar cambios despu&eacute;s de la entrega?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Incluimos una ronda de revisiones dentro del proyecto. Adem&aacute;s, si contratas nuestro servicio de <a href="/servicios/soporte-mantenimiento" class="text-primary hover:underline">soporte y mantenimiento</a>, puedes solicitar modificaciones menores de forma continua.</p>
+                    <h3 class="font-bold text-white mb-2">¿Puedo solicitar cambios después de la entrega?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Incluimos una ronda de revisiones dentro del proyecto. Además, si contratas nuestro servicio de <a href="/servicios/soporte-mantenimiento" class="text-primary hover:underline">soporte y mantenimiento</a>, puedes solicitar modificaciones menores de forma continua.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Qu&eacute; pasa si necesito la web urgente?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Ofrecemos servicio express para proyectos urgentes. <a href="/contacto" class="text-primary hover:underline">Contacta con nosotros</a>, cu&eacute;ntanos tus plazos y te confirmaremos si podemos cumplirlos. Nuestro proceso optimizado con IA nos permite ser m&aacute;s r&aacute;pidos que una agencia tradicional.</p>
+                    <h3 class="font-bold text-white mb-2">¿Qué pasa si necesito la web urgente?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Ofrecemos servicio express para proyectos urgentes. <a href="/contacto" class="text-primary hover:underline">Contacta con nosotros</a>, cuéntanos tus plazos y te confirmaremos si podemos cumplirlos. Nuestro proceso optimizado con IA nos permite ser más rápidos que una agencia tradicional.</p>
                 </div>
             </div>
         </section>
@@ -395,20 +386,20 @@
                 <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
                     <i data-lucide="code-2" class="w-5 h-5 text-yellow-400"></i>
                 </div>
-                <h2 class="text-2xl font-bold">Tecnolog&iacute;a</h2>
+                <h2 class="text-2xl font-bold">Tecnología</h2>
             </div>
             <div class="space-y-4">
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Qu&eacute; tecnolog&iacute;as utiliz&aacute;is?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Usamos tecnolog&iacute;as modernas y r&aacute;pidas: HTML5, CSS3, JavaScript, Tailwind CSS y frameworks como Next.js cuando el proyecto lo requiere. Todas nuestras webs son responsive, r&aacute;pidas y est&aacute;n <a href="/servicios/optimizacion-continua" class="text-primary hover:underline">optimizadas para SEO</a>.</p>
+                    <h3 class="font-bold text-white mb-2">¿Qué tecnologías utilizáis?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Usamos tecnologías modernas y rápidas: HTML5, CSS3, JavaScript, Tailwind CSS y frameworks como Next.js cuando el proyecto lo requiere. Todas nuestras webs son responsive, rápidas y están <a href="/servicios/optimizacion-continua" class="text-primary hover:underline">optimizadas para SEO</a>.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Las webs son responsive (se adaptan al m&oacute;vil)?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">S&iacute;, todas nuestras webs se dise&ntilde;an mobile-first. Esto significa que primero optimizamos la experiencia en m&oacute;vil y luego la escalamos a tablet y escritorio, garantizando que se vea perfecta en cualquier dispositivo.</p>
+                    <h3 class="font-bold text-white mb-2">¿Las webs son responsive (se adaptan al móvil)?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Sí, todas nuestras webs se diseñan mobile-first. Esto significa que primero optimizamos la experiencia en móvil y luego la escalamos a tablet y escritorio, garantizando que se vea perfecta en cualquier dispositivo.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Inclu&iacute;s hosting y dominio?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Podemos gestionar el hosting y dominio por ti o trabajar con el proveedor que t&uacute; prefieras. Recomendamos soluciones r&aacute;pidas y fiables como Vercel o Hostinger dependiendo del tipo de proyecto.</p>
+                    <h3 class="font-bold text-white mb-2">¿Incluís hosting y dominio?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Podemos gestionar el hosting y dominio por ti o trabajar con el proveedor que tú prefieras. Recomendamos soluciones rápidas y fiables como Vercel o Hostinger dependiendo del tipo de proyecto.</p>
                 </div>
             </div>
         </section>
@@ -423,16 +414,16 @@
             </div>
             <div class="space-y-4">
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Qu&eacute; es exactamente el chatbot con IA?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Es un asistente virtual inteligente integrado en tu web que atiende a los visitantes las 24 horas. Responde preguntas, cualifica leads, agenda citas y gu&iacute;a a los usuarios hacia la conversi&oacute;n de forma autom&aacute;tica. Puedes ver m&aacute;s detalles en nuestra p&aacute;gina del servicio de <a href="/servicios/chatbot-ia" class="text-primary hover:underline">chatbot IA</a>.</p>
+                    <h3 class="font-bold text-white mb-2">¿Qué es exactamente el chatbot con IA?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Es un asistente virtual inteligente integrado en tu web que atiende a los visitantes las 24 horas. Responde preguntas, cualifica leads, agenda citas y guía a los usuarios hacia la conversión de forma automática. Puedes ver más detalles en nuestra página del servicio de <a href="/servicios/chatbot-ia" class="text-primary hover:underline">chatbot IA</a>.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;La IA reemplaza el trabajo humano?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">No, la IA complementa tu trabajo. Automatiza tareas repetitivas como atender consultas b&aacute;sicas o cualificar leads para que t&uacute; y tu equipo pod&aacute;is centraros en cerrar ventas y atender a clientes que realmente necesitan atenci&oacute;n humana.</p>
+                    <h3 class="font-bold text-white mb-2">¿La IA reemplaza el trabajo humano?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">No, la IA complementa tu trabajo. Automatiza tareas repetitivas como atender consultas básicas o cualificar leads para que tú y tu equipo podáis centraros en cerrar ventas y atender a clientes que realmente necesitan atención humana.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;El chatbot se puede personalizar para mi negocio?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Totalmente. Entrenamos el chatbot con la informaci&oacute;n espec&iacute;fica de tu negocio: servicios, precios, horarios, preguntas frecuentes de tus clientes, etc. Habla como si fuera parte de tu equipo. Descubre c&oacute;mo funciona en la p&aacute;gina de <a href="/servicios/captacion-leads" class="text-primary hover:underline">captaci&oacute;n de leads</a>.</p>
+                    <h3 class="font-bold text-white mb-2">¿El chatbot se puede personalizar para mi negocio?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Totalmente. Entrenamos el chatbot con la información específica de tu negocio: servicios, precios, horarios, preguntas frecuentes de tus clientes, etc. Habla como si fuera parte de tu equipo. Descubre cómo funciona en la página de <a href="/servicios/captacion-leads" class="text-primary hover:underline">captación de leads</a>.</p>
                 </div>
             </div>
         </section>
@@ -447,32 +438,32 @@
             </div>
             <div class="space-y-4">
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Qu&eacute; incluye el soporte despu&eacute;s del lanzamiento?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Ofrecemos planes de <a href="/servicios/soporte-mantenimiento" class="text-primary hover:underline">soporte y mantenimiento</a> que incluyen: actualizaciones de seguridad, copias de respaldo, monitorizaci&oacute;n de rendimiento, modificaciones menores de contenido y soporte t&eacute;cnico por email.</p>
+                    <h3 class="font-bold text-white mb-2">¿Qué incluye el soporte después del lanzamiento?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Ofrecemos planes de <a href="/servicios/soporte-mantenimiento" class="text-primary hover:underline">soporte y mantenimiento</a> que incluyen: actualizaciones de seguridad, copias de respaldo, monitorización de rendimiento, modificaciones menores de contenido y soporte técnico por email.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Qu&eacute; pasa si algo se rompe en mi web?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Si tienes contratado nuestro servicio de soporte, lo solucionamos con prioridad. Si no, puedes <a href="/contacto" class="text-primary hover:underline">contactarnos</a> y te daremos un presupuesto para la reparaci&oacute;n. Nuestro compromiso es que tu web siempre est&eacute; operativa.</p>
+                    <h3 class="font-bold text-white mb-2">¿Qué pasa si algo se rompe en mi web?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Si tienes contratado nuestro servicio de soporte, lo solucionamos con prioridad. Si no, puedes <a href="/contacto" class="text-primary hover:underline">contactarnos</a> y te daremos un presupuesto para la reparación. Nuestro compromiso es que tu web siempre esté operativa.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Puedo gestionar el contenido de mi web yo mismo?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Depende del tipo de proyecto. En webs est&aacute;ticas, te explicamos c&oacute;mo hacer cambios b&aacute;sicos. En proyectos con CMS, tendr&aacute;s un panel de administraci&oacute;n intuitivo para gestionar contenido, productos o entradas de blog sin necesidad de conocimientos t&eacute;cnicos.</p>
+                    <h3 class="font-bold text-white mb-2">¿Puedo gestionar el contenido de mi web yo mismo?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Depende del tipo de proyecto. En webs estáticas, te explicamos cómo hacer cambios básicos. En proyectos con CMS, tendrás un panel de administración intuitivo para gestionar contenido, productos o entradas de blog sin necesidad de conocimientos técnicos.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Trabaj&aacute;is solo con PYMEs o tambi&eacute;n con grandes empresas?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Nos especializamos en PYMEs, aut&oacute;nomos y negocios locales porque es donde m&aacute;s impacto generamos. Sectores como <a href="/para/restaurantes" class="text-primary hover:underline">restaurantes</a>, <a href="/para/clinicas" class="text-primary hover:underline">cl&iacute;nicas</a>, <a href="/para/abogados" class="text-primary hover:underline">abogados</a>, <a href="/para/inmobiliarias" class="text-primary hover:underline">inmobiliarias</a>, coaches y e-commerce son nuestro fuerte.</p>
+                    <h3 class="font-bold text-white mb-2">¿Trabajáis solo con PYMEs o también con grandes empresas?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Nos especializamos en PYMEs, autónomos y negocios locales porque es donde más impacto generamos. Sectores como <a href="/para/restaurantes" class="text-primary hover:underline">restaurantes</a>, <a href="/para/clinicas" class="text-primary hover:underline">clínicas</a>, <a href="/para/abogados" class="text-primary hover:underline">abogados</a>, <a href="/para/inmobiliarias" class="text-primary hover:underline">inmobiliarias</a>, coaches y e-commerce son nuestro fuerte.</p>
                 </div>
                 <div class="bg-card rounded-xl border border-white/5 p-5">
-                    <h3 class="font-bold text-white mb-2">&iquest;Hac&eacute;is SEO para posicionar mi web en Google?</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Todas nuestras webs se construyen con una base t&eacute;cnica SEO s&oacute;lida: velocidad optimizada, estructura correcta, metadatos, Schema markup y contenido preparado para posicionar. Si necesitas una estrategia SEO completa y continuada, podemos ofrecerte un plan de <a href="/servicios/optimizacion-continua" class="text-primary hover:underline">optimizaci&oacute;n adicional</a>.</p>
+                    <h3 class="font-bold text-white mb-2">¿Hacéis SEO para posicionar mi web en Google?</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Todas nuestras webs se construyen con una base técnica SEO sólida: velocidad optimizada, estructura correcta, metadatos, Schema markup y contenido preparado para posicionar. Si necesitas una estrategia SEO completa y continuada, podemos ofrecerte un plan de <a href="/servicios/optimizacion-continua" class="text-primary hover:underline">optimización adicional</a>.</p>
                 </div>
             </div>
         </section>
 
         <!-- CTA -->
         <div class="mt-12 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-white/5 p-8 md:p-10 text-center">
-            <h2 class="text-2xl font-bold mb-4">&iquest;No encuentras lo que buscas?</h2>
-            <p class="text-secondary mb-6 max-w-lg mx-auto">Escr&iacute;benos directamente y te respondemos en menos de 24 horas. Tambi&eacute;n puedes consultar nuestros planes para ver qu&eacute; incluye cada servicio.</p>
+            <h2 class="text-2xl font-bold mb-4">¿No encuentras lo que buscas?</h2>
+            <p class="text-secondary mb-6 max-w-lg mx-auto">Escríbenos directamente y te respondemos en menos de 24 horas. También puedes consultar nuestros planes para ver qué incluye cada servicio.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="/contacto" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl transition-colors">
                     Contactar ahora <i data-lucide="arrow-right" class="w-5 h-5"></i>
@@ -492,9 +483,9 @@
         <div>
           <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Servicios</h4>
           <ul class="space-y-3 text-sm text-secondary">
-            <li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Dise&ntilde;o Web</a></li>
+            <li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Diseño Web</a></li>
             <li><a href="/servicios/chatbot-ia" class="hover:text-primary transition-colors">Chatbot IA</a></li>
-            <li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captaci&oacute;n de Leads</a></li>
+            <li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captación de Leads</a></li>
             <li><a href="/servicios/funnels-conversion" class="hover:text-primary transition-colors">Funnels</a></li>
             <li><a href="/servicios/crm-personalizado" class="hover:text-primary transition-colors">CRM</a></li>
             <li><a href="/servicios/" class="hover:text-primary transition-colors font-medium text-primary">Ver todos &rarr;</a></li>
@@ -504,7 +495,7 @@
           <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Sectores</h4>
           <ul class="space-y-3 text-sm text-secondary">
             <li><a href="/para/restaurantes" class="hover:text-primary transition-colors">Restaurantes</a></li>
-            <li><a href="/para/clinicas" class="hover:text-primary transition-colors">Cl&iacute;nicas</a></li>
+            <li><a href="/para/clinicas" class="hover:text-primary transition-colors">Clínicas</a></li>
             <li><a href="/para/abogados" class="hover:text-primary transition-colors">Abogados</a></li>
             <li><a href="/para/coaches" class="hover:text-primary transition-colors">Coaches</a></li>
             <li><a href="/para/ecommerce" class="hover:text-primary transition-colors">eCommerce</a></li>
@@ -526,22 +517,22 @@
         <div>
           <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4>
           <ul class="space-y-3 text-sm text-secondary">
-            <li><a href="/privacidad" class="hover:text-primary transition-colors">Pol&iacute;tica de Privacidad</a></li>
-            <li><a href="/terminos" class="hover:text-primary transition-colors">T&eacute;rminos y Condiciones</a></li>
-            <li><a href="/cookies" class="hover:text-primary transition-colors">Pol&iacute;tica de Cookies</a></li>
+            <li><a href="/privacidad" class="hover:text-primary transition-colors">Política de Privacidad</a></li>
+            <li><a href="/terminos" class="hover:text-primary transition-colors">Términos y Condiciones</a></li>
+            <li><a href="/cookies" class="hover:text-primary transition-colors">Política de Cookies</a></li>
           </ul>
         </div>
       </div>
       <!-- Presencia local -->
       <div class="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-sm text-secondary">
-        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Dise&ntilde;o Web Tenerife</a>
+        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Diseño Web Tenerife</a>
         <a href="/agencia-digital-tenerife" class="hover:text-primary transition-colors">Agencia Digital Tenerife</a>
-        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Dise&ntilde;o Web Canarias</a>
+        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Diseño Web Canarias</a>
         <a href="/agencia-digital-canarias" class="hover:text-primary transition-colors">Agencia Digital Canarias</a>
       </div>
       <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary">
         <div>&copy; 2026 ZappyApps. Todos los derechos reservados.</div>
-        <div><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
+        <div class="flex items-center gap-4"><a href="tel:+34696120384" class="hover:text-primary transition-colors">696 120 384</a><span class="text-white/20">|</span><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
       </div>
     </div>
   </footer>

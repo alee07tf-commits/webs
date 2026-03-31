@@ -480,8 +480,8 @@
   <div class="login-card">
     <div class="login-logo">ZappyApps</div>
     <div class="login-sub">Panel CRM &mdash; Acceso interno</div>
-    <label class="login-label" for="pass-input">Contrase&ntilde;a</label>
-    <input class="login-input" id="pass-input" type="password" placeholder="Introduce la contrase&ntilde;a" onkeydown="if(event.key==='Enter')doLogin()">
+    <label class="login-label" for="pass-input">Contraseña</label>
+    <input class="login-input" id="pass-input" type="password" placeholder="Introduce la contraseña" onkeydown="if(event.key==='Enter')doLogin()">
     <button class="login-btn" onclick="doLogin()">Acceder</button>
     <div class="login-err" id="login-err">Contraseña incorrecta</div>
   </div>
@@ -520,7 +520,7 @@
         <option value="descartado">Descartado</option>
       </select>
       <select class="filter-select" id="f-source" onchange="render()">
-        <option value="">Todos los or&iacute;genes</option>
+        <option value="">Todos los orígenes</option>
         <option value="prototipo-gratis">Prototipo Gratis</option>
         <option value="contacto">Formulario Contacto</option>
       </select>
@@ -704,8 +704,8 @@ function buildPanel(l) {
     <!-- Acciones rápidas -->
     <div class="panel-section">
       <div class="panel-section-title">Contactar</div>
-      ${waUrl ? `<a class="wa-link" href="${waUrl}" target="_blank">💬 WhatsApp: ${esc(l.whatsapp)}</a>` : ''}
-      ${l.email ? `<a class="email-link" href="mailto:${esc(l.email)}" target="_blank">✉ ${esc(l.email)}</a>` : ''}
+      ${waUrl ? `<a class="wa-link" href="${waUrl}" target="_blank" rel="noopener noreferrer">💬 WhatsApp: ${esc(l.whatsapp)}</a>` : ''}
+      ${l.email ? `<a class="email-link" href="mailto:${esc(l.email)}" target="_blank" rel="noopener noreferrer">✉ ${esc(l.email)}</a>` : ''}
     </div>
 
     <!-- Estado y notas -->
@@ -732,7 +732,7 @@ function buildPanel(l) {
       ${l.cargo   ? row('Cargo', l.cargo) : ''}
       ${l.presupuesto ? row('Presupuesto', l.presupuesto) : ''}
       ${l.estadoWeb   ? row('Estado web', l.estadoWeb) : ''}
-      ${l.urlActual && l.urlActual !== 'N/A' ? row('URL actual', `<a href="${l.urlActual}" target="_blank" style="color:var(--primary);text-decoration:none">${l.urlActual}</a>`) : ''}
+      ${l.urlActual && l.urlActual !== 'N/A' ? row('URL actual', `<a href="${l.urlActual}" target="_blank" rel="noopener noreferrer" style="color:var(--primary);text-decoration:none">${l.urlActual}</a>`) : ''}
     </div>
 
     ${l.descripcion ? `<div class="panel-section">

@@ -1,0 +1,10 @@
+{
+  "name": "zappyapps-web",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i input.css -o tailwind.min.css --minify"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -4,3 +4,5 @@
 *.py
 *.zip
 notebooklm_context.txt
+node_modules/
+input.css

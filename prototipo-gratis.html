@@ -466,6 +466,7 @@
 
     /* Gradient text helper */
     .grad { background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
   </style>
 </head>
 <body>
@@ -475,13 +476,15 @@
     <span class="logo-name">ZappyApps</span>
   </a>
 
+  <h1 class="sr-only">Solicita tu Prototipo Web Gratis</h1>
+
   <div class="form-wrap">
 
     <!-- Progress bar -->
     <div class="prog-track" id="prog-track">
       <div class="prog-step active" id="ps1"><div class="prog-dot">1</div><span class="prog-lbl">Tipo</span></div>
       <div class="prog-step" id="ps2"><div class="prog-dot">2</div><span class="prog-lbl">Negocio</span></div>
-      <div class="prog-step" id="ps3"><div class="prog-dot">3</div><span class="prog-lbl">Situaci&oacute;n</span></div>
+      <div class="prog-step" id="ps3"><div class="prog-dot">3</div><span class="prog-lbl">Situación</span></div>
       <div class="prog-step" id="ps4"><div class="prog-dot">4</div><span class="prog-lbl">Objetivos</span></div>
       <div class="prog-step" id="ps5"><div class="prog-dot">5</div><span class="prog-lbl">Contacto</span></div>
     </div>
@@ -494,20 +497,20 @@
         <div class="panel" id="s1">
           <div class="card-inner">
             <div class="eyebrow">Prototipo gratuito</div>
-            <div class="step-title">&iquest;Qu&eacute; necesitas que <span class="grad">dise&ntilde;emos</span>?</div>
-            <div class="step-sub">Dise&ntilde;amos el prototipo antes de reunirnos para que veas el resultado real antes de decidir nada. Sin pagos, sin compromisos.</div>
+            <div class="step-title">¿Qué necesitas que <span class="grad">diseñemos</span>?</div>
+            <div class="step-sub">Diseñamos el prototipo antes de reunirnos para que veas el resultado real antes de decidir nada. Sin pagos, sin compromisos.</div>
             <div class="opt-grid">
               <div class="opt-card" data-g="tipo" data-v="web" onclick="pick(this)">
                 <span class="opt-icon">🌐</span>
                 <div class="opt-title">Prototipo de Web</div>
-                <div class="opt-desc">Dise&ntilde;o completo de tu p&aacute;gina principal orientada a captar clientes.</div>
+                <div class="opt-desc">Diseño completo de tu página principal orientada a captar clientes.</div>
                 <span class="opt-badge">HOME COMPLETA</span>
               </div>
               <div class="opt-card" data-g="tipo" data-v="landing" onclick="pick(this)">
                 <span class="opt-icon">🎯</span>
                 <div class="opt-title">Prototipo de Landing</div>
-                <div class="opt-desc">P&aacute;gina enfocada en un solo objetivo: que te llamen, escriban o compren.</div>
-                <span class="opt-badge">ALTA CONVERSI&Oacute;N</span>
+                <div class="opt-desc">Página enfocada en un solo objetivo: que te llamen, escriban o compren.</div>
+                <span class="opt-badge">ALTA CONVERSIÓN</span>
               </div>
             </div>
             <div class="err" id="err-tipo" style="display:none;margin-top:4px">Selecciona el tipo de prototipo.</div>
@@ -521,12 +524,12 @@
         <div class="panel" id="s2" style="display:none">
           <div class="card-inner">
             <div class="eyebrow">Tu negocio</div>
-            <div class="step-title">Cu&eacute;ntanos <span class="grad">qui&eacute;n eres</span></div>
-            <div class="step-sub">Con esto dise&ntilde;amos algo adaptado a tu sector real, no una plantilla gen&eacute;rica.</div>
+            <div class="step-title">Cuéntanos <span class="grad">quién eres</span></div>
+            <div class="step-sub">Con esto diseñamos algo adaptado a tu sector real, no una plantilla genérica.</div>
             <div class="field-row">
               <div class="field" id="f-nom">
                 <label>Nombre del negocio *</label>
-                <input type="text" id="nom" placeholder="Ej: Cl&iacute;nica Vital">
+                <input type="text" id="nom" placeholder="Ej: Clínica Vital">
                 <div class="err">Campo obligatorio.</div>
               </div>
               <div class="field" id="f-sec">
@@ -534,16 +537,16 @@
                 <select id="sec">
                   <option value="">Selecciona...</option>
                   <option>Salud y bienestar</option>
-                  <option>Restauraci&oacute;n y hosteler&iacute;a</option>
+                  <option>Restauración y hostelería</option>
                   <option>Comercio y retail</option>
                   <option>Servicios profesionales</option>
                   <option>Inmobiliaria</option>
-                  <option>Educaci&oacute;n y formaci&oacute;n</option>
-                  <option>Belleza y est&eacute;tica</option>
+                  <option>Educación y formación</option>
+                  <option>Belleza y estética</option>
                   <option>Deporte y fitness</option>
-                  <option>Construcci&oacute;n y reformas</option>
-                  <option>Legal y asesor&iacute;a</option>
-                  <option>Tecnolog&iacute;a</option>
+                  <option>Construcción y reformas</option>
+                  <option>Legal y asesoría</option>
+                  <option>Tecnología</option>
                   <option>E-commerce</option>
                   <option>Otro</option>
                 </select>
@@ -551,19 +554,19 @@
               </div>
             </div>
             <div class="field" id="f-desc">
-              <label>&iquest;A qu&eacute; se dedica tu negocio? *</label>
-              <textarea id="desc" placeholder="Ej: Cl&iacute;nica de fisioterapia especializada en lesiones deportivas en Tenerife." rows="3"></textarea>
-              <div class="hint">Una o dos frases. Queremos entender bien c&oacute;mo ayudas a tus clientes.</div>
-              <div class="err">Cu&eacute;ntanos brevemente a qu&eacute; te dedicas.</div>
+              <label>¿A qué se dedica tu negocio? *</label>
+              <textarea id="desc" placeholder="Ej: Clínica de fisioterapia especializada en lesiones deportivas en Tenerife." rows="3"></textarea>
+              <div class="hint">Una o dos frases. Queremos entender bien cómo ayudas a tus clientes.</div>
+              <div class="err">Cuéntanos brevemente a qué te dedicas.</div>
             </div>
             <div class="field" id="f-icp">
-              <label>&iquest;Qui&eacute;n es tu cliente ideal? *</label>
-              <textarea id="icp" placeholder="Ej: Due&ntilde;os de peque&ntilde;os negocios de 35-55 a&ntilde;os que quieren m&aacute;s clientes." rows="2"></textarea>
+              <label>¿Quién es tu cliente ideal? *</label>
+              <textarea id="icp" placeholder="Ej: Dueños de pequeños negocios de 35-55 años que quieren más clientes." rows="2"></textarea>
               <div class="err">Describe a tu cliente ideal.</div>
             </div>
           </div>
           <div class="card-footer">
-            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-back" onclick="prev()">← Atrás</button>
             <button class="btn-next" onclick="next()">Continuar <span class="arr">→</span></button>
           </div>
         </div>
@@ -571,9 +574,9 @@
         <!-- PASO 3 -->
         <div class="panel" id="s3" style="display:none">
           <div class="card-inner">
-            <div class="eyebrow">Situaci&oacute;n actual</div>
-            <div class="step-title">&iquest;C&oacute;mo est&aacute; tu <span class="grad">presencia digital</span>?</div>
-            <div class="step-sub">Nos ayuda a hacer la auditor&iacute;a previa y mostrarte el mayor salto posible desde el primer d&iacute;a.</div>
+            <div class="eyebrow">Situación actual</div>
+            <div class="step-title">¿Cómo está tu <span class="grad">presencia digital</span>?</div>
+            <div class="step-sub">Nos ayuda a hacer la auditoría previa y mostrarte el mayor salto posible desde el primer día.</div>
             <div class="field">
               <label>Estado actual</label>
               <div class="opt-grid">
@@ -587,18 +590,18 @@
                 </div>
                 <div class="opt-card" data-g="estado" data-v="web-ok" onclick="pick(this);chkUrl()">
                   <div class="opt-title">Tengo web, quiero mejorarla</div>
-                  <div class="opt-desc">Funciona, pero podr&iacute;a rendir mucho m&aacute;s.</div>
+                  <div class="opt-desc">Funciona, pero podría rendir mucho más.</div>
                 </div>
                 <div class="opt-card" data-g="estado" data-v="landing" onclick="pick(this);chkUrl()">
                   <div class="opt-title">Quiero una landing nueva</div>
-                  <div class="opt-desc">Para un servicio, campa&ntilde;a o producto concreto.</div>
+                  <div class="opt-desc">Para un servicio, campaña o producto concreto.</div>
                 </div>
               </div>
             </div>
             <div class="field cond" id="url-field">
               <label>URL de tu web actual</label>
               <input type="url" id="web-url" placeholder="https://tunegocio.com">
-              <div class="hint">Nos ayuda a preparar la auditor&iacute;a antes de la reuni&oacute;n.</div>
+              <div class="hint">Nos ayuda a preparar la auditoría antes de la reunión.</div>
             </div>
             <div class="field" id="f-prob">
               <label>Mayor problema que quieres resolver *</label>
@@ -606,16 +609,16 @@
                 <button class="tag-btn" onclick="tog(this)">No consigo que me contacten</button>
                 <button class="tag-btn" onclick="tog(this)">Mi web es antigua y no vende</button>
                 <button class="tag-btn" onclick="tog(this)">No aparezco en Google</button>
-                <button class="tag-btn" onclick="tog(this)">No tengo sistema de captaci&oacute;n</button>
+                <button class="tag-btn" onclick="tog(this)">No tengo sistema de captación</button>
                 <button class="tag-btn" onclick="tog(this)">Quiero atender clientes sin estar pendiente</button>
-                <button class="tag-btn" onclick="tog(this)">Quiero validar una oferta r&aacute;pido</button>
+                <button class="tag-btn" onclick="tog(this)">Quiero validar una oferta rápido</button>
                 <button class="tag-btn" onclick="tog(this)">Imagen poco profesional</button>
               </div>
               <div class="err" id="err-prob">Selecciona al menos un problema.</div>
             </div>
           </div>
           <div class="card-footer">
-            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-back" onclick="prev()">← Atrás</button>
             <button class="btn-next" onclick="next()">Continuar <span class="arr">→</span></button>
           </div>
         </div>
@@ -624,38 +627,38 @@
         <div class="panel" id="s4" style="display:none">
           <div class="card-inner">
             <div class="eyebrow">Objetivos y estilo</div>
-            <div class="step-title">&iquest;Qu&eacute; resultado <span class="grad">esperas</span>?</div>
-            <div class="step-sub">Con esto el dise&ntilde;ador adapta cada decisi&oacute;n al objetivo real, no a lo que "queda bonito".</div>
+            <div class="step-title">¿Qué resultado <span class="grad">esperas</span>?</div>
+            <div class="step-sub">Con esto el diseñador adapta cada decisión al objetivo real, no a lo que "queda bonito".</div>
             <div class="field" id="f-obj">
               <label>Objetivo principal *</label>
               <div class="opt-grid c1">
-                <div class="opt-card" data-g="obj" data-v="leads" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Que m&aacute;s gente me contacte y me compre</div></div>
-                <div class="opt-card" data-g="obj" data-v="confianza" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Transmitir m&aacute;s profesionalidad y confianza</div></div>
-                <div class="opt-card" data-g="obj" data-v="automatizar" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Que la web trabaje sola: capte y atienda sin que yo est&eacute;</div></div>
-                <div class="opt-card" data-g="obj" data-v="validar" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Lanzar algo nuevo y ver si funciona antes de invertir m&aacute;s</div></div>
+                <div class="opt-card" data-g="obj" data-v="leads" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Que más gente me contacte y me compre</div></div>
+                <div class="opt-card" data-g="obj" data-v="confianza" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Transmitir más profesionalidad y confianza</div></div>
+                <div class="opt-card" data-g="obj" data-v="automatizar" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Que la web trabaje sola: capte y atienda sin que yo esté</div></div>
+                <div class="opt-card" data-g="obj" data-v="validar" onclick="pick(this)" style="padding:13px 15px"><div class="opt-title">Lanzar algo nuevo y ver si funciona antes de invertir más</div></div>
               </div>
               <div class="err" id="err-obj">Selecciona tu objetivo principal.</div>
             </div>
             <div class="field">
               <label>Tono visual de tu marca</label>
               <div class="tag-wrap" id="estilo-tags">
-                <button class="tag-btn" onclick="tog(this)">Moderno y tecnol&oacute;gico</button>
+                <button class="tag-btn" onclick="tog(this)">Moderno y tecnológico</button>
                 <button class="tag-btn" onclick="tog(this)">Elegante y premium</button>
                 <button class="tag-btn" onclick="tog(this)">Cercano y humano</button>
                 <button class="tag-btn" onclick="tog(this)">Minimalista y limpio</button>
                 <button class="tag-btn" onclick="tog(this)">Atrevido y diferente</button>
                 <button class="tag-btn" onclick="tog(this)">Profesional y serio</button>
               </div>
-              <div class="hint">Puedes elegir varios. El dise&ntilde;ador lo tendr&aacute; en cuenta.</div>
+              <div class="hint">Puedes elegir varios. El diseñador lo tendrá en cuenta.</div>
             </div>
             <div class="field">
               <label>Referencia visual o comentario</label>
-              <textarea id="refs" placeholder="Ej: Me gusta el estilo de Apple.com. O: somos una cl&iacute;nica, queremos transmitir salud y modernidad. Colores: azul y blanco." rows="3"></textarea>
-              <div class="hint">Opcional pero muy &uacute;til para el dise&ntilde;ador.</div>
+              <textarea id="refs" placeholder="Ej: Me gusta el estilo de Apple.com. O: somos una clínica, queremos transmitir salud y modernidad. Colores: azul y blanco." rows="3"></textarea>
+              <div class="hint">Opcional pero muy útil para el diseñador.</div>
             </div>
           </div>
           <div class="card-footer">
-            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-back" onclick="prev()">← Atrás</button>
             <button class="btn-next" onclick="next()">Continuar <span class="arr">→</span></button>
           </div>
         </div>
@@ -663,13 +666,13 @@
         <!-- PASO 5 -->
         <div class="panel" id="s5" style="display:none">
           <div class="card-inner">
-            <div class="eyebrow">&Uacute;ltimo paso</div>
-            <div class="step-title">&iquest;D&oacute;nde te <span class="grad">enviamos la fecha</span>?</div>
-            <div class="step-sub">En 24&ndash;48h te escribimos por WhatsApp para confirmar la sesi&oacute;n donde te presentamos el prototipo ya terminado.</div>
+            <div class="eyebrow">Último paso</div>
+            <div class="step-title">¿Dónde te <span class="grad">enviamos la fecha</span>?</div>
+            <div class="step-sub">En 24&ndash;48h te escribimos por WhatsApp para confirmar la sesión donde te presentamos el prototipo ya terminado.</div>
             <div class="field-row">
               <div class="field" id="f-nc">
                 <label>Tu nombre *</label>
-                <input type="text" id="nc" placeholder="Alejandro Garc&iacute;a">
+                <input type="text" id="nc" placeholder="Alejandro García">
                 <div class="err">Introduce tu nombre.</div>
               </div>
               <div class="field">
@@ -680,36 +683,36 @@
             <div class="field" id="f-email">
               <label>Email *</label>
               <input type="email" id="email" placeholder="tu@empresa.com">
-              <div class="err">Introduce un email v&aacute;lido.</div>
+              <div class="err">Introduce un email válido.</div>
             </div>
             <div class="field" id="f-wa">
               <label>WhatsApp *</label>
               <input type="tel" id="wa" placeholder="+34 600 000 000">
-              <div class="hint">Te contactamos aqu&iacute; para agendar la sesi&oacute;n.</div>
-              <div class="err">Introduce tu n&uacute;mero de WhatsApp.</div>
+              <div class="hint">Te contactamos aquí para agendar la sesión.</div>
+              <div class="err">Introduce tu número de WhatsApp.</div>
             </div>
             <div class="field">
               <label>Presupuesto orientativo</label>
               <select id="budget">
                 <option value="">Prefiero no indicarlo ahora</option>
-                <option>Menos de 1.000&euro;</option>
-                <option>1.000&euro; &ndash; 3.000&euro;</option>
-                <option>3.000&euro; &ndash; 6.000&euro;</option>
-                <option>6.000&euro; &ndash; 15.000&euro;</option>
-                <option>+15.000&euro;</option>
+                <option>Menos de 1.000€</option>
+                <option>1.000€ &ndash; 3.000€</option>
+                <option>3.000€ &ndash; 6.000€</option>
+                <option>6.000€ &ndash; 15.000€</option>
+                <option>+15.000€</option>
               </select>
               <div class="hint">No condiciona nada. Tenemos planes para cada momento de crecimiento.</div>
             </div>
             <div class="field" id="f-legal">
               <label style="display:flex;align-items:flex-start;gap:9px;cursor:pointer;text-transform:none;letter-spacing:0;font-size:12px;color:var(--t2)">
                 <input type="checkbox" id="legal" style="width:15px;height:15px;margin-top:1px;flex-shrink:0;accent-color:var(--primary)">
-                Acepto la <a href="/privacidad" style="color:var(--primary);text-decoration:none">&nbsp;pol&iacute;tica de privacidad</a>&nbsp;y que ZappyApps me contacte sobre mi solicitud.
+                Acepto la <a href="/privacidad" style="color:var(--primary);text-decoration:none">&nbsp;política de privacidad</a>&nbsp;y que ZappyApps me contacte sobre mi solicitud.
               </label>
-              <div class="err" id="err-legal">Debes aceptar la pol&iacute;tica de privacidad.</div>
+              <div class="err" id="err-legal">Debes aceptar la política de privacidad.</div>
             </div>
           </div>
           <div class="card-footer">
-            <button class="btn-back" onclick="prev()">← Atr&aacute;s</button>
+            <button class="btn-back" onclick="prev()">← Atrás</button>
             <button class="btn-next" onclick="submit()">Solicitar prototipo gratis &nbsp;🚀</button>
           </div>
         </div>
@@ -718,13 +721,13 @@
         <div id="s-ok" style="display:none">
           <div class="confirm">
             <div class="confirm-icon">✓</div>
-            <div class="confirm-title">&iexcl;Prototipo en camino!</div>
-            <div class="confirm-sub">Hemos recibido tu solicitud. Nuestro equipo ya est&aacute; analizando tu negocio para dise&ntilde;ar algo que te sorprenda.</div>
+            <div class="confirm-title">¡Prototipo en camino!</div>
+            <div class="confirm-sub">Hemos recibido tu solicitud. Nuestro equipo ya está analizando tu negocio para diseñar algo que te sorprenda.</div>
             <div class="confirm-box" id="c-summary"></div>
             <div class="next-box">
-              <strong>&iquest;Qu&eacute; pasa ahora?</strong><br>
-              En las pr&oacute;ximas <strong>24&ndash;48h</strong> te escribimos por WhatsApp para agendar tu <strong>Sesi&oacute;n de Revelaci&oacute;n</strong>.<br><br>
-              Te presentamos el prototipo terminado y el plan exacto para convertirlo en un sistema que capta clientes solo. Si te convence, hablamos de seguir. Si no, te quedas con el dise&ntilde;o igualmente.
+              <strong>¿Qué pasa ahora?</strong><br>
+              En las próximas <strong>24&ndash;48h</strong> te escribimos por WhatsApp para agendar tu <strong>Sesión de Revelación</strong>.<br><br>
+              Te presentamos el prototipo terminado y el plan exacto para convertirlo en un sistema que capta clientes solo. Si te convence, hablamos de seguir. Si no, te quedas con el diseño igualmente.
             </div>
           </div>
         </div>
@@ -733,7 +736,7 @@
     </div>
 
     <p class="bottom-note">
-      Sin pagos. Sin compromisos. Si no te convence, te quedas con el dise&ntilde;o.<br>
+      Sin pagos. Sin compromisos. Si no te convence, te quedas con el diseño.<br>
       <a href="/">← Volver a zappyapps.tech</a>
     </p>
 
