@@ -1,0 +1,24 @@
+seed: voicebot
+db: es | currency: eur
+total_keywords: 326
+total_vol: 530 (BAJO)
+avg_kd: 10 (MUY BAJO)
+insight: BLUE OCEAN — poca demanda SEO pero prácticamente sin competencia. Oportunidad si combinamos con "IA de voz" o "agente de voz IA" que tienen más demanda
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+voicebot|140|11|1.81|I
+voicebots|90|9|1.81|I
+ai voicebots|20|||n/d
+chatbot voicebot|20|||n/d
+chatbots voicebots|20|||n/d
+que es un voicebot|20|||n/d
+voicebot ai|20||2.97|n/d
+voicebot icon|20|||n/d
+voicebot que es|20||0.71|n/d
+voicebot su|20|||n/d
+aws voicebot|10|||n/d
+chatbot vs voicebot|10|||n/d
+co to jest voicebot|10|||n/d
+dialogflow voicebot|10|||n/d
+salesforce voicebot|10|||n/d

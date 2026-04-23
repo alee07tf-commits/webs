@@ -1,0 +1,13 @@
+seed: IA generativa empresa
+db: es | currency: eur
+total_keywords: 35 (BAJO)
+total_vol: 1470
+avg_kd: 16
+insight: RUIDO = generadores nombres/logos (tools gratuitas, no B2B consulting). "ia generativa para empresas" solo 30 vol. Término técnico que el mercado hispano no usa para comprar.
+DECISIÓN: No posicionar "IA generativa" como pilar. Usar términos más concretos por caso de uso.
+extracted: top 5 relevantes
+
+kw|vol|kd|cpc|intent
+ia generativa para empresas|30|||n/d
+soluciones de ia generativa para empresas|30|||n/d
+(resto: generadores de nombres/logos - ruido)

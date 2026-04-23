@@ -1,0 +1,19 @@
+seed: atención al cliente IA
+db: es | currency: eur
+total_keywords: 37
+total_vol: 300
+avg_kd: 23
+insight: BAJA demanda directa pero CPC 2-3.4€ indica intención comercial alta. El caso de uso se vende en SEO bajo "chatbot empresa" y "automatización IA". Usar como SUB-PÁGINA o sección, no como pilar.
+extracted: top 10
+
+kw|vol|kd|cpc|intent
+atencion al cliente ia|40|23|3.43|I
+desarrollo agente ia atención al cliente|30|||n/d
+implementación de ia para atención al cliente|30|||n/d
+atencion al cliente con ia|20||2.82|n/d
+atención al cliente ia|20||3.43|n/d
+chatbot de ia para atención al cliente|20|||n/d
+ia en atencion al cliente|20||2.05|n/d
+ia para atencion al cliente|20||3.29|n/d
+mejorar atención al cliente con ia|20|||n/d
+agente ia atención al cliente|10|||n/d

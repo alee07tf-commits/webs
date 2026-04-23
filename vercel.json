@@ -1,4 +1,29 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {"source": "/blog/automatizar-whatsapp-business", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/chatbot-ia-para-pymes", "destination": "/servicios/chatbots-empresas/", "permanent": true},
+    {"source": "/blog/como-automatizar-captacion-leads", "destination": "/servicios/automatizaciones-ia/", "permanent": true},
+    {"source": "/blog/como-elegir-agencia-web", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/como-captar-clientes-online", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/crm-para-pymes-guia", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/crm-vs-excel", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/cuanto-cuesta-web-profesional", "destination": "/precios/", "permanent": true},
+    {"source": "/blog/diferencia-web-bonita-web-que-vende", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/errores-web-pymes", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/funnel-ventas-automatizado", "destination": "/servicios/automatizaciones-ia/", "permanent": true},
+    {"source": "/blog/ia-aplicada-marketing-pymes", "destination": "/servicios/", "permanent": true},
+    {"source": "/blog/ia-generativa-ventas-pymes", "destination": "/servicios/agentes-ia-empresas/", "permanent": true},
+    {"source": "/blog/kit-digital-guia", "destination": "/consultoria-ia/kit-consulting/", "permanent": true},
+    {"source": "/blog/mejores-agencias-diseno-web-espana", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/por-que-mi-web-no-genera-clientes", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/que-es-lead-scoring", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/redes-sociales-vs-web", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/subvenciones-digitalizacion-2026", "destination": "/consultoria-ia/kit-consulting/", "permanent": true},
+    {"source": "/blog/tendencias-diseno-web-2026", "destination": "/blog/", "permanent": true},
+    {"source": "/blog/web-conversion-vs-web-corporativa", "destination": "/blog/", "permanent": true},
+    {"source": "/prototipo-gratis", "destination": "/contacto/", "permanent": true},
+    {"source": "/sobre-nosotros", "destination": "/nosotros", "permanent": true}
+  ]
 }

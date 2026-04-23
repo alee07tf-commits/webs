@@ -1,0 +1,24 @@
+seed: IA para empresas
+db: es | currency: eur
+total_keywords: 190
+total_vol: 4050
+avg_kd: 25 (BAJO-MEDIO)
+insight: SEMILLA CORE DEL NEGOCIO. "agentes ia para empresas" KD 14 CPC 3.16€ = HOME RUN. "ia conversacional para empresas" KD 7 también excelente. Market fit fortísimo con lo que Alejandro vende.
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+generar una imagen con ia para mi empresa de x4|1000|16||I (noise, irrelevante)
+ia para empresas|390|50|3.84|I
+agentes ia para empresas|90|14|3.16|I
+consultoría ia para pequeñas empresas|90|||n/d
+agentes de ia para empresas|70|24|3.15|I
+curso de ia para empresas|70|35|3.05|I
+formacion ia para empresas|70|21|3.9|C
+soluciones de ia para empresas|70|47|3.91|I C
+agentes ia para empresas pais vasco|50|3||I
+curso ia para empresas|50|44|3.15|I
+cursos de ia para empresas|50|8|3.05|I
+cursos ia para empresas|50|11|3.46|I
+ia conversacional para empresas|50|7||I C
+servicios de ia para empresas|50|25|3|I
+soluciones ia para empresas|50|26|2.57|I

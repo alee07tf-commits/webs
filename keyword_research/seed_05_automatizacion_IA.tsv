@@ -1,0 +1,24 @@
+seed: automatización IA
+db: es | currency: eur
+total_keywords: 262
+total_vol: 4450
+avg_kd: 22 (BAJO)
+insight: Buen volumen agregado + KD bajo. Ciudades: girona, castellon aparecen = intent local
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+udemy n8n agentes y automatizaciones de ia sin código|320|35||N T
+automatizaciones ia|260|20|2.11|I
+automatizaciones con ia|210|23|1.94|I
+automatizaciones ia girona|210|6||I
+automatización con ia|140|23|2.29|I
+agencia de automatización de ia|110|35|3.27|C
+automatización de procesos con ia|110|19|2.46|I
+automatizar procesos con ia|110|28|2.41|I
+automatizaciones ia castellon|90|6||C
+automatización ia|90|26||I T
+automatización de procesos con ia servicio|70|||n/d
+automatizar pruebas de api con ia|70|||n/d
+automatización impulsada por ia|50|28||I
+automatización inteligente con ia|50|34||I
+curso automatización ia|50||1.89|I

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Contenido — ZappyApps</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#08080c;color:#e2e8f0;min-height:100vh}
+
+  /* HEADER */
+  .header{background:linear-gradient(135deg,#0f172a,#1a1035,#0f172a);border-bottom:1px solid rgba(99,102,241,.2);padding:36px 48px;position:sticky;top:0;z-index:100;backdrop-filter:blur(20px)}
+  .header h1{font-size:26px;font-weight:900;background:linear-gradient(135deg,#818cf8,#6366f1,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+  .header-sub{color:#94a3b8;font-size:14px;line-height:1.7;max-width:800px}
+  .header-sub strong{color:#c7d2fe}
+
+  /* STRATEGY BOX */
+  .strategy{margin:28px 48px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .strat-card{border-radius:16px;padding:28px;position:relative;overflow:hidden}
+  .strat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+  .strat-yt{background:linear-gradient(135deg,rgba(239,68,68,.08),rgba(15,23,42,.8));border:1px solid rgba(239,68,68,.2)}
+  .strat-yt::before{background:linear-gradient(90deg,#ef4444,#f97316)}
+  .strat-short{background:linear-gradient(135deg,rgba(168,85,247,.08),rgba(15,23,42,.8));border:1px solid rgba(168,85,247,.2)}
+  .strat-short::before{background:linear-gradient(90deg,#a855f7,#6366f1)}
+  .strat-card .tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
+  .strat-yt .tag{color:#fca5a5}
+  .strat-short .tag{color:#d8b4fe}
+  .strat-card h2{font-size:18px;font-weight:800;color:#f1f5f9;margin-bottom:8px}
+  .strat-card p{font-size:13px;color:#94a3b8;line-height:1.7}
+  .strat-card .freq{margin-top:14px;font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;display:inline-block}
+  .strat-yt .freq{background:rgba(239,68,68,.12);color:#fca5a5}
+  .strat-short .freq{background:rgba(168,85,247,.12);color:#d8b4fe}
+
+  /* TABS */
+  .tabs-wrap{padding:0 48px;margin-top:28px}
+  .tabs{display:flex;gap:4px;background:rgba(15,23,42,.6);border-radius:12px;padding:4px;border:1px solid rgba(99,102,241,.1);width:fit-content}
+  .tab{padding:10px 22px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;border:none;background:0 0;color:#64748b}
+  .tab:hover{color:#a5b4fc}
+  .tab.active{background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff;box-shadow:0 4px 12px rgba(99,102,241,.3)}
+
+  /* CONTENT */
+  .content-area{padding:28px 48px 60px}
+  .tab-content{display:none}
+  .tab-content.active{display:block}
+
+  /* WEEK */
+  .week{margin-bottom:44px}
+  .week-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+  .week-num{background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff;font-size:13px;font-weight:700;padding:8px 16px;border-radius:8px;white-space:nowrap}
+  .week-title{font-size:18px;font-weight:800;color:#e2e8f0}
+  .week-sub{font-size:13px;color:#64748b;margin-top:2px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+  /* YT CARD */
+  .yt{background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(15,23,42,.85));border:1px solid rgba(239,68,68,.2);border-radius:16px;padding:26px;position:relative;overflow:hidden}
+  .yt::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ef4444,#f97316)}
+  .yt .ftag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#fca5a5;margin-bottom:12px}
+  .yt h3{font-size:17px;font-weight:800;color:#f1f5f9;margin-bottom:10px;line-height:1.4}
+  .yt .desc{font-size:13px;color:#94a3b8;line-height:1.7;margin-bottom:16px}
+  .yt .meta{display:flex;gap:16px;font-size:12px;color:#64748b}
+  .yt .meta span{display:flex;align-items:center;gap:4px}
+  .yt .outline{margin-top:16px;padding-top:16px;border-top:1px solid rgba(239,68,68,.1)}
+  .yt .otitle{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#fca5a5;margin-bottom:10px}
+  .yt .outline ol{list-style:none;counter-reset:o}
+  .yt .outline li{counter-increment:o;font-size:13px;color:#94a3b8;padding:5px 0;display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+  .yt .outline li::before{content:counter(o);background:rgba(239,68,68,.15);color:#fca5a5;font-size:10px;font-weight:700;min-width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px}
+
+  /* SHORTS */
+  .shorts{display:flex;flex-direction:column;gap:12px}
+  .sh{background:linear-gradient(135deg,rgba(168,85,247,.06),rgba(15,23,42,.85));border:1px solid rgba(168,85,247,.15);border-radius:12px;padding:18px 20px;position:relative;overflow:hidden;transition:all .2s}
+  .sh:hover{border-color:rgba(168,85,247,.35);transform:translateY(-1px)}
+  .sh::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:linear-gradient(180deg,#a855f7,#6366f1)}
+  .sh .dtag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#a855f7;margin-bottom:6px}
+  .sh h4{font-size:14px;font-weight:700;color:#e2e8f0;margin-bottom:6px;line-height:1.3}
+  .sh .hook{font-size:12px;color:#c084fc;font-style:italic;margin-bottom:6px}
+  .sh p{font-size:12px;color:#94a3b8;line-height:1.5}
+  .sh .plats{display:flex;gap:6px;margin-top:8px}
+  .ptag{font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px}
+  .p-ig{background:rgba(236,72,153,.15);color:#f9a8d4}
+  .p-tt{background:rgba(255,255,255,.08);color:#e2e8f0}
+  .p-li{background:rgba(59,130,246,.15);color:#93c5fd}
+
+  /* CONCEPT TAG */
+  .concept-tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+  .ct-case{background:rgba(239,68,68,.12);color:#fca5a5}
+  .ct-concept{background:rgba(52,211,153,.12);color:#6ee7b7}
+
+  /* STATS */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+  .stat{background:rgba(15,23,42,.6);border:1px solid rgba(99,102,241,.1);border-radius:12px;padding:24px;text-align:center}
+  .stat .val{font-size:32px;font-weight:900;background:linear-gradient(135deg,#818cf8,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .stat .lbl{font-size:12px;color:#64748b;margin-top:4px}
+
+  /* RULES */
+  .rules{background:linear-gradient(135deg,rgba(52,211,153,.06),rgba(15,23,42,.8));border:1px solid rgba(52,211,153,.2);border-radius:16px;padding:28px 32px;margin-top:24px}
+  .rules h3{font-size:16px;font-weight:700;color:#34d399;margin-bottom:16px}
+  .rule{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+  .rule-n{background:rgba(52,211,153,.15);color:#34d399;font-weight:700;min-width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px}
+  .rule-t{font-size:14px;font-weight:600;color:#e2e8f0}
+  .rule-d{font-size:12px;color:#64748b;margin-top:2px}
+
+  /* FLOW */
+  .flow{background:rgba(15,23,42,.6);border:1px solid rgba(99,102,241,.1);border-radius:16px;padding:28px 32px;margin-bottom:24px}
+  .flow h3{font-size:16px;font-weight:700;color:#a5b4fc;margin-bottom:20px}
+  .flow-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .flow-step{text-align:center;padding:20px;border-radius:12px}
+  .fs-1{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.15)}
+  .fs-2{background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.15)}
+  .fs-3{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.15)}
+  .flow-step .icon{font-size:28px;margin-bottom:10px}
+  .flow-step .ftitle{font-size:13px;font-weight:700;margin-bottom:4px}
+  .fs-1 .ftitle{color:#fca5a5}
+  .fs-2 .ftitle{color:#d8b4fe}
+  .fs-3 .ftitle{color:#6ee7b7}
+  .flow-step .fdesc{font-size:11px;color:#64748b;line-height:1.5}
+  .flow-arrow{display:flex;align-items:center;justify-content:center;color:#475569;font-size:20px}
+
+  @media(max-width:900px){
+    .grid,.strategy,.flow-steps,.stats{grid-template-columns:1fr}
+    .header,.content-area,.tabs-wrap,.strategy{padding-left:20px;padding-right:20px;margin-left:0;margin-right:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Estrategia de Contenido — ZappyApps</h1>
+  <p class="header-sub">
+    <strong>Modelo:</strong> Mostrar tu trabajo. Cada YouTube es un caso real: "Construí este sistema de ventas para este negocio. Esto es lo que hice y por qué." Cada short es un concepto sacado de ese trabajo: "Por qué esto multiplica tus ventas." El contenido atrae a dueños de negocios de ticket alto que quieren lo mismo para ellos.
+  </p>
+</div>
+
+<!-- 2 FORMATOS -->
+<div class="strategy">
+  <div class="strat-card strat-yt">
+    <div class="tag">▶ YouTube — Vídeo largo</div>
+    <h2>Case Study: "Construí este sistema"</h2>
+    <p>
+      Eliges un negocio real (o un ejemplo hiperrealista). Muestras el ANTES: cómo captaba clientes, qué le fallaba. Diseñas el sistema completo: web de conversión, CRM, chatbot, secuencias, captación. Muestras el DESPUÉS: el sistema funcionando y los resultados. El espectador ve tu proceso de pensamiento, tu nivel, y quiere lo mismo.
+    </p>
+    <div class="freq">1 vídeo / semana — 10-20 min</div>
+  </div>
+  <div class="strat-card strat-short">
+    <div class="tag">◆ Short — Concepto específico</div>
+    <h2>1 concepto = 1 vídeo</h2>
+    <p>
+      Cada short explica UN concepto del sistema de ventas: por qué tener un CRM propio, qué pasa cuando automatizas el seguimiento, por qué el lead scoring cambia el juego, cómo una secuencia de emails convierte leads fríos en clientes. Cada concepto va anclado a un resultado real, no a teoría.
+    </p>
+    <div class="freq">3-4 shorts / semana — IG + TikTok + LinkedIn</div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('s1')">Semanas 1-4</button>
+    <button class="tab" onclick="switchTab('s2')">Semanas 5-8</button>
+    <button class="tab" onclick="switchTab('resumen')">Estrategia</button>
+  </div>
+</div>
+
+<div class="content-area">
+
+<!-- ============ SEMANAS 1-4 ============ -->
+<div id="tab-s1" class="tab-content active">
+
+<!-- SEMANA 1 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 1</div>
+    <div>
+      <div class="week-title">Sistema de ventas para una clínica de fisioterapia</div>
+      <div class="week-sub">Case study completo + 3 conceptos extraídos del caso</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Construí un sistema de ventas para una clínica de fisioterapia. Este fue el resultado.</h3>
+      <p class="desc">
+        Eliges una clínica de fisioterapia (real o ejemplo realista). Enseñas cómo captaba pacientes antes: boca a boca, Doctoralia pagando comisión, alguna red social sin estrategia. Analizas qué le faltaba. Diseñas su sistema completo en pantalla: web orientada a conversión, chatbot que responde y agenda citas solo, CRM donde gestiona todos los pacientes, secuencia automática de seguimiento post-visita. Muestras el resultado final funcionando y los números.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-20 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Esta clínica dependía de Doctoralia para conseguir pacientes. Les montamos un sistema de ventas propio. Mira qué pasó."</li>
+          <li><strong>EL ANTES:</strong> Cómo captaba pacientes, cuánto pagaba en comisiones, qué pasaba cuando alguien le buscaba en Google (mostrar en pantalla)</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> Qué le faltaba — no tenía forma de captar leads propios, no hacía seguimiento, dependía 100% de terceros</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Web de conversión con formulario inteligente (explicar POR QUÉ cada decisión de diseño). Chatbot IA que responde dudas y agenda citas automáticamente (demo en vivo). CRM personalizado donde ve todos los leads, su estado, y puede hacer seguimiento. Secuencia automática: después de la primera visita, el sistema envía mensaje de seguimiento para fidelizar.</li>
+          <li><strong>EL DESPUÉS:</strong> Sistema funcionando en demo completa — un lead entra, el chatbot le atiende, se agenda, aparece en el CRM con toda la info</li>
+          <li><strong>LOS NÚMEROS:</strong> Reducción de dependencia de Doctoralia, pacientes que llegan directos, ahorro en comisiones, tiempo ahorrado en gestión</li>
+          <li>Cierre: "Si tu negocio depende de terceros para conseguir clientes, podemos diseñar algo así para ti. Link en la descripción."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: CRM propio</span>
+        <h4>Por qué tu negocio necesita un CRM propio (y no Excel)</h4>
+        <div class="hook">Hook: "Tus leads están en WhatsApp, en email, en un Excel y en tu cabeza. Así es imposible vender bien."</div>
+        <p>Mostrar la diferencia real: el caos de gestionar leads sin sistema vs. un CRM donde ves todo de un vistazo. Pantalla partida con ejemplo real del caso de la clínica. No es teoría — es "mira, esto es lo que le construí y esto es lo que ve el dueño cada mañana".</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Chatbot que agenda solo</span>
+        <h4>Le puse un chatbot a esta clínica. Ahora agenda citas mientras el dueño duerme.</h4>
+        <div class="hook">Hook: "Son las 23:00. Un paciente escribe. A las 23:01 ya tiene cita agendada. Sin que nadie hiciera nada."</div>
+        <p>Demo real del chatbot funcionando. Mostrar la conversación: el paciente pregunta, el bot responde, le ofrece hora, se agenda. Todo automático. "Esto lo construí para esta clínica. Así funciona."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Dejar de depender de Doctoralia</span>
+        <h4>Esta clínica pagaba 300€/mes a Doctoralia. Ya no los necesita.</h4>
+        <div class="hook">Hook: "300€ al mes en comisiones. Cada mes. Y los pacientes ni siquiera eran suyos."</div>
+        <p>La cuenta real: cuánto pagaba en comisiones vs. cuánto le cuesta el sistema propio. El sistema se paga solo en 2 meses y después todo es ganancia directa. "Estos son los números reales."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEMANA 2 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 2</div>
+    <div>
+      <div class="week-title">Sistema de ventas para un despacho de abogados</div>
+      <div class="week-sub">Case study completo + 3 conceptos extraídos del caso</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Este despacho de abogados perdía el 70% de las consultas. Le construí un sistema que filtra y cierra solo.</h3>
+      <p class="desc">
+        Despacho de abogados que recibía consultas de todo tipo: gente que no podía pagar, casos fuera de su especialidad, curiosos. El abogado perdía horas filtrando. Le montas un sistema donde la web filtra antes de que llegue a él: formulario inteligente que pregunta tipo de caso, urgencia, presupuesto. El chatbot descarta los que no encajan. El CRM prioriza los que sí. Solo le llegan leads cualificados listos para contratar.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-18 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Este abogado dedicaba 10 horas a la semana a consultas que no le pagaban. Le construí un sistema que ahora filtra y le pasa solo los que valen la pena."</li>
+          <li><strong>EL ANTES:</strong> Cómo le llegaban leads (formulario genérico, email, llamadas), cuánto tiempo perdía filtrando, tasa de conversión ridícula</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> No tenía filtro, no tenía seguimiento, no sabía qué leads eran rentables hasta que ya había perdido 30 minutos con ellos</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Web con formulario de cualificación (explicar cada pregunta y POR QUÉ la incluyo). Chatbot que pre-filtra: si el caso no encaja, le deriva amablemente. Si encaja, agenda consulta. Lead scoring: el CRM puntúa cada lead y el abogado ve primero los de más valor. Secuencia de follow-up automática para los que no cerraron en la primera consulta.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo del flujo completo en pantalla</li>
+          <li><strong>LOS NÚMEROS:</strong> De dedicar 10h/semana a filtrar, a 2h/semana. De cerrar 1 de cada 10 consultas, a 1 de cada 3. Facturación que sube porque solo habla con gente que va a pagar.</li>
+          <li>Cierre: "Si tu negocio pierde tiempo con leads que no convierten, esto es exactamente lo que hacemos."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Lead Scoring</span>
+        <h4>Le puse lead scoring a este despacho. Ahora sabe qué cliente vale la pena antes de hablar con él.</h4>
+        <div class="hook">Hook: "Imagina saber ANTES de la llamada si ese cliente te va a pagar o te va a hacer perder el tiempo."</div>
+        <p>Mostrar el CRM con los leads puntuados. "Este tiene 85 puntos: caso urgente, presupuesto alto, encaja con la especialidad. Este tiene 20: solo quiere una opinión gratis." El abogado elige con quién hablar. Así de simple.</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Formulario inteligente</span>
+        <h4>Un formulario inteligente que filtra antes que tú</h4>
+        <div class="hook">Hook: "No todos los leads son iguales. ¿Por qué los tratas como si lo fueran?"</div>
+        <p>Mostrar el formulario en acción: las preguntas que hace, por qué cada una es importante, cómo el sistema decide si el lead pasa o no. "Esto no es un formulario de contacto genérico. Es un filtro de ventas."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Follow-up automático</span>
+        <h4>El 80% de las ventas se pierden por no hacer seguimiento. Este sistema lo hace solo.</h4>
+        <div class="hook">Hook: "Un lead te dijo 'lo pienso'. ¿Le volviste a escribir? Exacto, nadie lo hace."</div>
+        <p>Mostrar la secuencia automática: el lead no cerró, a los 2 días recibe un mensaje, a los 5 otro. Sin que el dueño haga nada. "De los leads que dicen 'lo pienso', el 30% cierra con el follow-up. Sin esta secuencia, son 0%."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEMANA 3 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 3</div>
+    <div>
+      <div class="week-title">Sistema de ventas para un consultor de negocio</div>
+      <div class="week-sub">Case study completo + 3 conceptos extraídos del caso</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Este consultor facturaba 3.000€/mes vendiendo por DM. Le monté un sistema y ahora factura 12.000€.</h3>
+      <p class="desc">
+        Consultor de negocio que vendía sus servicios de mentoría a 2.000€ por cliente. Captaba todo por Instagram DMs, sin sistema, sin seguimiento, sin página de ventas. Dependía de su energía diaria para vender. Le construyes: landing de ventas con copy de conversión, embudo de captación con lead magnet, secuencia de emails que calienta y cierra, CRM donde gestiona pipeline completo, y sistema de reserva de llamadas de venta automatizado.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-20 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Este consultor vendía servicios de 2.000€ por DMs de Instagram. Todo manual. Le construí un sistema que ahora le cierra ventas mientras graba contenido."</li>
+          <li><strong>EL ANTES:</strong> Cómo vendía (DMs uno a uno), cuánto tiempo le costaba, techo de facturación por falta de sistema</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> No tenía embudo, no tenía seguimiento, perdía leads porque no podía responder a todos, no tenía landing de ventas</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Landing de ventas que explica su servicio y cualifica (POR QUÉ cada sección). Lead magnet + secuencia de emails que educan y calientan. Sistema de reserva de "llamada de claridad" automatizado. CRM con pipeline visual: lead → calentado → llamada agendada → propuesta → cerrado. Dashboard donde ve cuánto tiene en pipeline y qué hacer cada día.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo completa del flujo — alguien descarga el lead magnet, recibe emails, agenda llamada, el consultor lo ve en su CRM listo para cerrar</li>
+          <li><strong>LOS NÚMEROS:</strong> De 1-2 clientes/mes a 5-6 con el mismo esfuerzo. Facturación × 4. Tiempo vendiendo: de 3h/día a 45min/día.</li>
+          <li>Cierre: "Si vendes servicios de alto valor y todavía lo haces todo manual, esto es lo que te falta."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Embudo de ventas</span>
+        <h4>Por qué vender por DMs tiene un techo (y cómo romperlo)</h4>
+        <div class="hook">Hook: "Vendes por DMs. Bien. ¿Pero cuántos leads puedes atender al día? 10, 15, 20 como mucho. Ese es tu techo."</div>
+        <p>El problema real de vender manual: tiene techo porque depende de tu tiempo. Un embudo vende mientras tú haces otras cosas. "Este consultor pasó de 15 DMs al día a un embudo que le trae 5-6 leads cualificados a la semana sin tocar Instagram."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Secuencia de emails</span>
+        <h4>Esta secuencia de 5 emails convierte leads fríos en llamadas de venta</h4>
+        <div class="hook">Hook: "Un desconocido descarga tu guía. 5 emails después, te pide una llamada de venta. ¿Magia? No. Sistema."</div>
+        <p>Explicar la lógica de la secuencia: email 1 entrega valor, email 2 genera confianza, email 3 presenta el problema, email 4 muestra la solución, email 5 invita a la llamada. "Esto es exactamente lo que le monté a este consultor. Así funciona."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Pipeline visual</span>
+        <h4>Así ve su pipeline de ventas cada mañana este consultor</h4>
+        <div class="hook">Hook: "Abre el panel. Ve que tiene 3 llamadas agendadas, 2 propuestas pendientes y 12.000€ en pipeline. Antes no tenía ni idea de cuánto iba a facturar."</div>
+        <p>Screencast del CRM con el pipeline. Mostrar las columnas: lead nuevo → contactado → llamada agendada → propuesta enviada → cerrado. "Esto lo ve cada mañana. Sabe exactamente qué hacer y cuánto va a facturar."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEMANA 4 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 4</div>
+    <div>
+      <div class="week-title">Sistema de ventas para una academia de formación</div>
+      <div class="week-sub">Case study completo + 3 conceptos extraídos del caso</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Esta academia vendía cursos de 1.500€ a puerta fría. Le monté un sistema que precalienta y cierra.</h3>
+      <p class="desc">
+        Academia de formación profesional que vende programas de 1.500€. Antes: publicidad en Meta Ads que lleva a una landing genérica, llamada de venta en frío, tasa de cierre del 5%. Le montas un sistema completo: landing de ventas con prueba social, webinar automatizado como lead magnet, secuencia de emails post-webinar, sistema de reserva de llamada de venta, CRM con lead scoring que indica qué leads están más calientes, y seguimiento automatizado post-llamada.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-20 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Esta academia cerraba 1 de cada 20 llamadas de venta. Con el sistema que le monté, ahora cierra 1 de cada 4."</li>
+          <li><strong>EL ANTES:</strong> Tráfico frío directo a landing → llamada de venta con gente que no sabe ni quién eres → tasa de cierre del 5%</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> El lead no estaba caliente. Le pedían una llamada de venta a alguien que acababa de verles por primera vez. Necesitaba un proceso de calentamiento.</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Webinar automatizado que educa y genera confianza (POR QUÉ funciona). Secuencia post-webinar: 3 emails que refuerzan dolor + solución + prueba social. Sistema de reserva que solo muestra horarios cuando el lead ha visto el webinar. CRM con scoring: los que vieron el webinar completo + abrieron los 3 emails = lead caliente. Los demás reciben más nurturing.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo del flujo completo: anuncio → webinar → emails → el lead agenda → llega a la llamada ya educado y convencido</li>
+          <li><strong>LOS NÚMEROS:</strong> Tasa de cierre del 5% → 25%. Coste por adquisición cae un 60%. Facturación se triplica con el mismo presupuesto de ads.</li>
+          <li>Cierre: "Si vendes formación o servicios de alto valor y tus llamadas de venta no cierran, el problema no eres tú. Es que el lead llega frío."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Precalentamiento de leads</span>
+        <h4>Si tu lead llega frío a la llamada, no es culpa tuya. Es culpa del sistema.</h4>
+        <div class="hook">Hook: "Le llamas. No sabe quién eres. Le explicas todo desde cero. Dice 'lo pienso'. ¿Te suena?"</div>
+        <p>El concepto de calentar un lead antes de la llamada de venta. Si llega frío, tú tienes que hacer todo el trabajo de convencer en 30 minutos. Si llega caliente, llega medio vendido. La diferencia es un sistema de precalentamiento.</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Webinar automatizado</span>
+        <h4>Un webinar que se reproduce solo y te genera llamadas de venta cada semana</h4>
+        <div class="hook">Hook: "Grabé un webinar UNA vez. Lleva 3 meses generando llamadas de venta en automático."</div>
+        <p>Cómo funciona un webinar automatizado: lo grabas una vez, el sistema lo envía a cada lead nuevo, los que llegan al final y quieren más → agendan llamada. "Esto le monté a esta academia. El webinar se reproduce solo y las llamadas siguen llegando."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Coste por adquisición</span>
+        <h4>Mismo presupuesto de ads. 3× más clientes. La diferencia es el sistema detrás.</h4>
+        <div class="hook">Hook: "No es cuánto gastas en publicidad. Es qué pasa con ese lead DESPUÉS de hacer clic."</div>
+        <p>El dinero en ads es el mismo. Lo que cambia es el recorrido del lead después del clic. Sin sistema: landing → llamada fría → no cierra. Con sistema: webinar → emails → llamada caliente → cierra. Mismo gasto, 3× resultado.</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ============ SEMANAS 5-8 ============ -->
+<div id="tab-s2" class="tab-content">
+
+<!-- SEMANA 5 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 5</div>
+    <div>
+      <div class="week-title">Sistema de ventas para una empresa de reformas</div>
+      <div class="week-sub">Case study completo + 3 conceptos</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Esta empresa de reformas captaba clientes con una tarjeta de visita y una web muerta. Mira su sistema ahora.</h3>
+      <p class="desc">
+        Empresa de reformas con ticket medio de 8.000-15.000€. Captaban clientes solo por referidos y una web que era un escaparate sin vida. Le montas: landing de presupuesto con calculadora interactiva, chatbot que precualifica por tipo de reforma y presupuesto, galería de proyectos anteriores con resultados, CRM que trackea cada lead desde la primera visita hasta el cierre, y secuencia de email con portfolio personalizado según el tipo de reforma que buscan.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-18 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Una empresa de reformas que factura 8.000€ por proyecto y captaba clientes con tarjetas de visita. Así cambió todo."</li>
+          <li><strong>EL ANTES:</strong> Web estática de 2019, sin formulario, sin portfolio visual, solo un teléfono. Los leads venían por boca a boca exclusivamente.</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> No tenía forma de captar leads online. No tenía forma de mostrar su trabajo de manera convincente. No hacía seguimiento.</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Calculadora de presupuesto interactiva (el cliente pone tipo de reforma, m², y recibe estimación → captura lead). Galería de antes/después con filtros por tipo de reforma. Chatbot que pregunta qué necesita y le muestra proyectos similares. CRM con pipeline específico para reformas: presupuesto solicitado → visita a obra → presupuesto enviado → seguimiento → firmado.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo del flujo completo</li>
+          <li><strong>LOS NÚMEROS:</strong> De 2-3 presupuestos al mes a 10-12. De cerrar 1 al mes a cerrar 3-4. La calculadora de presupuesto sola genera el 60% de los leads.</li>
+          <li>Cierre: "Si vendes servicios de ticket alto y no tienes un sistema que capture y cualifique leads, estás dejando cientos de miles de euros al año sin tocar."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Calculadora interactiva como captación</span>
+        <h4>Le puse una calculadora de presupuesto en la web. Ahora capta más leads que su equipo comercial.</h4>
+        <div class="hook">Hook: "El visitante pone qué necesita, los m², y recibe una estimación. A cambio, tú tienes su contacto y sabes exactamente qué quiere."</div>
+        <p>Mostrar la calculadora en acción. El visitante interactúa, recibe valor (estimación), y el negocio recibe un lead hipercualificado. Win-win. "Esto genera el 60% de los leads de esta empresa."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Portfolio como herramienta de venta</span>
+        <h4>Tu portfolio no es un álbum de fotos. Es tu mejor vendedor.</h4>
+        <div class="hook">Hook: "La mayoría de negocios tienen un portfolio escondido en una pestaña que nadie visita. Así no vende."</div>
+        <p>Cómo convertir un portfolio pasivo en una herramienta de venta activa: filtros por tipo de proyecto, antes/después con datos, integrado en el flujo de captación. "Cuando el chatbot le muestra proyectos similares al suyo, la confianza sube de golpe."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Pipeline de ventas para servicios de ticket alto</span>
+        <h4>Si vendes a 8.000€, no puedes gestionar leads en la cabeza</h4>
+        <div class="hook">Hook: "3 presupuestos pendientes, 2 visitas a obra, 1 seguimiento que olvidaste. Resultado: dinero perdido."</div>
+        <p>Mostrar el pipeline visual: cada lead en su etapa, cuánto tiempo lleva ahí, qué acción toca. "Este dueño abre el CRM y sabe exactamente qué hacer hoy para cerrar los 45.000€ que tiene en pipeline."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEMANA 6 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 6</div>
+    <div>
+      <div class="week-title">Sistema de ventas para un coach de alto rendimiento</div>
+      <div class="week-sub">Case study completo + 3 conceptos</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Este coach vendía mentorías de 5.000€ una a una. Le monté un sistema que escala sin perder exclusividad.</h3>
+      <p class="desc">
+        Coach de alto rendimiento para directivos. Precio: 5.000€ por programa. Problema: vendía 100% por networking y referidos, limitado a 3-4 clientes al mes. Le construyes un sistema que mantiene la exclusividad pero escala: landing de aplicación (no "comprar", sino "aplicar" — filtra por nivel), secuencia de nurturing por email con contenido de valor, sistema de llamada estratégica, CRM con segmentación por tipo de directivo y tamaño de empresa.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-20 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Mentorías de 5.000€. Solo por networking. 3-4 clientes al mes. Este coach quería escalar sin perder exclusividad. Mira lo que le monté."</li>
+          <li><strong>EL ANTES:</strong> Captación 100% por LinkedIn y contactos personales. Buena facturación pero con techo. Sin sistema, si él no vende, nadie vende.</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> Necesitaba un sistema que atrajera directivos cualificados sin que pareciera "marketing masivo". La exclusividad era clave.</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Landing de APLICACIÓN (no de compra) — "Aplica para trabajar conmigo" genera exclusividad. Formulario que filtra por cargo, tamaño de empresa, facturación, objetivo. Secuencia de nurturing con contenido que solo un directivo valora. Sistema de "sesión estratégica" como paso previo al cierre. CRM segmentado: CEOs, directores, founders → cada segmento recibe comunicación diferente.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo del flujo. Un directivo aplica, el sistema le cualifica, recibe contenido específico para su nivel, agenda sesión estratégica, llega convencido de que quiere trabajar con el coach.</li>
+          <li><strong>LOS NÚMEROS:</strong> De 3-4 clientes/mes a 7-8 sin bajar el precio. Pipeline siempre lleno. El coach dedica su tiempo a dar el servicio, no a buscar clientes.</li>
+          <li>Cierre: "Si vendes servicios premium y quieres escalar sin perder la exclusividad, esto es exactamente lo que necesitas."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Landing de aplicación vs landing de compra</span>
+        <h4">"Aplica para trabajar conmigo" cierra más que "Compra mi servicio"</h4>
+        <div class="hook">Hook: "Si vendes a 5.000€, la gente no quiere un botón de 'comprar'. Quiere sentir que fue SELECCIONADA."</div>
+        <p>La psicología detrás de "aplicar": invierte la relación de poder. El cliente siente que es un privilegio trabajar contigo, no que tú le estás vendiendo. "Este cambio solo — de 'compra' a 'aplica' — subió la tasa de cierre un 40%."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Nurturing segmentado</span>
+        <h4>No todos tus leads son iguales. ¿Por qué les envías el mismo email?</h4>
+        <div class="hook">Hook: "Un CEO de una empresa de 50 empleados y un freelancer que factura 3.000€/mes reciben el mismo email. ¿Tiene sentido?"</div>
+        <p>Segmentación real: el CRM clasifica cada lead por su perfil y cada uno recibe contenido relevante para su nivel. "El CEO recibe casos de empresas como la suya. El director recibe otra cosa. Cada uno se siente entendido."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Escalar sin perder exclusividad</span>
+        <h4>Escalar ventas no significa bajar precio. Significa tener mejor sistema.</h4>
+        <div class="hook">Hook: "Si para vender más tienes que bajar el precio, el problema no es el precio. Es tu sistema de captación."</div>
+        <p>El dilema del servicio premium: quieres más clientes pero no quieres ser "masivo". La solución no es bajar el ticket — es tener un sistema que atraiga al perfil correcto en mayor volumen. "Este coach pasó de 3 a 8 clientes/mes. Mismo precio. Mejor sistema."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEMANA 7 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 7</div>
+    <div>
+      <div class="week-title">Sistema de ventas para una agencia de marketing</div>
+      <div class="week-sub">Case study completo + 3 conceptos</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Esta agencia cerraba 2 clientes al mes. Le reconstruí su sistema de captación y ahora cierra 8.</h3>
+      <p class="desc">
+        Agencia de marketing con servicios de 1.500-3.000€/mes. Captaba por referidos y propuestas en frío. Le construyes: página de casos de éxito interactiva, sistema de auditoría gratuita como lead magnet (suena familiar), embudo de nutrición, CRM con pipeline de agencia, y sistema de propuestas automatizadas que se generan a partir de los datos del formulario.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-18 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Una agencia de marketing que vende marketing... pero no tenía sistema de ventas propio. La ironía. Mira qué le construí."</li>
+          <li><strong>EL ANTES:</strong> Captación por referidos, propuestas en frío por email, web genérica sin diferenciación. 2 clientes nuevos al mes.</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> No tenía un sistema que mostrara su trabajo de forma convincente, no precualificaba leads, las propuestas se hacían manual y tardaban 2 días.</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Página de resultados con casos reales y métricas (no testimonios genéricos — datos). "Auditoría gratuita" como lead magnet: el potencial cliente responde preguntas sobre su negocio → el sistema genera un mini-informe automático → el lead queda impresionado y quiere hablar. CRM con pipeline: lead → auditoría enviada → reunión agendada → propuesta → cierre. Sistema de propuestas semi-automatizado: los datos del formulario rellenan el 70% de la propuesta.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo del flujo + el sistema de propuestas</li>
+          <li><strong>LOS NÚMEROS:</strong> De 2 clientes/mes a 8. Tiempo por propuesta: de 2 días a 2 horas. Tasa de cierre: del 15% al 35%.</li>
+          <li>Cierre: "El mejor sistema de ventas es el que le demuestra a tu cliente lo que haces ANTES de pedirle dinero."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Lead magnet que precualifica</span>
+        <h4>Una auditoría gratuita bien hecha vende más que 100 llamadas en frío</h4>
+        <div class="hook">Hook: "Le das algo gratis que le demuestra tu nivel. Cuando ve el resultado, no necesitas convencerle de nada."</div>
+        <p>El concepto de "trabajar antes de cobrar" como sistema. No es regalar trabajo — es tu mejor herramienta de venta. "Esta agencia cierra el 35% de las auditorías que envía. En frío cerraba el 5%."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Propuestas semi-automatizadas</span>
+        <h4>Esta agencia tarda 2 horas en hacer una propuesta que antes tardaba 2 días</h4>
+        <div class="hook">Hook: "2 días haciendo una propuesta para que te digan 'lo pienso'. ¿Y si tardaras 2 horas?"</div>
+        <p>Cómo funciona: los datos del formulario de cualificación alimentan automáticamente una plantilla de propuesta. El 70% se genera solo. Solo ajustas el 30% restante. Más propuestas en menos tiempo = más oportunidades de cierre.</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Mostrar resultados con datos, no con palabras</span>
+        <h4">"Somos los mejores" no vende. "+180% de leads para este cliente" sí.</h4>
+        <div class="hook">Hook: "Si tu página de resultados dice 'clientes satisfechos' en vez de '3× más leads en 90 días', nadie te va a creer."</div>
+        <p>La diferencia entre prueba social genérica y prueba social con datos. Mostrar el antes/después de la página de resultados. "Cuando cambiamos 'testimonios' por 'casos con datos reales', la tasa de conversión subió un 70%."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEMANA 8 -->
+<div class="week">
+  <div class="week-head">
+    <div class="week-num">SEMANA 8</div>
+    <div>
+      <div class="week-title">Sistema de ventas para una inmobiliaria de lujo</div>
+      <div class="week-sub">Case study completo + 3 conceptos</div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="yt">
+      <div class="ftag">▶ YouTube — Case Study</div>
+      <span class="concept-tag ct-case">Caso real</span>
+      <h3>Esta inmobiliaria de lujo captaba leads con Idealista. Le monté un sistema que le trae compradores directos con 500K+ de presupuesto.</h3>
+      <p class="desc">
+        Inmobiliaria especializada en propiedades de 500K-2M€. Dependía de portales como Idealista y Fotocasa que le traían curiosos con presupuesto de 200K. Le montas: web de captación con filtro por presupuesto, contenido exclusivo para compradores cualificados (guía de inversión inmobiliaria), sistema de nurturing que educa sobre el mercado, chatbot que precualifica por capacidad económica, CRM con segmentación por tipo de comprador y rango de inversión.
+      </p>
+      <div class="meta">
+        <span>⏱ 15-20 min</span>
+        <span>🖥 Grabación de pantalla + cámara</span>
+      </div>
+      <div class="outline">
+        <div class="otitle">Estructura</div>
+        <ol>
+          <li>Hook: "Esta inmobiliaria vende propiedades de medio millón. Y captaba clientes en Idealista compitiendo con pisos de 150K. Le construí un sistema que atrae directamente al comprador correcto."</li>
+          <li><strong>EL ANTES:</strong> Portales inmobiliarios masivos, leads de baja calidad, muchas visitas con gente sin presupuesto real</li>
+          <li><strong>EL DIAGNÓSTICO:</strong> El canal de captación no filtraba. Atraía volumen pero no calidad. El agente perdía 15h/semana con visitas que no iban a comprar.</li>
+          <li><strong>LO QUE CONSTRUÍ:</strong> Web propia con filtro de presupuesto integrado (solo ves propiedades en tu rango). Lead magnet: "Guía de inversión inmobiliaria en [zona]" → captura al comprador con intención real. Chatbot que pregunta: presupuesto, tipo de propiedad, plazo de compra → filtra. CRM con scoring por capacidad económica: los de 500K+ van directo al agente senior. Secuencia de emails con propiedades personalizadas según el perfil.</li>
+          <li><strong>EL DESPUÉS:</strong> Demo: un comprador entra, el sistema le cualifica, ve solo lo relevante, el agente recibe un lead con toda la info lista</li>
+          <li><strong>LOS NÚMEROS:</strong> De 50 leads/mes con 10% cualificados a 20 leads/mes con 70% cualificados. Menos volumen, mucha más calidad. Ventas mensuales: ×2.</li>
+          <li>Cierre: "Si vendes algo de ticket muy alto y te llegan leads que no pueden pagarlo, no necesitas más leads. Necesitas mejores leads. Y eso es un problema de sistema."</li>
+        </ol>
+      </div>
+    </div>
+    <div class="shorts">
+      <div class="sh">
+        <div class="dtag">Short #1 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Menos leads, más calidad</span>
+        <h4>50 leads basura vs 20 leads cualificados. ¿Qué prefieres?</h4>
+        <div class="hook">Hook: "Más leads no es mejor. 50 leads de los que 5 compran es peor que 20 de los que 14 compran."</div>
+        <p>El mito del volumen. En ticket alto, calidad > cantidad. Un sistema bien montado atrae MENOS gente pero la correcta. "Esta inmobiliaria redujo leads un 60% y duplicó ventas."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #2 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Contenido como filtro de calidad</span>
+        <h4>Un PDF bien hecho filtra mejor que 100 preguntas en un formulario</h4>
+        <div class="hook">Hook: "Si alguien descarga tu 'Guía de inversión en propiedades de 500K+', ¿qué sabes de esa persona? Que tiene dinero y quiere invertir."</div>
+        <p>El lead magnet como filtro invisible. El tipo de contenido que ofreces atrae al tipo de persona que quieres. Contenido premium → leads premium. "No necesitas preguntar '¿cuál es tu presupuesto?' si tu lead magnet ya filtró por ti."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+      <div class="sh">
+        <div class="dtag">Short #3 — Concepto</div>
+        <span class="concept-tag ct-concept">Concepto: Personalización automática</span>
+        <h4>Cada lead recibe propiedades distintas. Automáticamente. Sin que tú hagas nada.</h4>
+        <div class="hook">Hook: "El lead dice que busca ático en zona centro con 500K de presupuesto. Al día siguiente recibe un email con 3 áticos en zona centro de 450-550K. ¿Magia?"</div>
+        <p>Segmentación + automatización. El CRM guarda las preferencias y el sistema envía contenido relevante. "El agente no hizo nada. El sistema lo hizo solo. Y ese lead agendó visita."</p>
+        <div class="plats"><span class="ptag p-ig">Instagram</span><span class="ptag p-tt">TikTok</span><span class="ptag p-li">LinkedIn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ============ RESUMEN / ESTRATEGIA ============ -->
+<div id="tab-resumen" class="tab-content">
+
+  <div class="stats">
+    <div class="stat"><div class="val">8</div><div class="lbl">Case Studies (YouTube)</div></div>
+    <div class="stat"><div class="val">24</div><div class="lbl">Conceptos (Shorts)</div></div>
+    <div class="stat"><div class="val">~5h</div><div class="lbl">Producción semanal</div></div>
+    <div class="stat"><div class="val">24</div><div class="lbl">Conceptos únicos explicados</div></div>
+  </div>
+
+  <div class="flow">
+    <h3>Cómo funciona: 1 caso → 3 conceptos</h3>
+    <div class="flow-steps">
+      <div class="flow-step fs-1">
+        <div class="icon">🎬</div>
+        <div class="ftitle">1. Eliges un negocio</div>
+        <div class="fdesc">Puede ser un cliente real, un ejemplo que tú mismo construyes, o un negocio que analizas públicamente. Tú diseñas el sistema completo.</div>
+      </div>
+      <div class="flow-step fs-2">
+        <div class="icon">▶</div>
+        <div class="ftitle">2. Grabas el case study (YouTube)</div>
+        <div class="fdesc">Muestras el antes, lo que construiste y por qué, y el resultado. El espectador ve tu nivel, tu proceso de pensamiento, y quiere lo mismo.</div>
+      </div>
+      <div class="flow-step fs-3">
+        <div class="icon">◆</div>
+        <div class="ftitle">3. Extraes 3 conceptos (Shorts)</div>
+        <div class="fdesc">De cada caso sacas 3 conceptos específicos (CRM, chatbot, lead scoring, email sequences...) y haces un short por cada uno anclado al caso real.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:rgba(15,23,42,.6);border:1px solid rgba(99,102,241,.1);border-radius:16px;padding:28px 32px;margin-bottom:24px">
+    <h3 style="font-size:16px;font-weight:700;color:#a5b4fc;margin-bottom:16px">Conceptos que vas cubriendo semana a semana</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+      <div style="background:rgba(52,211,153,.06);border:1px solid rgba(52,211,153,.1);border-radius:8px;padding:12px">
+        <div style="font-size:11px;font-weight:700;color:#6ee7b7;margin-bottom:6px">CAPTACIÓN</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.6">CRM propio · Chatbot IA · Formulario inteligente · Calculadora interactiva · Landing de aplicación · Lead magnet como filtro</div>
+      </div>
+      <div style="background:rgba(168,85,247,.06);border:1px solid rgba(168,85,247,.1);border-radius:8px;padding:12px">
+        <div style="font-size:11px;font-weight:700;color:#d8b4fe;margin-bottom:6px">CONVERSIÓN</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.6">Lead scoring · Secuencia de emails · Precalentamiento · Follow-up automático · Propuestas semi-automatizadas · Nurturing segmentado</div>
+      </div>
+      <div style="background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.1);border-radius:8px;padding:12px">
+        <div style="font-size:11px;font-weight:700;color:#fca5a5;margin-bottom:6px">GESTIÓN Y ESCALA</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.6">Pipeline visual · Embudo de ventas · Webinar automatizado · Portfolio como herramienta · Personalización automática · Resultados con datos</div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:#64748b;margin-top:14px;line-height:1.6">En 8 semanas cubres 24 conceptos distintos. Cada uno anclado a un caso real, no a teoría. Al cabo de 2 meses, cualquiera que te siga entiende perfectamente qué haces, cómo lo haces, y qué resultados genera.</p>
+  </div>
+
+  <div class="rules">
+    <h3>El filtro de cada pieza de contenido</h3>
+    <div class="rule">
+      <span class="rule-n">1</span>
+      <div>
+        <div class="rule-t">¿Estoy mostrando MI trabajo o dando consejos genéricos?</div>
+        <div class="rule-d">Si es un consejo que podría dar cualquiera, no lo publiques. Si es algo que construiste tú para un negocio real, sí.</div>
+      </div>
+    </div>
+    <div class="rule">
+      <span class="rule-n">2</span>
+      <div>
+        <div class="rule-t">¿Esto atraería a un dueño de negocio de ticket alto o a un curioso?</div>
+        <div class="rule-d">El contenido no busca viralidad. Busca que 500 personas correctas lo vean y 5 te escriban. Mejor 5 leads de 5.000€ que 50.000 views de nadie.</div>
+      </div>
+    </div>
+    <div class="rule">
+      <span class="rule-n">3</span>
+      <div>
+        <div class="rule-t">¿Cada concepto está anclado a un resultado real?</div>
+        <div class="rule-d">Nunca "el lead scoring es importante". Siempre "le puse lead scoring a este despacho y pasó de cerrar 1/10 a 1/3". El concepto SIN resultado es teoría. El concepto CON resultado es prueba.</div>
+      </div>
+    </div>
+    <div class="rule">
+      <span class="rule-n">4</span>
+      <div>
+        <div class="rule-t">¿Estoy enseñando a la competencia o atrayendo a mi cliente?</div>
+        <div class="rule-d">"Cómo montar un CRM" = competencia. "Le puse un CRM a este negocio y ahora factura el doble" = cliente. Siempre la segunda.</div>
+      </div>
+    </div>
+    <div class="rule">
+      <span class="rule-n">5</span>
+      <div>
+        <div class="rule-t">¿El CTA es natural o forzado?</div>
+        <div class="rule-d">"Si tu negocio está en esta situación, te ayudamos a ver cómo sería tu sistema." No "cómpranos". El caso real ya vendió por ti — solo necesitas abrir la puerta.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<script>
+function switchTab(id){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

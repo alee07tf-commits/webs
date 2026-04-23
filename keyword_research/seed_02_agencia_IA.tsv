@@ -1,0 +1,23 @@
+seed: agencia IA
+db: es | currency: eur
+total_keywords: 148
+total_vol: 3010
+avg_kd: 21
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+agencia ia|390|51|1.6|I
+agencia de ia|320|48|1.61|I
+agencia de automatización de ia|110|35|3.27|C
+agencias de ia|110|45|1.51|C
+agencia ia asturias|90|2||I
+agencias ia|90|55|1.63|C
+mwlb - agencia de ia y growth marketing|90|17||I T
+agencia automatizacion ia|70|7|2.65|C
+agencia de ia de voz|50|6||I
+agencia de voz ia|50|7||I
+agencia ia albacete|50|||n/d
+agencia seo con ia|50|8||I
+agencia automatizaciones ia zaragoza|40|||I C
+agencia con ia|40|||n/d
+agencia de marketing ia|40||1.95|C

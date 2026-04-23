@@ -1,0 +1,24 @@
+seed: desarrollo IA
+db: es | currency: eur
+total_keywords: 247
+total_vol: 2720
+avg_kd: 33
+insight: Mucho ruido educativo (master, curso, python). BOFU real: "desarrollo de software con ia a medida" pero solo 40 vol
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+desarrollo de ia|70|62|2.23|I
+desarrollo ia|70|59|1.64|I
+herramientas de desarrollo de agentes de ia|70|||n/d
+desarrolladores ia|50|19|1.64|I
+desarrollador de ia|40|22|1.94|I
+desarrollador de ia vs ingeniero de ia|40|||n/d
+desarrollar imagenes con ia|40|70||I
+desarrollo asistente ia hoteles|40|||n/d
+desarrollo de software con ia a medida|40|||n/d
+master de ia para desarrolladores|40|||n/d
+master ia para desarrolladores|40|14||I
+python para ciencia de datos ia y desarrollo ibm|40|27||I
+desarrollador ia|30|19|2.07|I
+desarrolladores de ia|30||2.23|I
+desarrollo agente ia atención al cliente|30|||n/d

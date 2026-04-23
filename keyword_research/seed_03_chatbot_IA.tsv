@@ -1,0 +1,23 @@
+seed: chatbot IA
+db: es | currency: eur
+total_keywords: 268
+total_vol: 3110
+avg_kd: 47
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+chatbot ia|390|70|0.97|I
+chatbots ia|260|58|0.98|I
+ia chatbot|210|76|0.55|I
+whatsapp permitirá crear chatbots personalizados con ia|170|26||I
+chatbot con ia|140|51|1.97|I
+chatbot de ia|70|67|0.86|I
+chatbots con ia|70|58|1.97|I
+chatbots impulsados por ia|70|21||C
+ia chatbots|70|62|0.55|C
+plataforma de chatbot de ia empresarial|50|||n/d
+whatsapp política chatbots ia|50|16||I
+chatbot de ia líder para preguntas de clientes|40|18||I
+chatbot ia español|40||0.63|n/d
+ask ai chatbot ia en español|30|||n/d
+chatbot ia clínicas dentales|30|||n/d

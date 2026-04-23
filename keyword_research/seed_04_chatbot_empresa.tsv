@@ -1,0 +1,24 @@
+seed: chatbot empresa
+db: es | currency: eur
+total_keywords: 123
+total_vol: 1000
+avg_kd: 15 (BAJO = OPORTUNIDAD)
+insight: CPC 4-6€ + KD bajo = BOFU comercial con alto poder adquisitivo B2B
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+chatbots para empresas|210|17|5.66|C
+chatbot para empresas|140|27|4.3|C
+chatbot empresas|50|21|4.68|C
+chatbots personalizados para empresas|50|5||C
+empresa de desarrollo de chatbots|40|6||I C
+implementación de chatbots para empresas|40|8||I
+chatbot ia para empresas|30|||n/d
+chatbot para empresa de servicios|30|||n/d
+chatbots empresas|30|25|4.68|I
+empresa de desarrollo de chatbots y avatares conversacionales|30|||n/d
+beneficios de un chatbot en una empresa|20|||n/d
+chatbot para empresas de logística|20|||n/d
+chatbot para mi empresa|20||6.61|n/d
+chatbot whatsapp para empresas|20|||n/d
+chatbots ejemplos de empresas|20|||n/d

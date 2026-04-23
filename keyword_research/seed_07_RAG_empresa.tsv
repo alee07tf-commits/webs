@@ -1,0 +1,6 @@
+seed: RAG empresa
+db: es | currency: eur
+total_keywords: 27 (RUIDO - no hay demanda real)
+insight: TÉRMINO TÉCNICO IGNORADO POR EL MERCADO. Los resultados son apellidos ("raga", "ragar") no el concepto. SEÑAL: Vender RAG explícitamente como servicio NO es viable en SEO hispanohablante. Hay que venderlo empaquetado bajo otros términos ("chatbot empresa con datos", "asistente IA para documentación", etc.)
+
+DECISIÓN ESTRATÉGICA: Eliminar RAG como término público. Mantener como capability interna que se entrega bajo nombres comerciales del lado del cliente.

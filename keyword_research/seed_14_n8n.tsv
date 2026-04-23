@@ -1,0 +1,24 @@
+seed: n8n
+db: es | currency: eur
+total_keywords: 17293 (GIGANTE)
+total_vol: 212390
+avg_kd: 38
+insight: AUDIENCIA TÉCNICA (developers), NO decisor B2B. Ideal para contenidos TOFU técnicos que capten autoridad. "n8n que es" 1300 vol KD 24 = pura captación. "rag anything n8n" 590 vol confirma que RAG sí se busca via n8n (no solo). NO COMERCIAL directamente, pero útil para autoridad y magnet de leads técnicos.
+extracted: top 15 by volume
+
+kw|vol|kd|cpc|intent
+n8n|49500|85|0.59|I N
+n8n que es|1300|24|0.47|I
+n8n pricing|1000|34|1.25|N
+n8n templates|1000|45|1.13|N
+crawlbase mcp n8n|720|29||I T
+n8n docker|720|44|2.64|I
+n8n github|720|77|1.54|N
+n8n icp linkedin|720|30||I T
+pdf to html n8n|720|26||I T
+que es n8n|720|28|0.43|I
+n8n motion graphics|590|27||I T
+pdf hyperlink n8n|590|27||N T
+rag anything n8n|590|40||N T
+create an api n8n|480|40||I N
+n8n logo|480|43||I

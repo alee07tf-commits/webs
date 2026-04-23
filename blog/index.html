@@ -1,534 +1,273 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="oCtnfh5mvtglGTDiyMi2ADmvcZUvNXhOFE-V9O6bl0U" />
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q73Z1TK7LS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Q73Z1TK7LS');
-    </script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q73Z1TK7LS');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Marketing Digital y Ventas | ZappyApps</title>
-    <meta name="description" content="Artículos sobre diseño web, automatización con IA y estrategias de captación de leads para PYMEs. Consejos prácticos para vender más online.">
+    <title>Blog de IA para Empresas · ZappyApps</title>
+    <meta name="description" content="Artículos sobre IA aplicada a empresas: chatbots, agentes IA, automatizaciones, Kit Consulting, n8n y stack práctico. Actualizados 2026.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://zappyapps.tech/blog">
-    <meta property="og:title" content="Blog de Marketing Digital y Ventas | ZappyApps">
-    <meta property="og:description" content="Artículos sobre diseño web, automatización con IA y estrategias de captación de leads para PYMEs.">
-    <meta property="og:image" content="https://zappyapps.tech/og-image.svg">
+    <link rel="canonical" href="https://zappyapps.tech/blog/">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zappyapps.tech/blog">
-    <meta property="og:site_name" content="ZappyApps">
-    <!-- Twitter -->
+    <meta property="og:url" content="https://zappyapps.tech/blog/">
+    <meta property="og:title" content="Blog de IA para Empresas · ZappyApps">
+    <meta property="og:description" content="Artículos sobre IA aplicada a empresas: chatbots, agentes IA, automatizaciones.">
+    <meta property="og:image" content="https://zappyapps.tech/og-image.svg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog de Marketing Digital y Ventas | ZappyApps">
-    <meta name="twitter:description" content="Artículos sobre diseño web, automatización con IA y estrategias de captación de leads para PYMEs.">
-    <meta name="twitter:image" content="https://zappyapps.tech/og-image.svg">
-<link rel="preconnect" href="https://unpkg.com">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Blog","name":"Blog de IA para Empresas","description":"Artículos sobre IA aplicada a empresas","url":"https://zappyapps.tech/blog/"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://zappyapps.tech/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://zappyapps.tech/blog/"}]}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.460.0" defer></script>
     <link rel="stylesheet" href="/tailwind.min.css">
-<script src="https://unpkg.com/lucide@0.460.0" defer></script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zappyapps.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://zappyapps.tech/blog" }
-        ]
-    }
-    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; }
+      body{background-color:#050508;color:#fff;overflow-x:hidden}
+      i[data-lucide]{width:24px;height:24px;display:inline-block;color:#3B82F6;transition:transform .3s ease,color .3s ease}
+      .text-primary i[data-lucide],.text-emerald-400 i[data-lucide],.text-red-400 i[data-lucide],.text-yellow-500 i[data-lucide]{color:inherit}
+      .ambient-glow{position:absolute;width:600px;height:600px;max-width:100vw;background:radial-gradient(circle,rgba(59,130,246,0.15) 0%,rgba(5,5,8,0) 70%);filter:blur(80px);z-index:-1;pointer-events:none}
+      .bg-grid{background-size:40px 40px;background-image:linear-gradient(to right,rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,0.03) 1px,transparent 1px);mask-image:linear-gradient(to bottom,transparent,black 40%,black 70%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,black 40%,black 70%,transparent)}
+      .text-gradient{background:linear-gradient(to right,#3B82F6,#818CF8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+      .card-hover-effect{transition:all .3s ease;border:1px solid rgba(255,255,255,0.06)}
+      .card-hover-effect:hover{transform:translateY(-4px);border-color:rgba(59,130,246,0.4);box-shadow:0 8px 32px rgba(59,130,246,0.15)}
+      .btn-premium{position:relative;transition:all .4s cubic-bezier(.175,.885,.32,1.275);overflow:hidden}
+      .btn-premium:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 10px 25px -5px rgba(59,130,246,0.4),0 8px 10px -6px rgba(59,130,246,0.4)}
     </style>
 </head>
-<body class="bg-background text-white min-h-screen">
+<body class="antialiased font-body">
 
-    <!-- Nav -->
-    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 border-b border-white/5 backdrop-blur-md bg-[#050508]/80">
-      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="/" class="text-2xl font-sans font-bold text-white tracking-tight hover:opacity-90 transition-opacity">ZappyApps</a>
-        <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-secondary">
-          <div class="relative group">
-            <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">Servicios
-              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="absolute top-full left-0 mt-1 w-56 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-              <a href="/servicios/diseno-web-estrategico" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Diseño Web Estratégico</a>
-              <a href="/servicios/chatbot-ia" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Chatbot IA</a>
-              <a href="/servicios/captacion-leads" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Captación de Leads</a>
-              <a href="/servicios/lead-scoring" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Lead Scoring</a>
-              <a href="/servicios/funnels-conversion" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Funnels de Conversión</a>
-              <a href="/servicios/crm-personalizado" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">CRM Personalizado</a>
-              <a href="/servicios/optimizacion-continua" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Optimización Continua</a>
-              <a href="/servicios/soporte-mantenimiento" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Soporte y Mantenimiento</a>
-              <a href="/servicios/landing-pages" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Landing Pages</a>
-              <a href="/servicios/seo-local" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">SEO Local</a>
-              <div class="border-t border-white/5 mt-1 pt-1">
-                <a href="/servicios/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5 transition-colors">Ver todos &rarr;</a>
-              </div>
-            </div>
-          </div>
-          <div class="relative group">
-            <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">Sectores
-              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="absolute top-full left-0 mt-1 w-52 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-              <a href="/para/restaurantes" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Restaurantes</a>
-              <a href="/para/clinicas" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Clínicas</a>
-              <a href="/para/abogados" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Abogados</a>
-              <a href="/para/coaches" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Coaches</a>
-              <a href="/para/ecommerce" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">eCommerce</a>
-              <a href="/para/inmobiliarias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Inmobiliarias</a>
-              <a href="/para/gimnasios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Gimnasios</a>
-              <a href="/para/academias" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Academias</a>
-              <a href="/para/clinicas-dentales" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Clínicas Dentales</a>
-              <a href="/para/consultoras" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Consultoras</a>
-              <a href="/para/veterinarios" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Veterinarios</a>
-              <a href="/para/centros-estetica" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5 transition-colors">Centros Estética</a>
-              <div class="border-t border-white/5 mt-1 pt-1">
-                <a href="/para/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5 transition-colors">Ver todos &rarr;</a>
-              </div>
-            </div>
-          </div>
-          <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
-          <a href="/comparar/" class="hover:text-primary transition-colors">Comparativas</a>
-          <a href="/precios" class="hover:text-primary transition-colors">Precios</a>
-          <a href="/sobre-nosotros" class="hover:text-primary transition-colors">Sobre Nosotros</a>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="/contacto/" class="hidden md:inline-flex bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_24px_rgba(59,130,246,0.5)]">Contacto</a>
-          <button id="mobile-menu-btn" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" aria-label="Menu" onclick="toggleMobileMenu()">
-            <span class="block w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="ham-top"></span>
-            <span class="block w-6 h-0.5 bg-white transition-all duration-300" id="ham-mid"></span>
-            <span class="block w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="ham-bot"></span>
+  <!-- Nav -->
+  <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 border-b border-white/5 backdrop-blur-md bg-[#050508]/80">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/" class="text-2xl font-sans font-bold text-white tracking-tight hover:opacity-90 transition-opacity">ZappyApps</a>
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-secondary">
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">Servicios
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
-        </div>
-      </div>
-      <div id="mobile-menu" class="lg:hidden hidden bg-[#0a0a12] border-t border-white/5 max-h-[calc(100vh-5rem)] overflow-y-auto">
-        <div class="px-6 py-6 space-y-1">
-          <div>
-            <button onclick="toggleMobileAccordion('mob-servicios')" class="w-full flex items-center justify-between py-3 text-white font-medium text-base">Servicios <svg class="w-4 h-4 text-secondary transition-transform" id="mob-servicios-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
-            <div id="mob-servicios" class="hidden pl-4 pb-2 space-y-1">
-              <a href="/servicios/diseno-web-estrategico" class="block py-2 text-sm text-secondary hover:text-primary">Diseño Web Estratégico</a>
-              <a href="/servicios/chatbot-ia" class="block py-2 text-sm text-secondary hover:text-primary">Chatbot IA</a>
-              <a href="/servicios/captacion-leads" class="block py-2 text-sm text-secondary hover:text-primary">Captación de Leads</a>
-              <a href="/servicios/lead-scoring" class="block py-2 text-sm text-secondary hover:text-primary">Lead Scoring</a>
-              <a href="/servicios/funnels-conversion" class="block py-2 text-sm text-secondary hover:text-primary">Funnels de Conversión</a>
-              <a href="/servicios/crm-personalizado" class="block py-2 text-sm text-secondary hover:text-primary">CRM Personalizado</a>
-              <a href="/servicios/optimizacion-continua" class="block py-2 text-sm text-secondary hover:text-primary">Optimización Continua</a>
-              <a href="/servicios/soporte-mantenimiento" class="block py-2 text-sm text-secondary hover:text-primary">Soporte y Mantenimiento</a>
-            <a href="/servicios/landing-pages" class="block py-2 text-sm text-secondary hover:text-primary">Landing Pages</a>
-            <a href="/servicios/seo-local" class="block py-2 text-sm text-secondary hover:text-primary">SEO Local</a>
-              <a href="/servicios/" class="block py-2 text-sm text-primary font-semibold">Ver todos &rarr;</a>
+          <div class="absolute top-full left-0 mt-1 w-64 bg-[#0f1119] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+            <a href="/servicios/chatbots-empresas/" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Chatbots para Empresas</a>
+            <a href="/servicios/agentes-ia-empresas/" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Agentes IA</a>
+            <a href="/servicios/automatizaciones-ia/" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Automatizaciones con IA</a>
+            <a href="/consultoria-ia/" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Consultoría IA</a>
+            <a href="/formacion-ia-empresas/" class="block px-4 py-2.5 text-sm text-secondary hover:text-white hover:bg-white/5">Formación IA</a>
+            <div class="border-t border-white/5 mt-1 pt-1">
+              <a href="/consultoria-ia/kit-consulting/" class="block px-4 py-2.5 text-sm text-primary font-semibold hover:bg-white/5">⭐ Kit Consulting</a>
             </div>
           </div>
-          <div>
-            <button onclick="toggleMobileAccordion('mob-sectores')" class="w-full flex items-center justify-between py-3 text-white font-medium text-base">Sectores <svg class="w-4 h-4 text-secondary transition-transform" id="mob-sectores-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
-            <div id="mob-sectores" class="hidden pl-4 pb-2 space-y-1">
-              <a href="/para/restaurantes" class="block py-2 text-sm text-secondary hover:text-primary">Restaurantes</a>
-              <a href="/para/clinicas" class="block py-2 text-sm text-secondary hover:text-primary">Clínicas</a>
-              <a href="/para/abogados" class="block py-2 text-sm text-secondary hover:text-primary">Abogados</a>
-              <a href="/para/coaches" class="block py-2 text-sm text-secondary hover:text-primary">Coaches</a>
-              <a href="/para/ecommerce" class="block py-2 text-sm text-secondary hover:text-primary">eCommerce</a>
-              <a href="/para/inmobiliarias" class="block py-2 text-sm text-secondary hover:text-primary">Inmobiliarias</a>
-              <a href="/para/gimnasios" class="block py-2 text-sm text-secondary hover:text-primary">Gimnasios</a>
-              <a href="/para/academias" class="block py-2 text-sm text-secondary hover:text-primary">Academias</a>
-              <a href="/para/clinicas-dentales" class="block py-2 text-sm text-secondary hover:text-primary">Clínicas Dentales</a>
-            <a href="/para/consultoras" class="block py-2 text-sm text-secondary hover:text-primary">Consultoras</a>
-            <a href="/para/veterinarios" class="block py-2 text-sm text-secondary hover:text-primary">Veterinarios</a>
-            <a href="/para/centros-estetica" class="block py-2 text-sm text-secondary hover:text-primary">Centros Estética</a>
-              <a href="/para/" class="block py-2 text-sm text-primary font-semibold">Ver todos &rarr;</a>
-            </div>
-          </div>
-          <a href="/blog/" class="block py-3 text-white font-medium text-base hover:text-primary">Blog</a>
-          <a href="/comparar/" class="block py-3 text-white font-medium text-base hover:text-primary">Comparativas</a>
-          <a href="/precios" class="block py-3 text-white font-medium text-base hover:text-primary">Precios</a>
-          <a href="/sobre-nosotros" class="block py-3 text-white font-medium text-base hover:text-primary">Sobre Nosotros</a>
-          <div class="pt-4 border-t border-white/5">
-            <a href="/contacto/" class="block w-full text-center bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg text-sm font-bold transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)]">Contacto</a>
-          </div>
         </div>
+        <a href="/casos-de-exito/" class="hover:text-primary transition-colors">Casos</a>
+        <a href="/blog/" class="text-primary font-semibold">Blog</a>
+        <a href="/precios" class="hover:text-primary transition-colors">Precios</a>
+        <a href="/nosotros" class="hover:text-primary transition-colors">Nosotros</a>
       </div>
-    </nav>
-    <script>
-    function toggleMobileMenu(){var m=document.getElementById('mobile-menu'),t=document.getElementById('ham-top'),d=document.getElementById('ham-mid'),b=document.getElementById('ham-bot');if(!m.classList.contains('hidden')){m.classList.add('hidden');t.style.transform='';d.style.opacity='1';b.style.transform='';}else{m.classList.remove('hidden');t.style.transform='rotate(45deg) translate(4px,4px)';d.style.opacity='0';b.style.transform='rotate(-45deg) translate(4px,-4px)';}}
-    function toggleMobileAccordion(id){var e=document.getElementById(id),i=document.getElementById(id+'-icon');if(e.classList.contains('hidden')){e.classList.remove('hidden');i.style.transform='rotate(180deg)';}else{e.classList.add('hidden');i.style.transform='';}}
-    (function(){var ls=0,nb=document.getElementById('navbar');if(!nb)return;window.addEventListener('scroll',function(){var cs=window.pageYOffset;if(cs<=0){nb.style.transform='translateY(0)';return;}if(cs>ls&&cs>80){nb.style.transform='translateY(-100%)';var mm=document.getElementById('mobile-menu');if(mm)mm.classList.add('hidden');}else{nb.style.transform='translateY(0)';}ls=cs;});})();
-    </script>
-
-    <!-- Hero -->
-    <header class="pt-32 pb-12 max-w-6xl mx-auto px-6">
-        <div class="text-center">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 border border-primary/20">Blog</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Blog: Diseño Web, IA y Automatización para PYMEs</h1>
-            <p class="text-secondary text-lg max-w-2xl mx-auto">Artículos prácticos sobre cómo convertir tu web en una máquina de captación de clientes. Sin humo, sin tecnicismos innecesarios.</p>
-        </div>
-    </header>
-
-    <!-- Articles Grid -->
-    <main class="max-w-6xl mx-auto px-6 pb-20">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- Article 1 -->
-            <a href="/blog/por-que-mi-web-no-genera-clientes" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Awareness</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Por Qué tu Web No Genera Clientes (y Cómo Solucionarlo)</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Tu web tiene visitas pero nadie contacta. Descubre los 5 errores que matan tus conversiones y cómo corregirlos hoy mismo.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">28 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 2 -->
-            <a href="/blog/cuanto-cuesta-web-profesional" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Consideración</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">¿Cuánto Cuesta una Web Profesional en 2026?</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Comparamos rangos de precio reales (500 € vs 3 000 € vs 10 000 €+), qué incluye cada uno y por qué lo barato suele salir caro.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">28 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 3 -->
-            <a href="/blog/chatbot-ia-para-pymes" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Consideración</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Chatbot con IA para PYMEs: Cómo Automatizar tus Ventas</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Guía práctica para implementar un chatbot con inteligencia artificial que atienda, cualifique y convierta visitantes en clientes.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">28 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 4 -->
-            <a href="/blog/diferencia-web-bonita-web-que-vende" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Awareness</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">La Diferencia entre una Web Bonita y una Web que Vende</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">El diseño bonito no vende solo. Descubre las 5 diferencias clave entre una web estética y una web orientada a resultados.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">28 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 5 -->
-            <a href="/blog/como-automatizar-captacion-leads" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Consideración</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Cómo Automatizar la Captación de Leads en tu Web</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Los 4 pilares de la captación automatizada: páginas de captación, asistentes automáticos, email marketing y panel de gestión. Guía paso a paso para PYMEs.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">28 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 6 -->
-            <a href="/blog/que-es-lead-scoring" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Awareness</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Lead Scoring: Qué Es y Por Qué tu PYME lo Necesita</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Aprende a puntuar y priorizar tus contactos para que tu equipo comercial se centre en quienes tienen más probabilidad de compra.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">28 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 7 -->
-            <a href="/blog/mejores-agencias-diseno-web-espana" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Decisión</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Mejores Agencias de Diseño Web en España 2026</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Comparativa de las mejores agencias web en España. Criterios de selección, precios orientativos y qué diferencia a ZappyApps del resto.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 8 -->
-            <a href="/blog/como-elegir-agencia-web" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Decisión</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Cómo Elegir Agencia de Diseño Web: Guía para PYMEs</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Qué preguntar, qué red flags evitar y cómo evaluar el portfolio. Checklist completo para tomar la mejor decisión.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 9 -->
-            <a href="/blog/crm-para-pymes-guia" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Decisión</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">CRM para PYMEs: Cuál Elegir y Por Qué lo Necesitas</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Comparativa de HubSpot, Zoho, Pipedrive y CRM a medida. Cuándo necesitas un CRM y qué opción encaja con tu negocio.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 10 -->
-            <a href="/blog/funnel-ventas-automatizado" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Estrategia</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Funnel de Ventas Automatizado: Guía Paso a Paso</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">TOFU, MOFU, BOFU explicado para PYMEs. Herramientas, ejemplos y cómo montar un sistema de ventas que trabaja 24/7.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 11 -->
-            <a href="/blog/web-conversion-vs-web-corporativa" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Diseño Web</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Web de Conversión vs Web Corporativa: Diferencias Clave</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Por qué las PYMEs necesitan webs orientadas a resultados y no simples escaparates digitales. Con ejemplos reales.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 12 -->
-            <a href="/blog/ia-aplicada-marketing-pymes" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">IA y Automatización</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">IA Aplicada al Marketing para PYMEs: Guía Práctica</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Chatbots, lead scoring, personalización y automatización al alcance de cualquier PYME. Herramientas y casos reales.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 13 -->
-            <a href="/blog/tendencias-diseno-web-2026" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Diseño Web</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Tendencias de Diseño Web 2026</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Las 10+ tendencias que marcarán el diseño web este año: IA conversacional, personalización dinámica, micro-interacciones y más.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 14 -->
-            <a href="/blog/errores-web-pymes" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Diseño Web</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">15 Errores Comunes en Webs de PYMEs (y Cómo Evitarlos)</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Checklist de autodiagnóstico para detectar los errores que están ahuyentando a tus clientes potenciales.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 15 -->
-            <a href="/blog/automatizar-whatsapp-business" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">IA y Automatización</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Cómo Automatizar WhatsApp Business: Guía Completa</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Asistentes automáticos, mensajes programados e integración con tu panel de gestión para responder a clientes las 24 horas sin esfuerzo manual.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Article 16 -->
-            <a href="/blog/ia-generativa-ventas-pymes" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">IA y Automatización</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">IA Generativa para Ventas en PYMEs</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Cómo usar ChatGPT y Claude para mejorar ventas: copywriting, emails de seguimiento, propuestas y atención al cliente.</p>
-                <div class="flex items-center justify-between">
-                    <span class="text-secondary text-xs">29 de marzo de 2026</span>
-                    <span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
-                </div>
-            </a>
-
-            <!-- Sprint 5 blog posts -->
-            <a href="/blog/kit-digital-guia" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-medium mb-4">Ayudas y Subvenciones</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Kit Digital 2026: Guía Completa para PYMEs</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Qué es el Kit Digital, cuantías por segmento (hasta 29.000€), requisitos y cómo solicitarlo paso a paso en 2026.</p>
-                <div class="flex items-center justify-between"><span class="text-secondary text-xs">29 de marzo de 2026</span><span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo →</span></div>
-            </a>
-            <a href="/blog/subvenciones-digitalizacion-2026" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-medium mb-4">Ayudas y Subvenciones</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Subvenciones Digitalización PYMEs 2026</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Todas las ayudas disponibles: Kit Digital, CDTI, fondos europeos y ayudas de Canarias. No dejes dinero sobre la mesa.</p>
-                <div class="flex items-center justify-between"><span class="text-secondary text-xs">29 de marzo de 2026</span><span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo →</span></div>
-            </a>
-            <a href="/blog/como-captar-clientes-online" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Estrategia Digital</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">8 Estrategias Para Captar Clientes por Internet</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">SEO, chatbots, embudos, CRM y más. Guía práctica con las 8 estrategias más efectivas para generar clientes online.</p>
-                <div class="flex items-center justify-between"><span class="text-secondary text-xs">29 de marzo de 2026</span><span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo →</span></div>
-            </a>
-            <a href="/blog/crm-vs-excel" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-accent text-xs font-medium mb-4">Herramientas</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">CRM vs Excel: Cuándo Dejar la Hoja de Cálculo</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Los 7 límites del Excel para gestión de clientes y cuándo es el momento de dar el salto a un CRM.</p>
-                <div class="flex items-center justify-between"><span class="text-secondary text-xs">29 de marzo de 2026</span><span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo →</span></div>
-            </a>
-            <a href="/blog/redes-sociales-vs-web" class="group bg-card rounded-2xl border border-white/5 p-6 md:p-8 hover:border-primary/30 transition-all duration-300">
-                <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-primary text-xs font-medium mb-4">Estrategia Digital</span>
-                <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Redes Sociales vs Página Web: Dónde Invertir</h2>
-                <p class="text-secondary text-sm mb-4 leading-relaxed">Por qué no puedes depender solo de Instagram. Las ventajas de tener web propia y cómo usar las redes como amplificador.</p>
-                <div class="flex items-center justify-between"><span class="text-secondary text-xs">29 de marzo de 2026</span><span class="text-primary text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Leer artículo →</span></div>
-            </a>
-
-        </div>
-
-        <!-- CTA -->
-        <div class="mt-16 text-center bg-card rounded-2xl border border-white/5 p-8 md:p-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Quieres que lo hagamos por ti?</h2>
-            <p class="text-secondary mb-8 max-w-xl mx-auto">Diseñamos webs que convierten visitantes en clientes reales. Con IA, automatización y estrategia de conversión incluida.</p>
-            <a href="/#pricing" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl transition-colors">
-                Ver planes y precios <i data-lucide="arrow-right" class="w-5 h-5"></i>
-            </a>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-white/5 bg-[#050508] pt-16 pb-8">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
-          <div>
-            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Servicios</h4>
-            <ul class="space-y-3 text-sm text-secondary">
-              <li><a href="/servicios/diseno-web-estrategico" class="hover:text-primary transition-colors">Diseño Web</a></li>
-              <li><a href="/servicios/chatbot-ia" class="hover:text-primary transition-colors">Chatbot IA</a></li>
-              <li><a href="/servicios/captacion-leads" class="hover:text-primary transition-colors">Captación de Leads</a></li>
-              <li><a href="/servicios/funnels-conversion" class="hover:text-primary transition-colors">Funnels</a></li>
-              <li><a href="/servicios/crm-personalizado" class="hover:text-primary transition-colors">CRM</a></li>
-              <li><a href="/servicios/" class="hover:text-primary transition-colors font-medium text-primary">Ver todos &rarr;</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Sectores</h4>
-            <ul class="space-y-3 text-sm text-secondary">
-              <li><a href="/para/restaurantes" class="hover:text-primary transition-colors">Restaurantes</a></li>
-              <li><a href="/para/clinicas" class="hover:text-primary transition-colors">Clínicas</a></li>
-              <li><a href="/para/abogados" class="hover:text-primary transition-colors">Abogados</a></li>
-              <li><a href="/para/coaches" class="hover:text-primary transition-colors">Coaches</a></li>
-              <li><a href="/para/ecommerce" class="hover:text-primary transition-colors">eCommerce</a></li>
-              <li><a href="/para/inmobiliarias" class="hover:text-primary transition-colors">Inmobiliarias</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Empresa</h4>
-            <ul class="space-y-3 text-sm text-secondary">
-              <li><a href="/sobre-nosotros" class="hover:text-primary transition-colors">Sobre Nosotros</a></li>
-              <li><a href="/equipo/" class="hover:text-primary transition-colors">Equipo</a></li>
-              <li><a href="/portfolio/" class="hover:text-primary transition-colors">Portfolio</a></li>
-              <li><a href="/testimonios/" class="hover:text-primary transition-colors">Testimonios</a></li>
-              <li><a href="/blog/" class="hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="/faq/" class="hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="/contacto/" class="hover:text-primary transition-colors">Contacto</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4>
-            <ul class="space-y-3 text-sm text-secondary">
-              <li><a href="/privacidad" class="hover:text-primary transition-colors">Política de Privacidad</a></li>
-              <li><a href="/terminos" class="hover:text-primary transition-colors">Términos y Condiciones</a></li>
-              <li><a href="/cookies" class="hover:text-primary transition-colors">Política de Cookies</a></li>
-            </ul>
-          </div>
-        </div>
-      <!-- Presencia local -->
-      <div class="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-sm text-secondary">
-        <a href="/diseno-web-tenerife" class="hover:text-primary transition-colors">Diseño Web Tenerife</a>
-        <a href="/agencia-digital-tenerife" class="hover:text-primary transition-colors">Agencia Digital Tenerife</a>
-        <a href="/diseno-web-canarias" class="hover:text-primary transition-colors">Diseño Web Canarias</a>
-        <a href="/agencia-digital-canarias" class="hover:text-primary transition-colors">Agencia Digital Canarias</a>
+      <div class="flex items-center gap-4">
+        <a href="/contacto/" class="hidden md:inline-flex bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_24px_rgba(59,130,246,0.5)]">Diagnóstico gratuito</a>
+        <button id="mobile-menu-btn" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" aria-label="Menu" onclick="toggleMobileMenu()">
+          <span class="block w-6 h-0.5 bg-white" id="ham-top"></span>
+          <span class="block w-6 h-0.5 bg-white" id="ham-mid"></span>
+          <span class="block w-6 h-0.5 bg-white" id="ham-bot"></span>
+        </button>
       </div>
-        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary">
-          <div>&copy; 2026 ZappyApps. Todos los derechos reservados.</div>
-          <div class="flex items-center gap-4"><a href="tel:+34696120384" class="hover:text-primary transition-colors">696 120 384</a><span class="text-white/20">|</span><a href="mailto:hola@zappyapps.tech" class="hover:text-primary transition-colors">hola@zappyapps.tech</a></div>
-        </div>
-      </div>
-    </footer>
-
-    <script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>
-BANNER_PLACEHOLDER
-
-    <!-- Cookie Banner -->
-    <div id="cookie-banner"
-        class="fixed bottom-0 left-0 right-0 z-[9999] transition-transform duration-500 translate-y-full">
-        <div class="max-w-5xl mx-auto px-4 pb-4">
-            <div
-                class="bg-[#0f1119] border border-white/10 rounded-2xl p-5 md:p-6 shadow-[0_-4px_30px_rgba(0,0,0,0.5)] backdrop-blur-sm">
-                <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
-                    <div class="flex items-start gap-3 flex-1">
-                        <div
-                            class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-                            <i data-lucide="cookie" class="w-5 h-5 text-primary"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-white font-bold text-sm mb-1">Usamos cookies 🍪</h4>
-                            <p class="text-secondary text-xs leading-relaxed">Utilizamos cookies propias y de terceros
-                                para analizar el tráfico y mejorar tu experiencia. Puedes aceptar, rechazar o configurar
-                                tus preferencias. Más información en nuestra <a href="/cookies"
-                                    class="text-primary hover:underline">política de cookies</a>.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2 shrink-0 w-full md:w-auto">
-                        <button onclick="rejectCookies()"
-                            class="flex-1 md:flex-none px-4 py-2 text-xs font-medium text-secondary hover:text-white border border-white/10 hover:border-white/20 rounded-lg transition-all">Rechazar</button>
-                        <a href="/cookies"
-                            class="flex-1 md:flex-none px-4 py-2 text-xs font-medium text-secondary hover:text-white border border-white/10 hover:border-white/20 rounded-lg transition-all text-center">Configurar</a>
-                        <button onclick="acceptCookies()"
-                            class="flex-1 md:flex-none px-5 py-2 text-xs font-bold text-white bg-primary hover:bg-primary-dark rounded-lg transition-all shadow-[0_0_15px_rgba(59,130,246,0.3)]">Aceptar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <script>
-    (function(){
-        function initCookieBanner(){
-            var consent=localStorage.getItem('zappy_cookie_consent');
-            if(!consent){
-                setTimeout(function(){
-                    var banner=document.getElementById('cookie-banner');
-                    if(banner){
-                        banner.classList.remove('translate-y-full');
-                        banner.classList.add('translate-y-0');
-                        if(typeof lucide!=='undefined') lucide.createIcons();
-                    }
-                },1500);
-            }
-        }
-        window.acceptCookies=function(){
-            localStorage.setItem('zappy_cookie_consent','accepted');
-            hideCookieBanner();
-        };
-        window.rejectCookies=function(){
-            localStorage.setItem('zappy_cookie_consent','rejected');
-            hideCookieBanner();
-        };
-        function hideCookieBanner(){
-            var banner=document.getElementById('cookie-banner');
-            if(banner){
-                banner.classList.remove('translate-y-0');
-                banner.classList.add('translate-y-full');
-            }
-        }
-        if(document.readyState==='loading'){
-            document.addEventListener('DOMContentLoaded',initCookieBanner);
-        } else {
-            initCookieBanner();
-        }
-    })();
-    </script>
+    <div id="mobile-menu" class="lg:hidden hidden bg-[#0a0a12] border-t border-white/5 max-h-[calc(100vh-5rem)] overflow-y-auto">
+      <div class="px-6 py-6 space-y-1">
+        <a href="/servicios/chatbots-empresas/" class="block py-3 text-white font-medium text-base">Chatbots para empresas</a>
+        <a href="/servicios/agentes-ia-empresas/" class="block py-3 text-white font-medium text-base">Agentes IA</a>
+        <a href="/servicios/automatizaciones-ia/" class="block py-3 text-white font-medium text-base">Automatizaciones con IA</a>
+        <a href="/consultoria-ia/" class="block py-3 text-white font-medium text-base">Consultoría IA</a>
+        <a href="/formacion-ia-empresas/" class="block py-3 text-white font-medium text-base">Formación IA</a>
+        <a href="/consultoria-ia/kit-consulting/" class="block py-3 text-primary font-medium text-base">⭐ Kit Consulting</a>
+        <a href="/casos-de-exito/" class="block py-3 text-white font-medium text-base">Casos</a>
+        <a href="/blog/" class="block py-3 text-primary font-medium text-base">Blog</a>
+        <a href="/precios" class="block py-3 text-white font-medium text-base">Precios</a>
+        <a href="/nosotros" class="block py-3 text-white font-medium text-base">Nosotros</a>
+        <div class="pt-4 border-t border-white/5">
+          <a href="/contacto/" class="block w-full text-center bg-primary text-white px-6 py-3 rounded-lg text-sm font-bold">Diagnóstico gratuito</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function toggleMobileMenu(){var m=document.getElementById('mobile-menu');m.classList.toggle('hidden')}
+  </script>
 
+  <!-- Breadcrumb -->
+  <div class="pt-28 pb-4 max-w-7xl mx-auto px-6">
+    <nav class="text-xs text-secondary" aria-label="breadcrumb">
+      <a href="/" class="hover:text-primary">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-white">Blog</span>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative py-16 overflow-hidden">
+    <div class="absolute top-0 right-0 w-full h-full bg-grid z-0"></div>
+    <div class="ambient-glow top-0 right-1/4"></div>
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-secondary mb-6">
+        <span class="w-2 h-2 rounded-full bg-primary"></span>
+        Contenido para decisores
+      </div>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-sans font-black leading-[1.1] text-white mb-6">
+        El blog de IA <span class="text-gradient">para decisores de pyme</span>
+      </h1>
+      <p class="text-lg text-secondary max-w-2xl mx-auto leading-relaxed">
+        Publicamos menos, pero pensado. Cada artículo busca ayudarte a tomar una decisión informada sobre qué herramienta de IA necesita tu empresa.
+      </p>
+    </div>
+  </section>
+
+  <!-- Proximamente -->
+  <section class="py-14 relative">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">En producción</h2>
+        <p class="text-secondary text-lg">Estos artículos salen en las próximas semanas. Puedes reservar un diagnóstico ahora si prefieres hablar directamente.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-card p-6 rounded-2xl border border-white/5 card-hover-effect flex flex-col">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-semibold">En redacción</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Cómo elegir una agencia de IA para tu pyme en 2026</h3>
+          <p class="text-secondary text-sm mb-4 flex-1">Qué preguntas hacer, qué red flags evitar, cómo comparar propuestas.</p>
+          <p class="text-xs text-secondary">Keyword: agencia IA pyme</p>
+        </div>
+
+        <div class="bg-card p-6 rounded-2xl border border-white/5 card-hover-effect flex flex-col">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold">En revisión</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Chatbot empresa vs. asistente IA: diferencias y cuándo usar cada uno</h3>
+          <p class="text-secondary text-sm mb-4 flex-1">Contexto, casos de uso y diferencia de precio (spoiler: chatbot es más barato).</p>
+          <p class="text-xs text-secondary">Keyword: chatbot vs asistente IA</p>
+        </div>
+
+        <div class="bg-card p-6 rounded-2xl border border-white/5 card-hover-effect flex flex-col">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">En redacción</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Checklist: ¿tu empresa está lista para un agente IA?</h3>
+          <p class="text-secondary text-sm mb-4 flex-1">5 preguntas que tu empresa debe responder sí. Si respondes no a alguna, mejor esperar.</p>
+          <p class="text-xs text-secondary">Keyword: agente IA checklist</p>
+        </div>
+
+        <div class="bg-card p-6 rounded-2xl border border-white/5 card-hover-effect flex flex-col">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold">En revisión</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">IA agéntica: qué es y por qué importa en 2026</h3>
+          <p class="text-secondary text-sm mb-4 flex-1">De chatbots que responden a agentes que ejecutan. El cambio fundamental de este año.</p>
+          <p class="text-xs text-secondary">Keyword: IA agéntica 2026</p>
+        </div>
+
+        <div class="bg-card p-6 rounded-2xl border border-white/5 card-hover-effect flex flex-col">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 text-xs font-semibold">En redacción</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Qué es n8n y por qué está cambiando cómo se automatiza en pymes</h3>
+          <p class="text-secondary text-sm mb-4 flex-1">No code automation + IA. Por qué no necesitas desarrollador propio para esto.</p>
+          <p class="text-xs text-secondary">Keyword: n8n automatización pyme</p>
+        </div>
+
+        <div class="bg-card p-6 rounded-2xl border border-white/5 card-hover-effect flex flex-col">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 text-xs font-semibold">En revisión</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Kit Consulting y IA: guía para acceder a hasta 24.000€</h3>
+          <p class="text-secondary text-sm mb-4 flex-1">Cómo calificar y maximizar la subvención pública para implementaciones de IA.</p>
+          <p class="text-xs text-secondary">Keyword: Kit Consulting IA</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-14 bg-[#08080C]/50 relative">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-gradient-to-b from-primary/10 to-accent/5 rounded-2xl border border-primary/40 p-10 text-center relative">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
+          <span class="px-4 py-1 rounded-full text-xs font-bold bg-primary text-white shadow-lg">Newsletter</span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Entérate cuando sale nuevo contenido</h2>
+        <p class="text-secondary max-w-lg mx-auto mb-6">Aviso cuando publicamos nuevo artículo + acceso prioritario a guías y recursos exclusivos.</p>
+        <form class="flex flex-col sm:flex-row gap-3" onsubmit="return false;">
+          <input type="email" placeholder="tu@email.com" class="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-secondary/60 outline-none focus:border-primary transition-colors" required>
+          <button type="submit" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg font-semibold transition-all">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-14 px-4 md:px-6">
+    <div class="max-w-5xl mx-auto relative rounded-2xl md:rounded-[2rem] overflow-hidden bg-gradient-to-br from-[#0F1119] to-[#1a1d2d] border border-white/10 p-10 md:p-16 text-center">
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-purple-500/10 opacity-50"></div>
+      <div class="relative z-10 space-y-6">
+        <h2 class="text-3xl md:text-4xl font-black text-white leading-tight">¿Prefieres hablar en directo? <span class="text-white/60">No esperes al blog.</span></h2>
+        <p class="text-secondary text-base md:text-lg max-w-2xl mx-auto">Reserva un diagnóstico gratuito de 30 min. Te asesoramos sobre qué IA te hace falta basándonos en tu caso específico.</p>
+        <a href="/contacto/" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(59,130,246,0.4)]">Reservar diagnóstico gratuito <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-[#050508] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+        <div>
+          <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Servicios IA</h4>
+          <ul class="space-y-3 text-sm text-secondary">
+            <li><a href="/servicios/chatbots-empresas/" class="hover:text-primary">Chatbots para empresas</a></li>
+            <li><a href="/servicios/agentes-ia-empresas/" class="hover:text-primary">Agentes IA</a></li>
+            <li><a href="/servicios/automatizaciones-ia/" class="hover:text-primary">Automatizaciones con IA</a></li>
+            <li><a href="/consultoria-ia/" class="hover:text-primary">Consultoría IA</a></li>
+            <li><a href="/formacion-ia-empresas/" class="hover:text-primary">Formación IA</a></li>
+            <li><a href="/consultoria-ia/kit-consulting/" class="text-primary font-medium">⭐ Kit Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Recursos</h4>
+          <ul class="space-y-3 text-sm text-secondary">
+            <li><a href="/casos-de-exito/" class="hover:text-primary">Casos de éxito</a></li>
+            <li><a href="/blog/" class="hover:text-primary">Blog</a></li>
+            <li><a href="/precios/" class="hover:text-primary">Precios</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Empresa</h4>
+          <ul class="space-y-3 text-sm text-secondary">
+            <li><a href="/nosotros" class="hover:text-primary">Nosotros</a></li>
+            <li><a href="/contacto/" class="hover:text-primary">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4>
+          <ul class="space-y-3 text-sm text-secondary">
+            <li><a href="/privacidad" class="hover:text-primary">Privacidad</a></li>
+            <li><a href="/terminos" class="hover:text-primary">Términos</a></li>
+            <li><a href="/cookies" class="hover:text-primary">Cookies</a></li>
+            <li><a href="/aviso-legal" class="hover:text-primary">Aviso Legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary">
+        <div>&copy; 2026 ZappyApps · Agencia boutique de IA · Digitalizador adherido Kit Consulting</div>
+        <div class="flex items-center gap-4"><a href="tel:+34696120384" class="hover:text-primary">696 120 384</a><span class="text-white/20">|</span><a href="mailto:hola@zappyapps.tech" class="hover:text-primary">hola@zappyapps.tech</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>if(window.lucide)lucide.createIcons();document.addEventListener('DOMContentLoaded',()=>{if(window.lucide)lucide.createIcons()});</script>
 </body>
 </html>
